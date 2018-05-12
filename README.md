@@ -46,7 +46,7 @@
 
 ## NiuTrans团队
 * [朱靖波](http://www.nlplab.com/members/zhujingbo.html)（项目负责人）
-* [肖桐](http://www.nlplab.com/members/~xiaotong.html)（技术负责人）
+* [肖桐](http://www.nlplab.com/members/xiaotong.html)（技术负责人）
 * [李强](http://www.nlplab.com/members/liqiang.html)
 * 杜权
 * 王强
