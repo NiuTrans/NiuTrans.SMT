@@ -1,0 +1,2217 @@
+000	NULL
+0	zero
+1	one
+2	two
+3	three
+4	four
+5	five
+6	six
+7	seven
+8	eight
+9	nine
+01	and one
+02	and two
+03	and three
+04	and four
+05	and five
+06	and six
+07	and seven
+08	and eight
+09	and nine
+001	and one
+002	and two
+003	and three
+004	and four
+005	and five
+006	and six
+007	and seven
+008	and eight
+009	and nine
+10	ten
+11	eleven
+12	twelve
+13	thirteen
+14	forteen
+15	fifteen
+16	sixteen
+17	seventeen
+18	eighteen
+19	nineteen
+010	and ten
+011	and eleven
+012	and twelve
+013	and thirteen
+014	and forteen
+015	and fifteen
+016	and sixteen
+017	and seventeen
+018	and eighteen
+019	and nineteen
+20	twenty
+21	twenty-one
+22	twenty-two
+23	twenty-three
+24	twenty-four
+25	twenty-five
+26	twenty-six
+27	twenty-seven
+28	twenty-eight
+29	twenty-nine
+020	and twenty
+021	and twenty-one
+022	and twenty-two
+023	and twenty-three
+024	and twenty-four
+025	and twenty-five
+026	and twenty-six
+027	and twenty-seven
+028	and twenty-eight
+029	and twenty-nine
+30	thirty
+31	thirty-one
+32	thirty-two
+33	thirty-three
+34	thirty-four
+35	thirty-five
+36	thirty-six
+37	thirty-seven
+38	thirty-eight
+39	thirty-nine
+030	and thirty
+031	and thirty-one
+032	and thirty-two
+033	and thirty-three
+034	and thirty-four
+035	and thirty-five
+036	and thirty-six
+037	and thirty-seven
+038	and thirty-eight
+039	and thirty-nine
+40	forty
+41	forty-one
+42	forty-two
+43	forty-three
+44	forty-four
+45	forty-five
+46	forty-six
+47	forty-seven
+48	forty-eight
+49	forty-nine
+040	and forty
+041	and forty-one
+042	and forty-two
+043	and forty-three
+044	and forty-four
+045	and forty-five
+046	and forty-six
+047	and forty-seven
+048	and forty-eight
+049	and forty-nine
+50	fifty
+51	fifty-one
+52	fifty-two
+53	fifty-three
+54	fifty-four
+55	fifty-five
+56	fifty-six
+57	fifty-seven
+58	fifty-eight
+59	fifty-nine
+050	and fifty
+051	and fifty-one
+052	and fifty-two
+053	and fifty-three
+054	and fifty-four
+055	and fifty-five
+056	and fifty-six
+057	and fifty-seven
+058	and fifty-eight
+059	and fifty-nine
+60	sixty
+61	sixty-one
+62	sixty-two
+63	sixty-three
+64	sixty-four
+65	sixty-five
+66	sixty-six
+67	sixty-seven
+68	sixty-eight
+69	sixty-nine
+060	and sixty
+061	and sixty-one
+062	and sixty-two
+063	and sixty-three
+064	and sixty-four
+065	and sixty-five
+066	and sixty-six
+067	and sixty-seven
+068	and sixty-eight
+069	and sixty-nine
+70	seventy
+71	seventy-one
+72	seventy-two
+73	seventy-three
+74	seventy-four
+75	seventy-five
+76	seventy-six
+77	seventy-seven
+78	seventy-eight
+79	seventy-nine
+070	and seventy
+071	and seventy-one
+072	and seventy-two
+073	and seventy-three
+074	and seventy-four
+075	and seventy-five
+076	and seventy-six
+077	and seventy-seven
+078	and seventy-eight
+079	and seventy-nine
+80	eighty
+81	eighty-one
+82	eighty-two
+83	eighty-three
+84	eighty-four
+85	eighty-five
+86	eighty-six
+87	eighty-seven
+88	eighty-eight
+89	eighty-nine
+080	and eighty
+081	and eighty-one
+082	and eighty-two
+083	and eighty-three
+084	and eighty-four
+085	and eighty-five
+086	and eighty-six
+087	and eighty-seven
+088	and eighty-eight
+089	and eighty-nine
+90	ninety
+91	ninety-one
+92	ninety-two
+93	ninety-three
+94	ninety-four
+95	ninety-five
+96	ninety-six
+97	ninety-seven
+98	ninety-eight
+99	ninety-nine
+090	and ninety
+091	and ninety-one
+092	and ninety-two
+093	and ninety-three
+094	and ninety-four
+095	and ninety-five
+096	and ninety-six
+097	and ninety-seven
+098	and ninety-eight
+099	and ninety-nine
+100	one hundred
+101	one hundred and one
+102	one hundred and two
+103	one hundred and three
+104	one hundred and four
+105	one hundred and five
+106	one hundred and six
+107	one hundred and seven
+108	one hundred and eight
+109	one hundred and nine
+110	one hundred and ten
+111	one hundred and eleven
+112	one hundred and twelve
+113	one hundred and thirteen
+114	one hundred and forteen
+115	one hundred and fifteen
+116	one hundred and sixteen
+117	one hundred and seventeen
+118	one hundred and eighteen
+119	one hundred and nineteen
+120	one hundred and twenty
+121	one hundred and twenty-one
+122	one hundred and twenty-two
+123	one hundred and twenty-three
+124	one hundred and twenty-four
+125	one hundred and twenty-five
+126	one hundred and twenty-six
+127	one hundred and twenty-seven
+128	one hundred and twenty-eight
+129	one hundred and twenty-nine
+130	one hundred and thirty
+131	one hundred and thirty-one
+132	one hundred and thirty-two
+133	one hundred and thirty-three
+134	one hundred and thirty-four
+135	one hundred and thirty-five
+136	one hundred and thirty-six
+137	one hundred and thirty-seven
+138	one hundred and thirty-eight
+139	one hundred and thirty-nine
+140	one hundred and forty
+141	one hundred and forty-one
+142	one hundred and forty-two
+143	one hundred and forty-three
+144	one hundred and forty-four
+145	one hundred and forty-five
+146	one hundred and forty-six
+147	one hundred and forty-seven
+148	one hundred and forty-eight
+149	one hundred and forty-nine
+150	one hundred and fifty
+151	one hundred and fifty-one
+152	one hundred and fifty-two
+153	one hundred and fifty-three
+154	one hundred and fifty-four
+155	one hundred and fifty-five
+156	one hundred and fifty-six
+157	one hundred and fifty-seven
+158	one hundred and fifty-eight
+159	one hundred and fifty-nine
+160	one hundred and sixty
+161	one hundred and sixty-one
+162	one hundred and sixty-two
+163	one hundred and sixty-three
+164	one hundred and sixty-four
+165	one hundred and sixty-five
+166	one hundred and sixty-six
+167	one hundred and sixty-seven
+168	one hundred and sixty-eight
+169	one hundred and sixty-nine
+170	one hundred and seventy
+171	one hundred and seventy-one
+172	one hundred and seventy-two
+173	one hundred and seventy-three
+174	one hundred and seventy-four
+175	one hundred and seventy-five
+176	one hundred and seventy-six
+177	one hundred and seventy-seven
+178	one hundred and seventy-eight
+179	one hundred and seventy-nine
+180	one hundred and eighty
+181	one hundred and eighty-one
+182	one hundred and eighty-two
+183	one hundred and eighty-three
+184	one hundred and eighty-four
+185	one hundred and eighty-five
+186	one hundred and eighty-six
+187	one hundred and eighty-seven
+188	one hundred and eighty-eight
+189	one hundred and eighty-nine
+190	one hundred and ninety
+191	one hundred and ninety-one
+192	one hundred and ninety-two
+193	one hundred and ninety-three
+194	one hundred and ninety-four
+195	one hundred and ninety-five
+196	one hundred and ninety-six
+197	one hundred and ninety-seven
+198	one hundred and ninety-eight
+199	one hundred and ninety-nine
+200	two hundred
+201	two hundred and one
+202	two hundred and two
+203	two hundred and three
+204	two hundred and four
+205	two hundred and five
+206	two hundred and six
+207	two hundred and seven
+208	two hundred and eight
+209	two hundred and nine
+210	two hundred and ten
+211	two hundred and eleven
+212	two hundred and twelve
+213	two hundred and thirteen
+214	two hundred and forteen
+215	two hundred and fifteen
+216	two hundred and sixteen
+217	two hundred and seventeen
+218	two hundred and eighteen
+219	two hundred and nineteen
+220	two hundred and twenty
+221	two hundred and twenty-one
+222	two hundred and twenty-two
+223	two hundred and twenty-three
+224	two hundred and twenty-four
+225	two hundred and twenty-five
+226	two hundred and twenty-six
+227	two hundred and twenty-seven
+228	two hundred and twenty-eight
+229	two hundred and twenty-nine
+230	two hundred and thirty
+231	two hundred and thirty-one
+232	two hundred and thirty-two
+233	two hundred and thirty-three
+234	two hundred and thirty-four
+235	two hundred and thirty-five
+236	two hundred and thirty-six
+237	two hundred and thirty-seven
+238	two hundred and thirty-eight
+239	two hundred and thirty-nine
+240	two hundred and forty
+241	two hundred and forty-one
+242	two hundred and forty-two
+243	two hundred and forty-three
+244	two hundred and forty-four
+245	two hundred and forty-five
+246	two hundred and forty-six
+247	two hundred and forty-seven
+248	two hundred and forty-eight
+249	two hundred and forty-nine
+250	two hundred and fifty
+251	two hundred and fifty-one
+252	two hundred and fifty-two
+253	two hundred and fifty-three
+254	two hundred and fifty-four
+255	two hundred and fifty-five
+256	two hundred and fifty-six
+257	two hundred and fifty-seven
+258	two hundred and fifty-eight
+259	two hundred and fifty-nine
+260	two hundred and sixty
+261	two hundred and sixty-one
+262	two hundred and sixty-two
+263	two hundred and sixty-three
+264	two hundred and sixty-four
+265	two hundred and sixty-five
+266	two hundred and sixty-six
+267	two hundred and sixty-seven
+268	two hundred and sixty-eight
+269	two hundred and sixty-nine
+270	two hundred and seventy
+271	two hundred and seventy-one
+272	two hundred and seventy-two
+273	two hundred and seventy-three
+274	two hundred and seventy-four
+275	two hundred and seventy-five
+276	two hundred and seventy-six
+277	two hundred and seventy-seven
+278	two hundred and seventy-eight
+279	two hundred and seventy-nine
+280	two hundred and eighty
+281	two hundred and eighty-one
+282	two hundred and eighty-two
+283	two hundred and eighty-three
+284	two hundred and eighty-four
+285	two hundred and eighty-five
+286	two hundred and eighty-six
+287	two hundred and eighty-seven
+288	two hundred and eighty-eight
+289	two hundred and eighty-nine
+290	two hundred and ninety
+291	two hundred and ninety-one
+292	two hundred and ninety-two
+293	two hundred and ninety-three
+294	two hundred and ninety-four
+295	two hundred and ninety-five
+296	two hundred and ninety-six
+297	two hundred and ninety-seven
+298	two hundred and ninety-eight
+299	two hundred and ninety-nine
+300	three hundred
+301	tree hundred and one
+302	tree hundred and two
+303	tree hundred and three
+304	tree hundred and four
+305	tree hundred and five
+306	tree hundred and six
+307	tree hundred and seven
+308	tree hundred and eight
+309	tree hundred and nine
+310	tree hundred and ten
+311	tree hundred and eleven
+312	tree hundred and twelve
+313	tree hundred and thirteen
+314	tree hundred and forteen
+315	tree hundred and fifteen
+316	tree hundred and sixteen
+317	tree hundred and seventeen
+318	tree hundred and eighteen
+319	tree hundred and nineteen
+320	tree hundred and twenty
+321	tree hundred and twenty-one
+322	tree hundred and twenty-two
+323	tree hundred and twenty-three
+324	tree hundred and twenty-four
+325	tree hundred and twenty-five
+326	tree hundred and twenty-six
+327	tree hundred and twenty-seven
+328	tree hundred and twenty-eight
+329	tree hundred and twenty-nine
+330	tree hundred and thirty
+331	tree hundred and thirty-one
+332	tree hundred and thirty-two
+333	tree hundred and thirty-three
+334	tree hundred and thirty-four
+335	tree hundred and thirty-five
+336	tree hundred and thirty-six
+337	tree hundred and thirty-seven
+338	tree hundred and thirty-eight
+339	tree hundred and thirty-nine
+340	tree hundred and forty
+341	tree hundred and forty-one
+342	tree hundred and forty-two
+343	tree hundred and forty-three
+344	tree hundred and forty-four
+345	tree hundred and forty-five
+346	tree hundred and forty-six
+347	tree hundred and forty-seven
+348	tree hundred and forty-eight
+349	tree hundred and forty-nine
+350	tree hundred and fifty
+351	tree hundred and fifty-one
+352	tree hundred and fifty-two
+353	tree hundred and fifty-three
+354	tree hundred and fifty-four
+355	tree hundred and fifty-five
+356	tree hundred and fifty-six
+357	tree hundred and fifty-seven
+358	tree hundred and fifty-eight
+359	tree hundred and fifty-nine
+360	tree hundred and sixty
+361	tree hundred and sixty-one
+362	tree hundred and sixty-two
+363	tree hundred and sixty-three
+364	tree hundred and sixty-four
+365	tree hundred and sixty-five
+366	tree hundred and sixty-six
+367	tree hundred and sixty-seven
+368	tree hundred and sixty-eight
+369	tree hundred and sixty-nine
+370	tree hundred and seventy
+371	tree hundred and seventy-one
+372	tree hundred and seventy-two
+373	tree hundred and seventy-three
+374	tree hundred and seventy-four
+375	tree hundred and seventy-five
+376	tree hundred and seventy-six
+377	tree hundred and seventy-seven
+378	tree hundred and seventy-eight
+379	tree hundred and seventy-nine
+380	tree hundred and eighty
+381	tree hundred and eighty-one
+382	tree hundred and eighty-two
+383	tree hundred and eighty-three
+384	tree hundred and eighty-four
+385	tree hundred and eighty-five
+386	tree hundred and eighty-six
+387	tree hundred and eighty-seven
+388	tree hundred and eighty-eight
+389	tree hundred and eighty-nine
+390	tree hundred and ninety
+391	tree hundred and ninety-one
+392	tree hundred and ninety-two
+393	tree hundred and ninety-three
+394	tree hundred and ninety-four
+395	tree hundred and ninety-five
+396	tree hundred and ninety-six
+397	tree hundred and ninety-seven
+398	tree hundred and ninety-eight
+399	tree hundred and ninety-nine
+400	four hundred
+401	four hundred and one
+402	four hundred and two
+403	four hundred and three
+404	four hundred and four
+405	four hundred and five
+406	four hundred and six
+407	four hundred and seven
+408	four hundred and eight
+409	four hundred and nine
+410	four hundred and ten
+411	four hundred and eleven
+412	four hundred and twelve
+413	four hundred and thirteen
+414	four hundred and forteen
+415	four hundred and fifteen
+416	four hundred and sixteen
+417	four hundred and seventeen
+418	four hundred and eighteen
+419	four hundred and nineteen
+420	four hundred and twenty
+421	four hundred and twenty-one
+422	four hundred and twenty-two
+423	four hundred and twenty-three
+424	four hundred and twenty-four
+425	four hundred and twenty-five
+426	four hundred and twenty-six
+427	four hundred and twenty-seven
+428	four hundred and twenty-eight
+429	four hundred and twenty-nine
+430	four hundred and thirty
+431	four hundred and thirty-one
+432	four hundred and thirty-two
+433	four hundred and thirty-three
+434	four hundred and thirty-four
+435	four hundred and thirty-five
+436	four hundred and thirty-six
+437	four hundred and thirty-seven
+438	four hundred and thirty-eight
+439	four hundred and thirty-nine
+440	four hundred and forty
+441	four hundred and forty-one
+442	four hundred and forty-two
+443	four hundred and forty-three
+444	four hundred and forty-four
+445	four hundred and forty-five
+446	four hundred and forty-six
+447	four hundred and forty-seven
+448	four hundred and forty-eight
+449	four hundred and forty-nine
+450	four hundred and fifty
+451	four hundred and fifty-one
+452	four hundred and fifty-two
+453	four hundred and fifty-three
+454	four hundred and fifty-four
+455	four hundred and fifty-five
+456	four hundred and fifty-six
+457	four hundred and fifty-seven
+458	four hundred and fifty-eight
+459	four hundred and fifty-nine
+460	four hundred and sixty
+461	four hundred and sixty-one
+462	four hundred and sixty-two
+463	four hundred and sixty-three
+464	four hundred and sixty-four
+465	four hundred and sixty-five
+466	four hundred and sixty-six
+467	four hundred and sixty-seven
+468	four hundred and sixty-eight
+469	four hundred and sixty-nine
+470	four hundred and seventy
+471	four hundred and seventy-one
+472	four hundred and seventy-two
+473	four hundred and seventy-three
+474	four hundred and seventy-four
+475	four hundred and seventy-five
+476	four hundred and seventy-six
+477	four hundred and seventy-seven
+478	four hundred and seventy-eight
+479	four hundred and seventy-nine
+480	four hundred and eighty
+481	four hundred and eighty-one
+482	four hundred and eighty-two
+483	four hundred and eighty-three
+484	four hundred and eighty-four
+485	four hundred and eighty-five
+486	four hundred and eighty-six
+487	four hundred and eighty-seven
+488	four hundred and eighty-eight
+489	four hundred and eighty-nine
+490	four hundred and ninety
+491	four hundred and ninety-one
+492	four hundred and ninety-two
+493	four hundred and ninety-three
+494	four hundred and ninety-four
+495	four hundred and ninety-five
+496	four hundred and ninety-six
+497	four hundred and ninety-seven
+498	four hundred and ninety-eight
+499	four hundred and ninety-nine
+500	five hundred
+501	five hundred and one
+502	five hundred and two
+503	five hundred and three
+504	five hundred and four
+505	five hundred and five
+506	five hundred and six
+507	five hundred and seven
+508	five hundred and eight
+509	five hundred and nine
+510	five hundred and ten
+511	five hundred and eleven
+512	five hundred and twelve
+513	five hundred and thirteen
+514	five hundred and forteen
+515	five hundred and fifteen
+516	five hundred and sixteen
+517	five hundred and seventeen
+518	five hundred and eighteen
+519	five hundred and nineteen
+520	five hundred and twenty
+521	five hundred and twenty-one
+522	five hundred and twenty-two
+523	five hundred and twenty-three
+524	five hundred and twenty-four
+525	five hundred and twenty-five
+526	five hundred and twenty-six
+527	five hundred and twenty-seven
+528	five hundred and twenty-eight
+529	five hundred and twenty-nine
+530	five hundred and thirty
+531	five hundred and thirty-one
+532	five hundred and thirty-two
+533	five hundred and thirty-three
+534	five hundred and thirty-four
+535	five hundred and thirty-five
+536	five hundred and thirty-six
+537	five hundred and thirty-seven
+538	five hundred and thirty-eight
+539	five hundred and thirty-nine
+540	five hundred and forty
+541	five hundred and forty-one
+542	five hundred and forty-two
+543	five hundred and forty-three
+544	five hundred and forty-four
+545	five hundred and forty-five
+546	five hundred and forty-six
+547	five hundred and forty-seven
+548	five hundred and forty-eight
+549	five hundred and forty-nine
+550	five hundred and fifty
+551	five hundred and fifty-one
+552	five hundred and fifty-two
+553	five hundred and fifty-three
+554	five hundred and fifty-four
+555	five hundred and fifty-five
+556	five hundred and fifty-six
+557	five hundred and fifty-seven
+558	five hundred and fifty-eight
+559	five hundred and fifty-nine
+560	five hundred and sixty
+561	five hundred and sixty-one
+562	five hundred and sixty-two
+563	five hundred and sixty-three
+564	five hundred and sixty-four
+565	five hundred and sixty-five
+566	five hundred and sixty-six
+567	five hundred and sixty-seven
+568	five hundred and sixty-eight
+569	five hundred and sixty-nine
+570	five hundred and seventy
+571	five hundred and seventy-one
+572	five hundred and seventy-two
+573	five hundred and seventy-three
+574	five hundred and seventy-four
+575	five hundred and seventy-five
+576	five hundred and seventy-six
+577	five hundred and seventy-seven
+578	five hundred and seventy-eight
+579	five hundred and seventy-nine
+580	five hundred and eighty
+581	five hundred and eighty-one
+582	five hundred and eighty-two
+583	five hundred and eighty-three
+584	five hundred and eighty-four
+585	five hundred and eighty-five
+586	five hundred and eighty-six
+587	five hundred and eighty-seven
+588	five hundred and eighty-eight
+589	five hundred and eighty-nine
+590	five hundred and ninety
+591	five hundred and ninety-one
+592	five hundred and ninety-two
+593	five hundred and ninety-three
+594	five hundred and ninety-four
+595	five hundred and ninety-five
+596	five hundred and ninety-six
+597	five hundred and ninety-seven
+598	five hundred and ninety-eight
+599	five hundred and ninety-nine
+600	six hundred
+601	six hundred and one
+602	six hundred and two
+603	six hundred and three
+604	six hundred and four
+605	six hundred and five
+606	six hundred and six
+607	six hundred and seven
+608	six hundred and eight
+609	six hundred and nine
+610	six hundred and ten
+611	six hundred and eleven
+612	six hundred and twelve
+613	six hundred and thirteen
+614	six hundred and forteen
+615	six hundred and fifteen
+616	six hundred and sixteen
+617	six hundred and seventeen
+618	six hundred and eighteen
+619	six hundred and nineteen
+620	six hundred and twenty
+621	six hundred and twenty-one
+622	six hundred and twenty-two
+623	six hundred and twenty-three
+624	six hundred and twenty-four
+625	six hundred and twenty-five
+626	six hundred and twenty-six
+627	six hundred and twenty-seven
+628	six hundred and twenty-eight
+629	six hundred and twenty-nine
+630	six hundred and thirty
+631	six hundred and thirty-one
+632	six hundred and thirty-two
+633	six hundred and thirty-three
+634	six hundred and thirty-four
+635	six hundred and thirty-five
+636	six hundred and thirty-six
+637	six hundred and thirty-seven
+638	six hundred and thirty-eight
+639	six hundred and thirty-nine
+640	six hundred and forty
+641	six hundred and forty-one
+642	six hundred and forty-two
+643	six hundred and forty-three
+644	six hundred and forty-four
+645	six hundred and forty-five
+646	six hundred and forty-six
+647	six hundred and forty-seven
+648	six hundred and forty-eight
+649	six hundred and forty-nine
+650	six hundred and fifty
+651	six hundred and fifty-one
+652	six hundred and fifty-two
+653	six hundred and fifty-three
+654	six hundred and fifty-four
+655	six hundred and fifty-five
+656	six hundred and fifty-six
+657	six hundred and fifty-seven
+658	six hundred and fifty-eight
+659	six hundred and fifty-nine
+660	six hundred and sixty
+661	six hundred and sixty-one
+662	six hundred and sixty-two
+663	six hundred and sixty-three
+664	six hundred and sixty-four
+665	six hundred and sixty-five
+666	six hundred and sixty-six
+667	six hundred and sixty-seven
+668	six hundred and sixty-eight
+669	six hundred and sixty-nine
+670	six hundred and seventy
+671	six hundred and seventy-one
+672	six hundred and seventy-two
+673	six hundred and seventy-three
+674	six hundred and seventy-four
+675	six hundred and seventy-five
+676	six hundred and seventy-six
+677	six hundred and seventy-seven
+678	six hundred and seventy-eight
+679	six hundred and seventy-nine
+680	six hundred and eighty
+681	six hundred and eighty-one
+682	six hundred and eighty-two
+683	six hundred and eighty-three
+684	six hundred and eighty-four
+685	six hundred and eighty-five
+686	six hundred and eighty-six
+687	six hundred and eighty-seven
+688	six hundred and eighty-eight
+689	six hundred and eighty-nine
+690	six hundred and ninety
+691	six hundred and ninety-one
+692	six hundred and ninety-two
+693	six hundred and ninety-three
+694	six hundred and ninety-four
+695	six hundred and ninety-five
+696	six hundred and ninety-six
+697	six hundred and ninety-seven
+698	six hundred and ninety-eight
+699	six hundred and ninety-nine
+700	seven hundred
+701	seven hundred and one
+702	seven hundred and two
+703	seven hundred and three
+704	seven hundred and four
+705	seven hundred and five
+706	seven hundred and six
+707	seven hundred and seven
+708	seven hundred and eight
+709	seven hundred and nine
+710	seven hundred and ten
+711	seven hundred and eleven
+712	seven hundred and twelve
+713	seven hundred and thirteen
+714	seven hundred and forteen
+715	seven hundred and fifteen
+716	seven hundred and sixteen
+717	seven hundred and seventeen
+718	seven hundred and eighteen
+719	seven hundred and nineteen
+720	seven hundred and twenty
+721	seven hundred and twenty-one
+722	seven hundred and twenty-two
+723	seven hundred and twenty-three
+724	seven hundred and twenty-four
+725	seven hundred and twenty-five
+726	seven hundred and twenty-six
+727	seven hundred and twenty-seven
+728	seven hundred and twenty-eight
+729	seven hundred and twenty-nine
+730	seven hundred and thirty
+731	seven hundred and thirty-one
+732	seven hundred and thirty-two
+733	seven hundred and thirty-three
+734	seven hundred and thirty-four
+735	seven hundred and thirty-five
+736	seven hundred and thirty-six
+737	seven hundred and thirty-seven
+738	seven hundred and thirty-eight
+739	seven hundred and thirty-nine
+740	seven hundred and forty
+741	seven hundred and forty-one
+742	seven hundred and forty-two
+743	seven hundred and forty-three
+744	seven hundred and forty-four
+745	seven hundred and forty-five
+746	seven hundred and forty-six
+747	seven hundred and forty-seven
+748	seven hundred and forty-eight
+749	seven hundred and forty-nine
+750	seven hundred and fifty
+751	seven hundred and fifty-one
+752	seven hundred and fifty-two
+753	seven hundred and fifty-three
+754	seven hundred and fifty-four
+755	seven hundred and fifty-five
+756	seven hundred and fifty-six
+757	seven hundred and fifty-seven
+758	seven hundred and fifty-eight
+759	seven hundred and fifty-nine
+760	seven hundred and sixty
+761	seven hundred and sixty-one
+762	seven hundred and sixty-two
+763	seven hundred and sixty-three
+764	seven hundred and sixty-four
+765	seven hundred and sixty-five
+766	seven hundred and sixty-six
+767	seven hundred and sixty-seven
+768	seven hundred and sixty-eight
+769	seven hundred and sixty-nine
+770	seven hundred and seventy
+771	seven hundred and seventy-one
+772	seven hundred and seventy-two
+773	seven hundred and seventy-three
+774	seven hundred and seventy-four
+775	seven hundred and seventy-five
+776	seven hundred and seventy-six
+777	seven hundred and seventy-seven
+778	seven hundred and seventy-eight
+779	seven hundred and seventy-nine
+780	seven hundred and eighty
+781	seven hundred and eighty-one
+782	seven hundred and eighty-two
+783	seven hundred and eighty-three
+784	seven hundred and eighty-four
+785	seven hundred and eighty-five
+786	seven hundred and eighty-six
+787	seven hundred and eighty-seven
+788	seven hundred and eighty-eight
+789	seven hundred and eighty-nine
+790	seven hundred and ninety
+791	seven hundred and ninety-one
+792	seven hundred and ninety-two
+793	seven hundred and ninety-three
+794	seven hundred and ninety-four
+795	seven hundred and ninety-five
+796	seven hundred and ninety-six
+797	seven hundred and ninety-seven
+798	seven hundred and ninety-eight
+799	seven hundred and ninety-nine
+800	eight hundred
+801	eight hundred and one
+802	eight hundred and two
+803	eight hundred and three
+804	eight hundred and four
+805	eight hundred and five
+806	eight hundred and six
+807	eight hundred and seven
+808	eight hundred and eight
+809	eight hundred and nine
+810	eight hundred and ten
+811	eight hundred and eleven
+812	eight hundred and twelve
+813	eight hundred and thirteen
+814	eight hundred and forteen
+815	eight hundred and fifteen
+816	eight hundred and sixteen
+817	eight hundred and seventeen
+818	eight hundred and eighteen
+819	eight hundred and nineteen
+820	eight hundred and twenty
+821	eight hundred and twenty-one
+822	eight hundred and twenty-two
+823	eight hundred and twenty-three
+824	eight hundred and twenty-four
+825	eight hundred and twenty-five
+826	eight hundred and twenty-six
+827	eight hundred and twenty-seven
+828	eight hundred and twenty-eight
+829	eight hundred and twenty-nine
+830	eight hundred and thirty
+831	eight hundred and thirty-one
+832	eight hundred and thirty-two
+833	eight hundred and thirty-three
+834	eight hundred and thirty-four
+835	eight hundred and thirty-five
+836	eight hundred and thirty-six
+837	eight hundred and thirty-seven
+838	eight hundred and thirty-eight
+839	eight hundred and thirty-nine
+840	eight hundred and forty
+841	eight hundred and forty-one
+842	eight hundred and forty-two
+843	eight hundred and forty-three
+844	eight hundred and forty-four
+845	eight hundred and forty-five
+846	eight hundred and forty-six
+847	eight hundred and forty-seven
+848	eight hundred and forty-eight
+849	eight hundred and forty-nine
+850	eight hundred and fifty
+851	eight hundred and fifty-one
+852	eight hundred and fifty-two
+853	eight hundred and fifty-three
+854	eight hundred and fifty-four
+855	eight hundred and fifty-five
+856	eight hundred and fifty-six
+857	eight hundred and fifty-seven
+858	eight hundred and fifty-eight
+859	eight hundred and fifty-nine
+860	eight hundred and sixty
+861	eight hundred and sixty-one
+862	eight hundred and sixty-two
+863	eight hundred and sixty-three
+864	eight hundred and sixty-four
+865	eight hundred and sixty-five
+866	eight hundred and sixty-six
+867	eight hundred and sixty-seven
+868	eight hundred and sixty-eight
+869	eight hundred and sixty-nine
+870	eight hundred and seventy
+871	eight hundred and seventy-one
+872	eight hundred and seventy-two
+873	eight hundred and seventy-three
+874	eight hundred and seventy-four
+875	eight hundred and seventy-five
+876	eight hundred and seventy-six
+877	eight hundred and seventy-seven
+878	eight hundred and seventy-eight
+879	eight hundred and seventy-nine
+880	eight hundred and eighty
+881	eight hundred and eighty-one
+882	eight hundred and eighty-two
+883	eight hundred and eighty-three
+884	eight hundred and eighty-four
+885	eight hundred and eighty-five
+886	eight hundred and eighty-six
+887	eight hundred and eighty-seven
+888	eight hundred and eighty-eight
+889	eight hundred and eighty-nine
+890	eight hundred and ninety
+891	eight hundred and ninety-one
+892	eight hundred and ninety-two
+893	eight hundred and ninety-three
+894	eight hundred and ninety-four
+895	eight hundred and ninety-five
+896	eight hundred and ninety-six
+897	eight hundred and ninety-seven
+898	eight hundred and ninety-eight
+899	eight hundred and ninety-nine
+900	nine hundred
+901	nine hundred and one
+902	nine hundred and two
+903	nine hundred and three
+904	nine hundred and four
+905	nine hundred and five
+906	nine hundred and six
+907	nine hundred and seven
+908	nine hundred and eight
+909	nine hundred and nine
+910	nine hundred and ten
+911	nine hundred and eleven
+912	nine hundred and twelve
+913	nine hundred and thirteen
+914	nine hundred and forteen
+915	nine hundred and fifteen
+916	nine hundred and sixteen
+917	nine hundred and seventeen
+918	nine hundred and eighteen
+919	nine hundred and nineteen
+920	nine hundred and twenty
+921	nine hundred and twenty-one
+922	nine hundred and twenty-two
+923	nine hundred and twenty-three
+924	nine hundred and twenty-four
+925	nine hundred and twenty-five
+926	nine hundred and twenty-six
+927	nine hundred and twenty-seven
+928	nine hundred and twenty-eight
+929	nine hundred and twenty-nine
+930	nine hundred and thirty
+931	nine hundred and thirty-one
+932	nine hundred and thirty-two
+933	nine hundred and thirty-three
+934	nine hundred and thirty-four
+935	nine hundred and thirty-five
+936	nine hundred and thirty-six
+937	nine hundred and thirty-seven
+938	nine hundred and thirty-eight
+939	nine hundred and thirty-nine
+940	nine hundred and forty
+941	nine hundred and forty-one
+942	nine hundred and forty-two
+943	nine hundred and forty-three
+944	nine hundred and forty-four
+945	nine hundred and forty-five
+946	nine hundred and forty-six
+947	nine hundred and forty-seven
+948	nine hundred and forty-eight
+949	nine hundred and forty-nine
+950	nine hundred and fifty
+951	nine hundred and fifty-one
+952	nine hundred and fifty-two
+953	nine hundred and fifty-three
+954	nine hundred and fifty-four
+955	nine hundred and fifty-five
+956	nine hundred and fifty-six
+957	nine hundred and fifty-seven
+958	nine hundred and fifty-eight
+959	nine hundred and fifty-nine
+960	nine hundred and sixty
+961	nine hundred and sixty-one
+962	nine hundred and sixty-two
+963	nine hundred and sixty-three
+964	nine hundred and sixty-four
+965	nine hundred and sixty-five
+966	nine hundred and sixty-six
+967	nine hundred and sixty-seven
+968	nine hundred and sixty-eight
+969	nine hundred and sixty-nine
+970	nine hundred and seventy
+971	nine hundred and seventy-one
+972	nine hundred and seventy-two
+973	nine hundred and seventy-three
+974	nine hundred and seventy-four
+975	nine hundred and seventy-five
+976	nine hundred and seventy-six
+977	nine hundred and seventy-seven
+978	nine hundred and seventy-eight
+979	nine hundred and seventy-nine
+980	nine hundred and eighty
+981	nine hundred and eighty-one
+982	nine hundred and eighty-two
+983	nine hundred and eighty-three
+984	nine hundred and eighty-four
+985	nine hundred and eighty-five
+986	nine hundred and eighty-six
+987	nine hundred and eighty-seven
+988	nine hundred and eighty-eight
+989	nine hundred and eighty-nine
+990	nine hundred and ninety
+991	nine hundred and ninety-one
+992	nine hundred and ninety-two
+993	nine hundred and ninety-three
+994	nine hundred and ninety-four
+995	nine hundred and ninety-five
+996	nine hundred and ninety-six
+997	nine hundred and ninety-seven
+998	nine hundred and ninety-eight
+999	nine hundred and ninety-nine
+a000	NULL
+a1	first
+a2	second
+a3	third
+a4	fourth
+a5	fifth
+a6	sixth
+a7	seventh
+a8	eighth
+a9	ninth
+a10	tenth
+a11	eleventh
+a12	twelfth
+a13	thirteenth
+a14	fourteenth
+a15	fifteenth
+a16	sixteenth
+a17	seventeenth
+a18	eighteenth
+a19	nineteenth
+a20	twentieth
+a21	twenty-first
+a22	twenty-second
+a23	twenty-third
+a24	twenty-fourth
+a25	twenty-fifth
+a26	twenty-sixth
+a27	twenty-seventh
+a28	twenty-eighth
+a29	twenty-ninth
+a30	thirtieth
+a31	thirty-first
+a32	thirty-second
+a33	thirty-third
+a34	thirty-fourth
+a35	thirty-fifth
+a36	thirty-sixth
+a37	thirty-seventh
+a38	thirty-eighth
+a39	thirty-ninth
+a40	fortieth
+a41	forty-first
+a42	forty-second
+a43	forty-third
+a44	forty-fourth
+a45	forty-fifth
+a46	forty-sixth
+a47	forty-seventh
+a48	forty-eighth
+a49	forty-ninth
+a50	fiftieth
+a51	fifty-first
+a52	fifty-second
+a53	fifty-third
+a54	fifty-fourth
+a55	fifty-fifth
+a56	fifty-sixth
+a57	fifty-seventh
+a58	fifty-eighth
+a59	fifty-ninth
+a60	sixtieth
+a61	sixty-first
+a62	sixty-second
+a63	sixty-third
+a64	sixty-fourth
+a65	sixty-fifth
+a66	sixty-sixth
+a67	sixty-seventh
+a68	sixty-eighth
+a69	sixty-ninth
+a70	seventieth
+a71	seventy-first
+a72	seventy-second
+a73	seventy-third
+a74	seventy-fourth
+a75	seventy-fifth
+a76	seventy-sixth
+a77	seventy-seventh
+a78	seventy-eighth
+a79	seventy-ninth
+a80	eightieth
+a81	eighty-first
+a82	eighty-second
+a83	eighty-third
+a84	eighty-fourth
+a85	eighty-fifth
+a86	eighty-sixth
+a87	eighty-seventh
+a88	eighty-eighth
+a89	eighty-ninth
+a90	ninetieth
+a91	ninety-first
+a92	ninety-second
+a93	ninety-third
+a94	ninety-fourth
+a95	ninety-fifth
+a96	ninety-sixth
+a97	ninety-seventh
+a98	ninety-eighth
+a99	ninety-ninth
+a001	and first
+a002	and second
+a003	and third
+a004	and fourth
+a005	and fifth
+a006	and sixth
+a007	and seventh
+a008	and eighth
+a009	and ninth
+a01	and first
+a02	and second
+a03	and third
+a04	and fourth
+a05	and fifth
+a06	and sixth
+a07	and seventh
+a08	and eighth
+a09	and ninth
+a010	and tenth
+a011	and eleventh
+a012	and twelfth
+a013	and thirteenth
+a014	and fourteenth
+a015	and fifteenth
+a016	and sixteenth
+a017	and seventeenth
+a018	and eighteenth
+a019	and nineteenth
+a020	and twentieth
+a021	and twenty-first
+a022	and twenty-second
+a023	and twenty-third
+a024	and twenty-fourth
+a025	and twenty-fifth
+a026	and twenty-sixth
+a027	and twenty-seventh
+a028	and twenty-eighth
+a029	and twenty-ninth
+a030	and thirtieth
+a031	and thirty-first
+a032	and thirty-second
+a033	and thirty-third
+a034	and thirty-fourth
+a035	and thirty-fifth
+a036	and thirty-sixth
+a037	and thirty-seventh
+a038	and thirty-eighth
+a039	and thirty-ninth
+a040	and fortieth
+a041	and forty-first
+a042	and forty-second
+a043	and forty-third
+a044	and forty-fourth
+a045	and forty-fifth
+a046	and forty-sixth
+a047	and forty-seventh
+a048	and forty-eighth
+a049	and forty-ninth
+a050	and fiftieth
+a051	and fifty-first
+a052	and fifty-second
+a053	and fifty-third
+a054	and fifty-fourth
+a055	and fifty-fifth
+a056	and fifty-sixth
+a057	and fifty-seventh
+a058	and fifty-eighth
+a059	and fifty-ninth
+a060	and sixtieth
+a061	and sixty-first
+a062	and sixty-second
+a063	and sixty-third
+a064	and sixty-fourth
+a065	and sixty-fifth
+a066	and sixty-sixth
+a067	and sixty-seventh
+a068	and sixty-eighth
+a069	and sixty-ninth
+a070	and seventieth
+a071	and seventy-first
+a072	and seventy-second
+a073	and seventy-third
+a074	and seventy-fourth
+a075	and seventy-fifth
+a076	and seventy-sixth
+a077	and seventy-seventh
+a078	and seventy-eighth
+a079	and seventy-ninth
+a080	and eightieth
+a081	and eighty-first
+a082	and eighty-second
+a083	and eighty-third
+a084	and eighty-fourth
+a085	and eighty-fifth
+a086	and eighty-sixth
+a087	and eighty-seventh
+a088	and eighty-eighth
+a089	and eighty-ninth
+a090	and ninetieth
+a091	and ninety-first
+a092	and ninety-second
+a093	and ninety-third
+a094	and ninety-fourth
+a095	and ninety-fifth
+a096	and ninety-sixth
+a097	and ninety-seventh
+a098	and ninety-eighth
+a099	and ninety-ninth
+a100	one hundredth
+a101	one hundred and first
+a102	one hundred and second
+a103	one hundred and third
+a104	one hundred and fourth
+a105	one hundred and fifth
+a106	one hundred and sixth
+a107	one hundred and seventh
+a108	one hundred and eighth
+a109	one hundred and ninth
+a110	one hundred and tenth
+a111	one hundred and eleventh
+a112	one hundred and twelfth
+a113	one hundred and thirteenth
+a114	one hundred and fourteenth
+a115	one hundred and fifteenth
+a116	one hundred and sixteenth
+a117	one hundred and seventeenth
+a118	one hundred and eighteenth
+a119	one hundred and nineteenth
+a120	one hundred and twentieth
+a121	one hundred and twenty-first
+a122	one hundred and twenty-second
+a123	one hundred and twenty-third
+a124	one hundred and twenty-fourth
+a125	one hundred and twenty-fifth
+a126	one hundred and twenty-sixth
+a127	one hundred and twenty-seventh
+a128	one hundred and twenty-eighth
+a129	one hundred and twenty-ninth
+a130	one hundred and thirtieth
+a131	one hundred and thirty-first
+a132	one hundred and thirty-second
+a133	one hundred and thirty-third
+a134	one hundred and thirty-fourth
+a135	one hundred and thirty-fifth
+a136	one hundred and thirty-sixth
+a137	one hundred and thirty-seventh
+a138	one hundred and thirty-eighth
+a139	one hundred and thirty-ninth
+a140	one hundred and fortieth
+a141	one hundred and forty-first
+a142	one hundred and forty-second
+a143	one hundred and forty-third
+a144	one hundred and forty-fourth
+a145	one hundred and forty-fifth
+a146	one hundred and forty-sixth
+a147	one hundred and forty-seventh
+a148	one hundred and forty-eighth
+a149	one hundred and forty-ninth
+a150	one hundred and fiftieth
+a151	one hundred and fifty-first
+a152	one hundred and fifty-second
+a153	one hundred and fifty-third
+a154	one hundred and fifty-fourth
+a155	one hundred and fifty-fifth
+a156	one hundred and fifty-sixth
+a157	one hundred and fifty-seventh
+a158	one hundred and fifty-eighth
+a159	one hundred and fifty-ninth
+a160	one hundred and sixtieth
+a161	one hundred and sixty-first
+a162	one hundred and sixty-second
+a163	one hundred and sixty-third
+a164	one hundred and sixty-fourth
+a165	one hundred and sixty-fifth
+a166	one hundred and sixty-sixth
+a167	one hundred and sixty-seventh
+a168	one hundred and sixty-eighth
+a169	one hundred and sixty-ninth
+a170	one hundred and seventieth
+a171	one hundred and seventy-first
+a172	one hundred and seventy-second
+a173	one hundred and seventy-third
+a174	one hundred and seventy-fourth
+a175	one hundred and seventy-fifth
+a176	one hundred and seventy-sixth
+a177	one hundred and seventy-seventh
+a178	one hundred and seventy-eighth
+a179	one hundred and seventy-ninth
+a180	one hundred and eightieth
+a181	one hundred and eighty-first
+a182	one hundred and eighty-second
+a183	one hundred and eighty-third
+a184	one hundred and eighty-fourth
+a185	one hundred and eighty-fifth
+a186	one hundred and eighty-sixth
+a187	one hundred and eighty-seventh
+a188	one hundred and eighty-eighth
+a189	one hundred and eighty-ninth
+a190	one hundred and ninetieth
+a191	one hundred and ninety-first
+a192	one hundred and ninety-second
+a193	one hundred and ninety-third
+a194	one hundred and ninety-fourth
+a195	one hundred and ninety-fifth
+a196	one hundred and ninety-sixth
+a197	one hundred and ninety-seventh
+a198	one hundred and ninety-eighth
+a199	one hundred and ninety-ninth
+a200	two hundredth
+a201	two hundred and first
+a202	two hundred and second
+a203	two hundred and third
+a204	two hundred and fourth
+a205	two hundred and fifth
+a206	two hundred and sixth
+a207	two hundred and seventh
+a208	two hundred and eighth
+a209	two hundred and ninth
+a210	two hundred and tenth
+a211	two hundred and eleventh
+a212	two hundred and twelfth
+a213	two hundred and thirteenth
+a214	two hundred and fourteenth
+a215	two hundred and fifteenth
+a216	two hundred and sixteenth
+a217	two hundred and seventeenth
+a218	two hundred and eighteenth
+a219	two hundred and nineteenth
+a220	two hundred and twentieth
+a221	two hundred and twenty-first
+a222	two hundred and twenty-second
+a223	two hundred and twenty-third
+a224	two hundred and twenty-fourth
+a225	two hundred and twenty-fifth
+a226	two hundred and twenty-sixth
+a227	two hundred and twenty-seventh
+a228	two hundred and twenty-eighth
+a229	two hundred and twenty-ninth
+a230	two hundred and thirtieth
+a231	two hundred and thirty-first
+a232	two hundred and thirty-second
+a233	two hundred and thirty-third
+a234	two hundred and thirty-fourth
+a235	two hundred and thirty-fifth
+a236	two hundred and thirty-sixth
+a237	two hundred and thirty-seventh
+a238	two hundred and thirty-eighth
+a239	two hundred and thirty-ninth
+a240	two hundred and fortieth
+a241	two hundred and forty-first
+a242	two hundred and forty-second
+a243	two hundred and forty-third
+a244	two hundred and forty-fourth
+a245	two hundred and forty-fifth
+a246	two hundred and forty-sixth
+a247	two hundred and forty-seventh
+a248	two hundred and forty-eighth
+a249	two hundred and forty-ninth
+a250	two hundred and fiftieth
+a251	two hundred and fifty-first
+a252	two hundred and fifty-second
+a253	two hundred and fifty-third
+a254	two hundred and fifty-fourth
+a255	two hundred and fifty-fifth
+a256	two hundred and fifty-sixth
+a257	two hundred and fifty-seventh
+a258	two hundred and fifty-eighth
+a259	two hundred and fifty-ninth
+a260	two hundred and sixtieth
+a261	two hundred and sixty-first
+a262	two hundred and sixty-second
+a263	two hundred and sixty-third
+a264	two hundred and sixty-fourth
+a265	two hundred and sixty-fifth
+a266	two hundred and sixty-sixth
+a267	two hundred and sixty-seventh
+a268	two hundred and sixty-eighth
+a269	two hundred and sixty-ninth
+a270	two hundred and seventieth
+a271	two hundred and seventy-first
+a272	two hundred and seventy-second
+a273	two hundred and seventy-third
+a274	two hundred and seventy-fourth
+a275	two hundred and seventy-fifth
+a276	two hundred and seventy-sixth
+a277	two hundred and seventy-seventh
+a278	two hundred and seventy-eighth
+a279	two hundred and seventy-ninth
+a280	two hundred and eightieth
+a281	two hundred and eighty-first
+a282	two hundred and eighty-second
+a283	two hundred and eighty-third
+a284	two hundred and eighty-fourth
+a285	two hundred and eighty-fifth
+a286	two hundred and eighty-sixth
+a287	two hundred and eighty-seventh
+a288	two hundred and eighty-eighth
+a289	two hundred and eighty-ninth
+a290	two hundred and ninetieth
+a291	two hundred and ninety-first
+a292	two hundred and ninety-second
+a293	two hundred and ninety-third
+a294	two hundred and ninety-fourth
+a295	two hundred and ninety-fifth
+a296	two hundred and ninety-sixth
+a297	two hundred and ninety-seventh
+a298	two hundred and ninety-eighth
+a299	two hundred and ninety-ninth
+a300	three hundredth
+a301	tree hundred and first
+a302	tree hundred and second
+a303	tree hundred and third
+a304	tree hundred and fourth
+a305	tree hundred and fifth
+a306	tree hundred and sixth
+a307	tree hundred and seventh
+a308	tree hundred and eighth
+a309	tree hundred and ninth
+a310	tree hundred and tenth
+a311	tree hundred and eleventh
+a312	tree hundred and twelfth
+a313	tree hundred and thirteenth
+a314	tree hundred and fourteenth
+a315	tree hundred and fifteenth
+a316	tree hundred and sixteenth
+a317	tree hundred and seventeenth
+a318	tree hundred and eighteenth
+a319	tree hundred and nineteenth
+a320	tree hundred and twentieth
+a321	tree hundred and twenty-first
+a322	tree hundred and twenty-second
+a323	tree hundred and twenty-third
+a324	tree hundred and twenty-fourth
+a325	tree hundred and twenty-fifth
+a326	tree hundred and twenty-sixth
+a327	tree hundred and twenty-seventh
+a328	tree hundred and twenty-eighth
+a329	tree hundred and twenty-ninth
+a330	tree hundred and thirtieth
+a331	tree hundred and thirty-first
+a332	tree hundred and thirty-second
+a333	tree hundred and thirty-third
+a334	tree hundred and thirty-fourth
+a335	tree hundred and thirty-fifth
+a336	tree hundred and thirty-sixth
+a337	tree hundred and thirty-seventh
+a338	tree hundred and thirty-eighth
+a339	tree hundred and thirty-ninth
+a340	tree hundred and fortieth
+a341	tree hundred and forty-first
+a342	tree hundred and forty-second
+a343	tree hundred and forty-third
+a344	tree hundred and forty-fourth
+a345	tree hundred and forty-fifth
+a346	tree hundred and forty-sixth
+a347	tree hundred and forty-seventh
+a348	tree hundred and forty-eighth
+a349	tree hundred and forty-ninth
+a350	tree hundred and fiftieth
+a351	tree hundred and fifty-first
+a352	tree hundred and fifty-second
+a353	tree hundred and fifty-third
+a354	tree hundred and fifty-fourth
+a355	tree hundred and fifty-fifth
+a356	tree hundred and fifty-sixth
+a357	tree hundred and fifty-seventh
+a358	tree hundred and fifty-eighth
+a359	tree hundred and fifty-ninth
+a360	tree hundred and sixtieth
+a361	tree hundred and sixty-first
+a362	tree hundred and sixty-second
+a363	tree hundred and sixty-third
+a364	tree hundred and sixty-fourth
+a365	tree hundred and sixty-fifth
+a366	tree hundred and sixty-sixth
+a367	tree hundred and sixty-seventh
+a368	tree hundred and sixty-eighth
+a369	tree hundred and sixty-ninth
+a370	tree hundred and seventieth
+a371	tree hundred and seventy-first
+a372	tree hundred and seventy-second
+a373	tree hundred and seventy-third
+a374	tree hundred and seventy-fourth
+a375	tree hundred and seventy-fifth
+a376	tree hundred and seventy-sixth
+a377	tree hundred and seventy-seventh
+a378	tree hundred and seventy-eighth
+a379	tree hundred and seventy-ninth
+a380	tree hundred and eightieth
+a381	tree hundred and eighty-first
+a382	tree hundred and eighty-second
+a383	tree hundred and eighty-third
+a384	tree hundred and eighty-fourth
+a385	tree hundred and eighty-fifth
+a386	tree hundred and eighty-sixth
+a387	tree hundred and eighty-seventh
+a388	tree hundred and eighty-eighth
+a389	tree hundred and eighty-ninth
+a390	tree hundred and ninetieth
+a391	tree hundred and ninety-first
+a392	tree hundred and ninety-second
+a393	tree hundred and ninety-third
+a394	tree hundred and ninety-fourth
+a395	tree hundred and ninety-fifth
+a396	tree hundred and ninety-sixth
+a397	tree hundred and ninety-seventh
+a398	tree hundred and ninety-eighth
+a399	tree hundred and ninety-ninth
+a400	four hundredth
+a401	four hundred and first
+a402	four hundred and second
+a403	four hundred and third
+a404	four hundred and fourth
+a405	four hundred and fifth
+a406	four hundred and sixth
+a407	four hundred and seventh
+a408	four hundred and eighth
+a409	four hundred and ninth
+a410	four hundred and tenth
+a411	four hundred and eleventh
+a412	four hundred and twelfth
+a413	four hundred and thirteenth
+a414	four hundred and fourteenth
+a415	four hundred and fifteenth
+a416	four hundred and sixteenth
+a417	four hundred and seventeenth
+a418	four hundred and eighteenth
+a419	four hundred and nineteenth
+a420	four hundred and twentieth
+a421	four hundred and twenty-first
+a422	four hundred and twenty-second
+a423	four hundred and twenty-third
+a424	four hundred and twenty-fourth
+a425	four hundred and twenty-fifth
+a426	four hundred and twenty-sixth
+a427	four hundred and twenty-seventh
+a428	four hundred and twenty-eighth
+a429	four hundred and twenty-ninth
+a430	four hundred and thirtieth
+a431	four hundred and thirty-first
+a432	four hundred and thirty-second
+a433	four hundred and thirty-third
+a434	four hundred and thirty-fourth
+a435	four hundred and thirty-fifth
+a436	four hundred and thirty-sixth
+a437	four hundred and thirty-seventh
+a438	four hundred and thirty-eighth
+a439	four hundred and thirty-ninth
+a440	four hundred and fortieth
+a441	four hundred and forty-first
+a442	four hundred and forty-second
+a443	four hundred and forty-third
+a444	four hundred and forty-fourth
+a445	four hundred and forty-fifth
+a446	four hundred and forty-sixth
+a447	four hundred and forty-seventh
+a448	four hundred and forty-eighth
+a449	four hundred and forty-ninth
+a450	four hundred and fiftieth
+a451	four hundred and fifty-first
+a452	four hundred and fifty-second
+a453	four hundred and fifty-third
+a454	four hundred and fifty-fourth
+a455	four hundred and fifty-fifth
+a456	four hundred and fifty-sixth
+a457	four hundred and fifty-seventh
+a458	four hundred and fifty-eighth
+a459	four hundred and fifty-ninth
+a460	four hundred and sixtieth
+a461	four hundred and sixty-first
+a462	four hundred and sixty-second
+a463	four hundred and sixty-third
+a464	four hundred and sixty-fourth
+a465	four hundred and sixty-fifth
+a466	four hundred and sixty-sixth
+a467	four hundred and sixty-seventh
+a468	four hundred and sixty-eighth
+a469	four hundred and sixty-ninth
+a470	four hundred and seventieth
+a471	four hundred and seventy-first
+a472	four hundred and seventy-second
+a473	four hundred and seventy-third
+a474	four hundred and seventy-fourth
+a475	four hundred and seventy-fifth
+a476	four hundred and seventy-sixth
+a477	four hundred and seventy-seventh
+a478	four hundred and seventy-eighth
+a479	four hundred and seventy-ninth
+a480	four hundred and eightieth
+a481	four hundred and eighty-first
+a482	four hundred and eighty-second
+a483	four hundred and eighty-third
+a484	four hundred and eighty-fourth
+a485	four hundred and eighty-fifth
+a486	four hundred and eighty-sixth
+a487	four hundred and eighty-seventh
+a488	four hundred and eighty-eighth
+a489	four hundred and eighty-ninth
+a490	four hundred and ninetieth
+a491	four hundred and ninety-first
+a492	four hundred and ninety-second
+a493	four hundred and ninety-third
+a494	four hundred and ninety-fourth
+a495	four hundred and ninety-fifth
+a496	four hundred and ninety-sixth
+a497	four hundred and ninety-seventh
+a498	four hundred and ninety-eighth
+a499	four hundred and ninety-ninth
+a500	five hundredth
+a501	five hundred and first
+a502	five hundred and second
+a503	five hundred and third
+a504	five hundred and fourth
+a505	five hundred and fifth
+a506	five hundred and sixth
+a507	five hundred and seventh
+a508	five hundred and eighth
+a509	five hundred and ninth
+a510	five hundred and tenth
+a511	five hundred and eleventh
+a512	five hundred and twelfth
+a513	five hundred and thirteenth
+a514	five hundred and fourteenth
+a515	five hundred and fifteenth
+a516	five hundred and sixteenth
+a517	five hundred and seventeenth
+a518	five hundred and eighteenth
+a519	five hundred and nineteenth
+a520	five hundred and twentieth
+a521	five hundred and twenty-first
+a522	five hundred and twenty-second
+a523	five hundred and twenty-third
+a524	five hundred and twenty-fourth
+a525	five hundred and twenty-fifth
+a526	five hundred and twenty-sixth
+a527	five hundred and twenty-seventh
+a528	five hundred and twenty-eighth
+a529	five hundred and twenty-ninth
+a530	five hundred and thirtieth
+a531	five hundred and thirty-first
+a532	five hundred and thirty-second
+a533	five hundred and thirty-third
+a534	five hundred and thirty-fourth
+a535	five hundred and thirty-fifth
+a536	five hundred and thirty-sixth
+a537	five hundred and thirty-seventh
+a538	five hundred and thirty-eighth
+a539	five hundred and thirty-ninth
+a540	five hundred and fortieth
+a541	five hundred and forty-first
+a542	five hundred and forty-second
+a543	five hundred and forty-third
+a544	five hundred and forty-fourth
+a545	five hundred and forty-fifth
+a546	five hundred and forty-sixth
+a547	five hundred and forty-seventh
+a548	five hundred and forty-eighth
+a549	five hundred and forty-ninth
+a550	five hundred and fiftieth
+a551	five hundred and fifty-first
+a552	five hundred and fifty-second
+a553	five hundred and fifty-third
+a554	five hundred and fifty-fourth
+a555	five hundred and fifty-fifth
+a556	five hundred and fifty-sixth
+a557	five hundred and fifty-seventh
+a558	five hundred and fifty-eighth
+a559	five hundred and fifty-ninth
+a560	five hundred and sixtieth
+a561	five hundred and sixty-first
+a562	five hundred and sixty-second
+a563	five hundred and sixty-third
+a564	five hundred and sixty-fourth
+a565	five hundred and sixty-fifth
+a566	five hundred and sixty-sixth
+a567	five hundred and sixty-seventh
+a568	five hundred and sixty-eighth
+a569	five hundred and sixty-ninth
+a570	five hundred and seventieth
+a571	five hundred and seventy-first
+a572	five hundred and seventy-second
+a573	five hundred and seventy-third
+a574	five hundred and seventy-fourth
+a575	five hundred and seventy-fifth
+a576	five hundred and seventy-sixth
+a577	five hundred and seventy-seventh
+a578	five hundred and seventy-eighth
+a579	five hundred and seventy-ninth
+a580	five hundred and eightieth
+a581	five hundred and eighty-first
+a582	five hundred and eighty-second
+a583	five hundred and eighty-third
+a584	five hundred and eighty-fourth
+a585	five hundred and eighty-fifth
+a586	five hundred and eighty-sixth
+a587	five hundred and eighty-seventh
+a588	five hundred and eighty-eighth
+a589	five hundred and eighty-ninth
+a590	five hundred and ninetieth
+a591	five hundred and ninety-first
+a592	five hundred and ninety-second
+a593	five hundred and ninety-third
+a594	five hundred and ninety-fourth
+a595	five hundred and ninety-fifth
+a596	five hundred and ninety-sixth
+a597	five hundred and ninety-seventh
+a598	five hundred and ninety-eighth
+a599	five hundred and ninety-ninth
+a600	six hundredth
+a601	six hundred and first
+a602	six hundred and second
+a603	six hundred and third
+a604	six hundred and fourth
+a605	six hundred and fifth
+a606	six hundred and sixth
+a607	six hundred and seventh
+a608	six hundred and eighth
+a609	six hundred and ninth
+a610	six hundred and tenth
+a611	six hundred and eleventh
+a612	six hundred and twelfth
+a613	six hundred and thirteenth
+a614	six hundred and fourteenth
+a615	six hundred and fifteenth
+a616	six hundred and sixteenth
+a617	six hundred and seventeenth
+a618	six hundred and eighteenth
+a619	six hundred and nineteenth
+a620	six hundred and twentieth
+a621	six hundred and twenty-first
+a622	six hundred and twenty-second
+a623	six hundred and twenty-third
+a624	six hundred and twenty-fourth
+a625	six hundred and twenty-fifth
+a626	six hundred and twenty-sixth
+a627	six hundred and twenty-seventh
+a628	six hundred and twenty-eighth
+a629	six hundred and twenty-ninth
+a630	six hundred and thirtieth
+a631	six hundred and thirty-first
+a632	six hundred and thirty-second
+a633	six hundred and thirty-third
+a634	six hundred and thirty-fourth
+a635	six hundred and thirty-fifth
+a636	six hundred and thirty-sixth
+a637	six hundred and thirty-seventh
+a638	six hundred and thirty-eighth
+a639	six hundred and thirty-ninth
+a640	six hundred and fortieth
+a641	six hundred and forty-first
+a642	six hundred and forty-second
+a643	six hundred and forty-third
+a644	six hundred and forty-fourth
+a645	six hundred and forty-fifth
+a646	six hundred and forty-sixth
+a647	six hundred and forty-seventh
+a648	six hundred and forty-eighth
+a649	six hundred and forty-ninth
+a650	six hundred and fiftieth
+a651	six hundred and fifty-first
+a652	six hundred and fifty-second
+a653	six hundred and fifty-third
+a654	six hundred and fifty-fourth
+a655	six hundred and fifty-fifth
+a656	six hundred and fifty-sixth
+a657	six hundred and fifty-seventh
+a658	six hundred and fifty-eighth
+a659	six hundred and fifty-ninth
+a660	six hundred and sixtieth
+a661	six hundred and sixty-first
+a662	six hundred and sixty-second
+a663	six hundred and sixty-third
+a664	six hundred and sixty-fourth
+a665	six hundred and sixty-fifth
+a666	six hundred and sixty-sixth
+a667	six hundred and sixty-seventh
+a668	six hundred and sixty-eighth
+a669	six hundred and sixty-ninth
+a670	six hundred and seventieth
+a671	six hundred and seventy-first
+a672	six hundred and seventy-second
+a673	six hundred and seventy-third
+a674	six hundred and seventy-fourth
+a675	six hundred and seventy-fifth
+a676	six hundred and seventy-sixth
+a677	six hundred and seventy-seventh
+a678	six hundred and seventy-eighth
+a679	six hundred and seventy-ninth
+a680	six hundred and eightieth
+a681	six hundred and eighty-first
+a682	six hundred and eighty-second
+a683	six hundred and eighty-third
+a684	six hundred and eighty-fourth
+a685	six hundred and eighty-fifth
+a686	six hundred and eighty-sixth
+a687	six hundred and eighty-seventh
+a688	six hundred and eighty-eighth
+a689	six hundred and eighty-ninth
+a690	six hundred and ninetieth
+a691	six hundred and ninety-first
+a692	six hundred and ninety-second
+a693	six hundred and ninety-third
+a694	six hundred and ninety-fourth
+a695	six hundred and ninety-fifth
+a696	six hundred and ninety-sixth
+a697	six hundred and ninety-seventh
+a698	six hundred and ninety-eighth
+a699	six hundred and ninety-ninth
+a700	seven hundredth
+a701	seven hundred and first
+a702	seven hundred and second
+a703	seven hundred and third
+a704	seven hundred and fourth
+a705	seven hundred and fifth
+a706	seven hundred and sixth
+a707	seven hundred and seventh
+a708	seven hundred and eighth
+a709	seven hundred and ninth
+a710	seven hundred and tenth
+a711	seven hundred and eleventh
+a712	seven hundred and twelfth
+a713	seven hundred and thirteenth
+a714	seven hundred and fourteenth
+a715	seven hundred and fifteenth
+a716	seven hundred and sixteenth
+a717	seven hundred and seventeenth
+a718	seven hundred and eighteenth
+a719	seven hundred and nineteenth
+a720	seven hundred and twentieth
+a721	seven hundred and twenty-first
+a722	seven hundred and twenty-second
+a723	seven hundred and twenty-third
+a724	seven hundred and twenty-fourth
+a725	seven hundred and twenty-fifth
+a726	seven hundred and twenty-sixth
+a727	seven hundred and twenty-seventh
+a728	seven hundred and twenty-eighth
+a729	seven hundred and twenty-ninth
+a730	seven hundred and thirtieth
+a731	seven hundred and thirty-first
+a732	seven hundred and thirty-second
+a733	seven hundred and thirty-third
+a734	seven hundred and thirty-fourth
+a735	seven hundred and thirty-fifth
+a736	seven hundred and thirty-sixth
+a737	seven hundred and thirty-seventh
+a738	seven hundred and thirty-eighth
+a739	seven hundred and thirty-ninth
+a740	seven hundred and fortieth
+a741	seven hundred and forty-first
+a742	seven hundred and forty-second
+a743	seven hundred and forty-third
+a744	seven hundred and forty-fourth
+a745	seven hundred and forty-fifth
+a746	seven hundred and forty-sixth
+a747	seven hundred and forty-seventh
+a748	seven hundred and forty-eighth
+a749	seven hundred and forty-ninth
+a750	seven hundred and fiftieth
+a751	seven hundred and fifty-first
+a752	seven hundred and fifty-second
+a753	seven hundred and fifty-third
+a754	seven hundred and fifty-fourth
+a755	seven hundred and fifty-fifth
+a756	seven hundred and fifty-sixth
+a757	seven hundred and fifty-seventh
+a758	seven hundred and fifty-eighth
+a759	seven hundred and fifty-ninth
+a760	seven hundred and sixtieth
+a761	seven hundred and sixty-first
+a762	seven hundred and sixty-second
+a763	seven hundred and sixty-third
+a764	seven hundred and sixty-fourth
+a765	seven hundred and sixty-fifth
+a766	seven hundred and sixty-sixth
+a767	seven hundred and sixty-seventh
+a768	seven hundred and sixty-eighth
+a769	seven hundred and sixty-ninth
+a770	seven hundred and seventieth
+a771	seven hundred and seventy-first
+a772	seven hundred and seventy-second
+a773	seven hundred and seventy-third
+a774	seven hundred and seventy-fourth
+a775	seven hundred and seventy-fifth
+a776	seven hundred and seventy-sixth
+a777	seven hundred and seventy-seventh
+a778	seven hundred and seventy-eighth
+a779	seven hundred and seventy-ninth
+a780	seven hundred and eightieth
+a781	seven hundred and eighty-first
+a782	seven hundred and eighty-second
+a783	seven hundred and eighty-third
+a784	seven hundred and eighty-fourth
+a785	seven hundred and eighty-fifth
+a786	seven hundred and eighty-sixth
+a787	seven hundred and eighty-seventh
+a788	seven hundred and eighty-eighth
+a789	seven hundred and eighty-ninth
+a790	seven hundred and ninetieth
+a791	seven hundred and ninety-first
+a792	seven hundred and ninety-second
+a793	seven hundred and ninety-third
+a794	seven hundred and ninety-fourth
+a795	seven hundred and ninety-fifth
+a796	seven hundred and ninety-sixth
+a797	seven hundred and ninety-seventh
+a798	seven hundred and ninety-eighth
+a799	seven hundred and ninety-ninth
+a800	eight hundredth
+a801	eight hundred and first
+a802	eight hundred and second
+a803	eight hundred and third
+a804	eight hundred and fourth
+a805	eight hundred and fifth
+a806	eight hundred and sixth
+a807	eight hundred and seventh
+a808	eight hundred and eighth
+a809	eight hundred and ninth
+a810	eight hundred and tenth
+a811	eight hundred and eleventh
+a812	eight hundred and twelfth
+a813	eight hundred and thirteenth
+a814	eight hundred and fourteenth
+a815	eight hundred and fifteenth
+a816	eight hundred and sixteenth
+a817	eight hundred and seventeenth
+a818	eight hundred and eighteenth
+a819	eight hundred and nineteenth
+a820	eight hundred and twentieth
+a821	eight hundred and twenty-first
+a822	eight hundred and twenty-second
+a823	eight hundred and twenty-third
+a824	eight hundred and twenty-fourth
+a825	eight hundred and twenty-fifth
+a826	eight hundred and twenty-sixth
+a827	eight hundred and twenty-seventh
+a828	eight hundred and twenty-eighth
+a829	eight hundred and twenty-ninth
+a830	eight hundred and thirtieth
+a831	eight hundred and thirty-first
+a832	eight hundred and thirty-second
+a833	eight hundred and thirty-third
+a834	eight hundred and thirty-fourth
+a835	eight hundred and thirty-fifth
+a836	eight hundred and thirty-sixth
+a837	eight hundred and thirty-seventh
+a838	eight hundred and thirty-eighth
+a839	eight hundred and thirty-ninth
+a840	eight hundred and fortieth
+a841	eight hundred and forty-first
+a842	eight hundred and forty-second
+a843	eight hundred and forty-third
+a844	eight hundred and forty-fourth
+a845	eight hundred and forty-fifth
+a846	eight hundred and forty-sixth
+a847	eight hundred and forty-seventh
+a848	eight hundred and forty-eighth
+a849	eight hundred and forty-ninth
+a850	eight hundred and fiftieth
+a851	eight hundred and fifty-first
+a852	eight hundred and fifty-second
+a853	eight hundred and fifty-third
+a854	eight hundred and fifty-fourth
+a855	eight hundred and fifty-fifth
+a856	eight hundred and fifty-sixth
+a857	eight hundred and fifty-seventh
+a858	eight hundred and fifty-eighth
+a859	eight hundred and fifty-ninth
+a860	eight hundred and sixtieth
+a861	eight hundred and sixty-first
+a862	eight hundred and sixty-second
+a863	eight hundred and sixty-third
+a864	eight hundred and sixty-fourth
+a865	eight hundred and sixty-fifth
+a866	eight hundred and sixty-sixth
+a867	eight hundred and sixty-seventh
+a868	eight hundred and sixty-eighth
+a869	eight hundred and sixty-ninth
+a870	eight hundred and seventieth
+a871	eight hundred and seventy-first
+a872	eight hundred and seventy-second
+a873	eight hundred and seventy-third
+a874	eight hundred and seventy-fourth
+a875	eight hundred and seventy-fifth
+a876	eight hundred and seventy-sixth
+a877	eight hundred and seventy-seventh
+a878	eight hundred and seventy-eighth
+a879	eight hundred and seventy-ninth
+a880	eight hundred and eightieth
+a881	eight hundred and eighty-first
+a882	eight hundred and eighty-second
+a883	eight hundred and eighty-third
+a884	eight hundred and eighty-fourth
+a885	eight hundred and eighty-fifth
+a886	eight hundred and eighty-sixth
+a887	eight hundred and eighty-seventh
+a888	eight hundred and eighty-eighth
+a889	eight hundred and eighty-ninth
+a890	eight hundred and ninetieth
+a891	eight hundred and ninety-first
+a892	eight hundred and ninety-second
+a893	eight hundred and ninety-third
+a894	eight hundred and ninety-fourth
+a895	eight hundred and ninety-fifth
+a896	eight hundred and ninety-sixth
+a897	eight hundred and ninety-seventh
+a898	eight hundred and ninety-eighth
+a899	eight hundred and ninety-ninth
+a900	nine hundredth
+a901	nine hundred and first
+a902	nine hundred and second
+a903	nine hundred and third
+a904	nine hundred and fourth
+a905	nine hundred and fifth
+a906	nine hundred and sixth
+a907	nine hundred and seventh
+a908	nine hundred and eighth
+a909	nine hundred and ninth
+a910	nine hundred and tenth
+a911	nine hundred and eleventh
+a912	nine hundred and twelfth
+a913	nine hundred and thirteenth
+a914	nine hundred and fourteenth
+a915	nine hundred and fifteenth
+a916	nine hundred and sixteenth
+a917	nine hundred and seventeenth
+a918	nine hundred and eighteenth
+a919	nine hundred and nineteenth
+a920	nine hundred and twentieth
+a921	nine hundred and twenty-first
+a922	nine hundred and twenty-second
+a923	nine hundred and twenty-third
+a924	nine hundred and twenty-fourth
+a925	nine hundred and twenty-fifth
+a926	nine hundred and twenty-sixth
+a927	nine hundred and twenty-seventh
+a928	nine hundred and twenty-eighth
+a929	nine hundred and twenty-ninth
+a930	nine hundred and thirtieth
+a931	nine hundred and thirty-first
+a932	nine hundred and thirty-second
+a933	nine hundred and thirty-third
+a934	nine hundred and thirty-fourth
+a935	nine hundred and thirty-fifth
+a936	nine hundred and thirty-sixth
+a937	nine hundred and thirty-seventh
+a938	nine hundred and thirty-eighth
+a939	nine hundred and thirty-ninth
+a940	nine hundred and fortieth
+a941	nine hundred and forty-first
+a942	nine hundred and forty-second
+a943	nine hundred and forty-third
+a944	nine hundred and forty-fourth
+a945	nine hundred and forty-fifth
+a946	nine hundred and forty-sixth
+a947	nine hundred and forty-seventh
+a948	nine hundred and forty-eighth
+a949	nine hundred and forty-ninth
+a950	nine hundred and fiftieth
+a951	nine hundred and fifty-first
+a952	nine hundred and fifty-second
+a953	nine hundred and fifty-third
+a954	nine hundred and fifty-fourth
+a955	nine hundred and fifty-fifth
+a956	nine hundred and fifty-sixth
+a957	nine hundred and fifty-seventh
+a958	nine hundred and fifty-eighth
+a959	nine hundred and fifty-ninth
+a960	nine hundred and sixtieth
+a961	nine hundred and sixty-first
+a962	nine hundred and sixty-second
+a963	nine hundred and sixty-third
+a964	nine hundred and sixty-fourth
+a965	nine hundred and sixty-fifth
+a966	nine hundred and sixty-sixth
+a967	nine hundred and sixty-seventh
+a968	nine hundred and sixty-eighth
+a969	nine hundred and sixty-ninth
+a970	nine hundred and seventieth
+a971	nine hundred and seventy-first
+a972	nine hundred and seventy-second
+a973	nine hundred and seventy-third
+a974	nine hundred and seventy-fourth
+a975	nine hundred and seventy-fifth
+a976	nine hundred and seventy-sixth
+a977	nine hundred and seventy-seventh
+a978	nine hundred and seventy-eighth
+a979	nine hundred and seventy-ninth
+a980	nine hundred and eightieth
+a981	nine hundred and eighty-first
+a982	nine hundred and eighty-second
+a983	nine hundred and eighty-third
+a984	nine hundred and eighty-fourth
+a985	nine hundred and eighty-fifth
+a986	nine hundred and eighty-sixth
+a987	nine hundred and eighty-seventh
+a988	nine hundred and eighty-eighth
+a989	nine hundred and eighty-ninth
+a990	nine hundred and ninetieth
+a991	nine hundred and ninety-first
+a992	nine hundred and ninety-second
+a993	nine hundred and ninety-third
+a994	nine hundred and ninety-fourth
+a995	nine hundred and ninety-fifth
+a996	nine hundred and ninety-sixth
+a997	nine hundred and ninety-seventh
+a998	nine hundred and ninety-eighth
+a999	nine hundred and ninety-ninth

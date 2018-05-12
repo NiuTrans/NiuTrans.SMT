@@ -1,0 +1,193 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>Natural Language Processing Laboratory at Northeastern University</title>
+<link href="style.css" type="text/css" rel="stylesheet"  />
+<link href="func.js" type="text/javascript"  />
+<link href="images/n.gif" type="images/x-iconf" rel="shortcut icon"  />
+</head>
+
+<body onload="MM_preloadImages('../NLP-WEB/home+.gif','../NLP-WEB/news+.gif','../NLP-WEB/people+.gif','../NLP-WEB/pub+.gif','../NLP-WEB/pro+.gif','../NLP-WEB/re+.gif','../NLP-WEB/images/home+.gif','../NLP-WEB/images/news+.gif','../NLP-WEB/images/people+.gif','../NLP-WEB/images/pub+.gif','../NLP-WEB/images/pro+.gif','../NLP-WEB/images/re+.gif')">
+
+<table id="mainbody" align="center" border="0" cellpadding="0" cellspacing="0">
+<tr>
+  <td id="sidebar" valign="top">
+  <div id="fixed_pos">
+    <div id="logo"><img src="images/logo.png" class="logo_img"/></div>
+    <!--div id="logo"><img src="images/niu.gif" class="logo_img"/></div-->
+    <div id="navi">
+      <h1>NiuTrans</h1>
+        <div class="item"><a href="NiuTrans.ch.html">中文版<img src="images/chinese.png" width="15" height="15" /></a></div>
+        <div class="item"><a href="NiuTrans.html#introduction" target="_self">Introduction</a></div>
+        <div class="item"><a href="NiuTrans.html#features" target="_self">Features</a></div>
+        <div class="item"><a href="NiuTrans.html#download" target="_self">Download</a></div>
+        <div class="item"><a href="NiuTrans.html#requirements" target="_self">Requirements</a></div>
+        <div class="item"><a href="NiuTrans.html#installation" target="_self">Installation</a></div>
+        <div class="item"><a href="NiuTrans.html#manual" target="_self">Manual&nbsp;<img src="images/pdf.gif" /></a></div>
+        <div class="item"><a href="NiuTrans.html#team-member" target="_self">NiuTrans Team</a><img src="images/new_icon.gif" width="31" height="12" /></div>
+        <div class="item"><a href="NiuTrans.html#cite-us" target="_self">Cite Us</a></div>
+        <div class="item"><a href="NiuTrans.html#get-support" target="_self">Get Support</a></div>
+        <div class="item"><a href="NiuTrans.html#history" target="_self">History</a></div>
+        <div class="item"><a href="NiuTrans.html#acknowledgements" target="_self">Acknowledgements</a></div>
+        
+      <h1>Step by Step Usage</h1>
+        <div class="item"><a href="NiuTrans.YourData.html" target="_self">Use Your Own Data</a><img src="images/new_icon.gif" width="31" height="12" /></div>
+        <div class="item"><a href="NiuTrans.Phrase.html" target="_self">NiuTrans.Phrase</a></div>
+        <div class="item"><a href="NiuTrans.Hierarchy.html" target="_self">NiuTrans.Hierarchy</a></div>
+        <div class="item"><a href="NiuTrans.Syntax.html" target="_self">NiuTrans.Syntax</a></div>
+
+      <h1>Advanced Usage</h1>
+        <div class="item"><a href="NiuTransAdvancedUsage.html" target="_self">Advanced Usage</a></div>
+
+      <h1>FAQ</h1>
+        <div class="item"><a href="NiuTrans.FAQ.ch.html" target="_self">FAQ</a></div>
+        
+      <h1>Applications</h1>
+        <div class="item"><a href="http://www.zjyatuo.com/" target="_self">1. NiuTrans Server<img src="images/new_icon.gif" width="31" height="12" /></a></div>
+        <div class="item"><a href="http://218.75.34.138/fanyi/" target="_self">2. Web-based MT</a></div>
+        <div class="item"><a href="http://www.zjyatuo.com/NiuTrans_Mobile.html">3. Speech-to-Speech MT (Android)</a></div>
+
+      <h1>Weibo</h1>
+       <div class="item"><a href="http://weibo.com/niutrans" target="_blank">weibo.com/niutrans</a></div>
+
+      <h1>BBS</h1>
+       <div class="item"><a href="http://183.129.153.66:81" target="_blank">183.129.153.66:81</a></div>
+   
+
+    </div>
+  </div>
+  </td>
+  <td id="corepart" valign="top">
+    <div id="mini_navi">
+      <span><a href="http://www.nlplab.com">NEUNLPLab</a></span><span class="gt">&gt;&gt;</span><span><a href="NiuTrans.html">NiuTrans Home</a></span><span class="gt">&gt;&gt;</span><span class="last_item">NiuTrans</span>
+    </div>
+        <p align="right"><br /></p>
+          <hr />
+          <p><span class="STYLE7"><a name="introduction"></a>NiuTrans: A Statistical Machine Translation System - Version 1.3.1 Beta</span></p>
+
+<p class="STYLE13">Introduction<br />
+            <span class="STYLE12"><strong><em>NiuTrans</em></strong> is an open-source statistical machine translation system developed by the <a href="http://www.nlplab.com">Natural Language Processing Group</a> at <a href="http://www.neu.edu.cn">Northeastern University</a>, China. The <em><strong>NiuTrans</strong></em> system is fully developed in C++ language. So it runs fast and uses less memory. Currently it has already supported phrase-based, hierarchical phrase-based and syntax-based (string-to-tree, tree-to-string and tree-to-tree) models for research-oriented studies.</span><br />
+          </p>
+          <a name="features"></a>
+          <hr style="width:30%; text-align:left; margin: 0 auto 0 0;"/>
+<p><span class="STYLE13">Features<br />
+              <span class="STYLE12">1. Written in </span></span><span class="STYLE17">C++</span><span class="STYLE13"><span class="STYLE12">. So it runs fast.<br />
+              2.</span></span><span class="STYLE17"> Multi-thread </span><span class="STYLE13"><span class="STYLE12">supported<br />
+              3. Easy-to-use APIs for </span></span><span class="STYLE17">feature engineering</span><span class="STYLE13"><span class="STYLE12"><br />
+              4. <span class="STYLE17">Competitive performance </span></span></span><span class="STYLE13"><span class="STYLE12"> for translation tasks<br />
+              5. A compact but efficient </span></span><span class="STYLE17">n-gram language model</span><span class="STYLE13"><span class="STYLE12"> is embedded. It does not need external support from other softwares (such as SRILM)<br />
+              6. Supports multiple SMT models<br />
+  &nbsp;&nbsp;&nbsp;a)</span></span><span class="STYLE17"> Phrase-based</span><span class="STYLE13"><span class="STYLE12"> model<br />
+  &nbsp;&nbsp;&nbsp;b)</span></span><span class="STYLE17"> Hierarchical phrase-based</span><span class="STYLE13"><span class="STYLE12"> model<br />
+  &nbsp;&nbsp;&nbsp;c)</span></span><span class="STYLE17"> Syntax-based (string-to-tree, tree-to-string and tree-to-tree)</span><span class="STYLE13"><span class="STYLE12"> models</span></span></p>
+  
+  		  <a name="download"></a>
+  		  <hr style="width:30%; text-align:left; margin: 0 auto 0 0;"/>
+  		  <p class="STYLE13">Download<br />
+            <span class="STYLE12">The system is open-source and available under the GNU General Public License (See more information about GPL <a href="http://www.gnu.org/licenses/gpl-2.0.html">here</a>). <br/>
+			To download its source code and the sample data, please click <a href="http://218.75.34.138:8808">link 1</a> or <a href="http://download2.niutrans.com:8080">link 2</a></span><span class="STYLE12">.</span><br />
+          </p>
+		  
+          <a name="requirements"></a>
+<hr style="width:30%; text-align:left; margin: 0 auto 0 0;"/>
+          <p class="STYLE13">Requirements<br />
+            <span class="STYLE12">For <strong>Windows</strong> users, Visual Studio 2008, <a href="http://www.cygwin.com/">Cygwin</a>, and 
+			<a href="http://www.activestate.com/activeperl">perl</a> (version 5.10.0 or higher) are required. It is suggested to install cygwin under  path "C:\" by default. <br/>
+		    </span><br/>
+			<span class="STYLE12">For <strong>Linux</strong> users, gcc (version 4.1.2 or higher), g++ (version 4.1.2 or higher), GNU Make (version 3.81 or higher) and perl (version 5.8.8 or higher) are required. <br />
+			<br />
+NOTE: <span class="STYLE17">2GB memory</span> and <span class="STYLE17">10GB disc space</span> is a minimal requirement for running the system. Of course, more memory and disc space is helpful if the system is trained using large-scale corpus. To support large data/model (such as n-gram LM), 64bit OS is recommended.<br/>
+		    </span>
+          </p>
+          
+          <a name="installation"></a>
+<hr style="width:30%; text-align:left; margin: 0 auto 0 0;"/>
+          <p class="STYLE13">Installation<br />
+            <span class="STYLE12"> Please unpack the downloaded package (surppose that the target directory is &quot;NiuTrans&quot;) and follow the following instructions to install the system. </span></p>
+          <p class="STYLE13"><span class="STYLE12">For <strong>Windows</strong> users, </span> <br/>
+		  <span class="STYLE12">
+		  	&nbsp;&nbsp; - open &quot;NiuTrans.sln&quot; in &quot;NiuTrans\src\&quot;<br />
+			&nbsp;&nbsp; - set configuration mode to "Release"<br />
+			&nbsp;&nbsp; - set platform mode to "Win32" (for 32bit OS) or "x64" (for 64bit OS)<br />
+            &nbsp;&nbsp; - build the whole solution<br />
+            &nbsp;You will then find that all binaries are generated in &quot;NiuTrans\bin\&quot;.
+			</span></p>
+          <p class="STYLE13"><span class="STYLE12">For <strong>Linux</strong> users, <br />
+			&nbsp;&nbsp; -  cd NiuTrans/src/<br />
+			&nbsp;&nbsp; - chmod a+x install.sh <br />
+			&nbsp;&nbsp; - ./install.sh -m32 (for 32bit OS) or ./install.sh (for 64bit OS)<br />
+			&nbsp;&nbsp; - source ~/.bashrc<br />
+			&nbsp;You will then find that all binaries are generated in &quot;NiuTrans/bin/&quot;.
+          </span></p>
+           
+          <a name="manual"></a>
+<hr style="width:30%; text-align:left; margin: 0 auto 0 0;"/>
+
+<p class="STYLE13">Manual<br />
+	<span class="STYLE12">The package also offers a manual to describe more details about the system, as well as various tricks to build better MT engines using NiuTrans. Click <a href="manual/niutrans-manual.pdf">here</a> to download the manual in pdf.
+	</span>
+</p>
+
+
+<!-- ############################### -->
+<!-- Usage -->
+<a name="team-member"></a>
+<hr style="width:30%; text-align:left; margin: 0 auto 0 0;"/>
+          <p class="STYLE12"><span class="STYLE13">NiuTrans Team</span><img src="images/new_icon.gif" width="31" height="12" /><br />
+            <a href="http://www.nlplab.com/members/zhujingbo.html">Jingbo Zhu</a> (Co-PI)<br />
+            <a href="http://www.nlplab.com/members/~xiaotong.html">Tong Xiao</a> (Co-PI)<br />
+            <a href="http://www.nlplab.com/members/liqiang.html">Qiang Li</a><br />
+            Quan Du<br />
+            Qiang Wang<br /><br />
+
+            Acknowledgements: In the process of the implementation of this project, we get the support of previous graduates, they are Hao Zhang (decoder, ME-reordering model), Rushan Chen (language model), Shujie Yao (data selection and data preprocessing), Ji Ma (language model and CWMT2013 baseline systems), Kunjie Sun (CWMT2013 Chinese-English baseline system) and Zhuo Liu (CWMT2013 English-Chinese baseline system).</p>
+            
+          <a name="cite-us"></a>
+<hr style="width:30%; text-align:left; margin: 0 auto 0 0;"/>
+          <p class="STYLE12"><span class="STYLE13">How To Cite NiuTrans</span><br />
+            If you use NiuTrans in your research and would like to acknowledge this project, please cite the following paper</br>
+          <strong>
+            Tong Xiao, Jingbo Zhu, Hao Zhang and Qiang Li. 2012. NiuTrans: An Open Source Toolkit for Phrase-based and Syntax-based Machine Translation. In <em>Proc. of ACL</em>, demonstration session.<a href="paper/ACL2012-NiuTrans.pdf"><img src="images/pdf.gif" /></a></br>
+            </strong>
+          </p>
+          
+          <a name="get-support"></a>
+          <hr style="width:30%; text-align:left; margin: 0 auto 0 0;"/>
+          <p class="STYLE12"><span class="STYLE13">Get Support</span><br />
+            For any questions about NiuTrans, please e-mail to us (<a href="mailto:niutrans@mail.neu.edu.cn">niutrans@mail.neu.edu.cn</a>) directly.</p>
+          
+          <a name="history"></a>
+          <hr style="width:30%; text-align:left; margin: 0 auto 0 0;"/>
+          <p class="STYLE12"><span class="STYLE13">History</span><br />
+          NiuTrans version 1.3.1 Beta - December 1, 2014 (bug fixes for the t2s/t2t decoder and syntactic rule extraction module)<img src="images/new_icon.gif" width="31" height="12" /><br />
+          NiuTrans version 1.3.0 Beta - July 17, 2013 (bug fixes, decoder updates, data preprocessing system updates, new scripts for CWMT2013)<br />
+          NiuTrans version 1.2.0 Beta - January 31, 2013 (bug fixes, decoder updates, add preprocessing system, word-alignment tool and recasing module)<br />
+          NiuTrans version 1.1.0 Beta - August 1, 2012 (bug fixes)<br />
+          NiuTrans version 1.0.0 Beta - July 7, 2012 (three syntax-based models are supported)<br />
+          NiuTrans version 0.3.0 - April 27, 2012 (hierarchical phrase-based model is supported)<br />
+          NiuTrans version 0.2.0 - October 29, 2011 (bug-fixing, 32bit OS supported)		  <br />
+          NiuTrans version 0.1.0 - July 5, 2011 (first version)</p>
+          
+          <a name="acknowledgements"></a>
+          <hr style="width:30%; text-align:left; margin: 0 auto 0 0;"/>
+          <p class="STYLE12"><span class="STYLE13">Acknowledgements</span><br />
+            This project is supported in part by the National Science Foundation of China (60873091; 61073140), Specialized Research Fund for the Doctoral Program of Higher Education (20100042110031), and the Fundamental Research Funds for the Central Universities.<br /></p>
+         <br />
+         <br /> 
+       <div class="item">
+         <p class="STYLE12">Downloaded <span class="STYLE17"><strong>1700</strong></span> to April 16, 2014. Page last modified on April 16, 2014</p>
+         <p class="STYLE12">This page is designed by Ziyi Feng and He Nian.
+       </div>
+
+        <p class="STYLE13">&nbsp;</p>
+        <a href="http://www2.clustrmaps.com/user/0eddcf28"><img src="http://www2.clustrmaps.com/stats/maps-no_clusters/www.nlplab.com-NiuPlan-NiuTrans.html-thumb.jpg" alt="Locations of visitors to this page" />
+</a>
+
+  </td>
+</tr>
+</table>
+
+</body>
+</html>

@@ -1,0 +1,108 @@
+
+:: jun's pos with goldberg dep templates
+
+window size:3 3
+$kernels
+:: tags of the word
+w
+t
+tagged
+lastName
+
+
+$posTemplate
+pl1_w 0 0
+pr1_w 0 0
+
+pl2_w 0 0
+pr2_w 0 0
+
+pl3_w 0 0
+pr3_w 0 0
+
+
+pl1_w@pl2_w 0 0
+#pl2_w@pl3_w 0 0
+
+pr1_w@pr2_w 0 0
+#pr2_w@pr3_w 0 0
+
+pl1_w@pl0_w 0 0
+pl0_w@pr1_w 0 0
+
+#pl1_w@pl2_w@pl3_w 0 0
+#pl0_w@pl1_w@pl2_w 0 0
+#pr1_w@pr2_w@pr3_w 0 0
+#pr0_w@pr1_w@pr2_w 0 0
+#pl1_w@pl0_w@pr1_w 0 0
+
+pl1_t 0 0
+pr1_t 0 0
+
+pl2_t 0 0
+pr2_t 0 0
+
+pl3_t 0 0
+pr3_t 0 0
+
+pl1_t@pl2_t 0 0
+pl2_t@pl3_t 0 0
+
+pr1_t@pr2_t 0 0
+pr2_t@pr3_t 0 0
+
+
+pl1_t@pl2_t@pl3_t 0 0
+pr1_t@pr2_t@pr3_t 0 0
+
+
+
+:: 1.0 extension
+pl1_w@pl1_t 0 0
+pr1_w@pr1_t 0 0
+
+pl2_w@pl2_t 0 0
+pr2_w@pr2_t 0 0
+
+
+#pl0_w@pl1_w@pl1_t 0 0
+#pl0_w@pr1_w@pr1_t 0 0
+
+
+
+:: 2.0 order preference
+pl0_w@pl1_tagged 0 0
+pl0_w@pl2_tagged 0 0
+
+pl0_w@pr1_tagged 0 0
+pl0_w@pr2_tagged 0 0
+
+#pl0_w@pl1_w@pl1_tagged 0 0
+#pl0_w@pl2_w@pl2_tagged 0 0
+
+#pl0_w@pr1_w@pr1_tagged 0 0
+#pl0_w@pr2_w@pr2_tagged 0 0
+
+
+pl0_w@pr1_tagged 0 0
+pl0_w@pr2_tagged 0 0
+
+pl0_w@pl1_tagged@pl2_tagged 0 0
+pl0_w@pr1_tagged@pr2_tagged 0 0
+
+
+:: 3.0 extension
+pl0_w@pl0_lastName 0 0
+
+pl0_w@pl1_lastName 0 0
+pl0_w@pl2_lastName 0 0
+
+pl0_w@pr1_lastName 0 0
+pl0_w@pr2_lastName 0 0
+
+
+pl1_lastName 0 0
+pl2_lastName 0 0
+
+pr1_lastName 0 0
+pr2_lastName 0 0

@@ -1,0 +1,347 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>Natural Language Processing Laboratory at Northeastern University</title>
+<link href="style.css" type="text/css" rel="stylesheet"  />
+<link href="func.js" type="text/javascript"  />
+<link href="images/n.gif" type="images/x-iconf" rel="shortcut icon"  />
+</head>
+
+<body onload="MM_preloadImages('../NLP-WEB/home+.gif','../NLP-WEB/news+.gif','../NLP-WEB/people+.gif','../NLP-WEB/pub+.gif','../NLP-WEB/pro+.gif','../NLP-WEB/re+.gif','../NLP-WEB/images/home+.gif','../NLP-WEB/images/news+.gif','../NLP-WEB/images/people+.gif','../NLP-WEB/images/pub+.gif','../NLP-WEB/images/pro+.gif','../NLP-WEB/images/re+.gif')">
+
+<table id="mainbody" align="center" border="0" cellpadding="0" cellspacing="0">
+<tr>
+  <td id="sidebar" valign="top">
+  <div id="fixed_pos">
+    <div id="logo"><img src="images/logo.png" class="logo_img"/></div>
+    <!--div id="logo"><img src="images/niu.gif" class="logo_img"/></div-->
+    <div id="navi">
+      <h1>NiuTrans</h1>
+        <div class="item"><a href="NiuTrans.YourData.ch.html">中文版<img src="images/chinese.png" width="15" height="15" /></a></div>
+        <div class="item"><a href="NiuTrans.html#introduction" target="_self">Introduction</a></div>
+        <div class="item"><a href="NiuTrans.html#features" target="_self">Features</a></div>
+        <div class="item"><a href="NiuTrans.html#download" target="_self">Download</a></div>
+        <div class="item"><a href="NiuTrans.html#requirements" target="_self">Requirements</a></div>
+        <div class="item"><a href="NiuTrans.html#installation" target="_self">Installation</a></div>
+        <div class="item"><a href="NiuTrans.html#manual" target="_self">Manual&nbsp;<img src="images/pdf.gif" /></a></div>
+        <div class="item"><a href="NiuTrans.html#team-member" target="_self">NiuTrans Team</a><img src="images/new_icon.gif" width="31" height="12" /></div>
+        <div class="item"><a href="NiuTrans.html#cite-us" target="_self">Cite Us</a></div>
+        <div class="item"><a href="NiuTrans.html#get-support" target="_self">Get Support</a></div>
+        <div class="item"><a href="NiuTrans.html#history" target="_self">History</a></div>
+        <div class="item"><a href="NiuTrans.html#acknowledgements" target="_self">Acknowledgements</a></div>
+        
+      <h1>Step by Step Usage</h1>
+        <div class="item"><a href="NiuTrans.YourData.html" target="_self">Use Your Own Data</a><img src="images/new_icon.gif" width="31" height="12" /></div>
+        <div class="item"><a href="NiuTrans.Phrase.html" target="_self">NiuTrans.Phrase</a></div>
+        <div class="item"><a href="NiuTrans.Hierarchy.html" target="_self">NiuTrans.Hierarchy</a></div>
+        <div class="item"><a href="NiuTrans.Syntax.html" target="_self">NiuTrans.Syntax</a></div>
+      
+      <h1>Advanced Usage</h1>
+        <div class="item"><a href="NiuTransAdvancedUsage.html" target="_self">Advanced Usage</a></div>
+        
+      <h1>FAQ</h1>
+        <div class="item"><a href="NiuTrans.FAQ.html" target="_self">FAQ</a></div>
+
+      <h1>Applications</h1>
+        <div class="item"><a href="http://www.zjyatuo.com/" target="_self">1. NiuTrans Server<img src="images/new_icon.gif" width="31" height="12" /></a></div>
+        <div class="item"><a href="http://218.75.34.138/fanyi/" target="_self">2. Web-based MT</a></div>
+        <div class="item"><a href="http://www.zjyatuo.com/NiuTrans_Mobile.html">3. Speech-to-Speech MT (Android)</a></div>
+
+      <h1>Weibo</h1>
+       <div class="item"><a href="http://weibo.com/niutrans" target="_blank">weibo.com/niutrans</a></div>
+
+      <h1>BBS</h1>
+       <div class="item"><a href="http://183.129.153.66:81" target="_blank">183.129.153.66:81</a></div>
+    </div>
+  </div>
+  </td>
+  <td id="corepart" valign="top">
+    <div id="mini_navi">
+      <span><a href="http://www.nlplab.com">NEU</a></span><span class="gt">&gt;&gt;</span><span><a href="NiuTrans.html">NiuTrans Home</a></span><span class="gt">&gt;&gt;</span><span class="last_item">Use Your Own Data</span>
+    </div>
+        <p align="right"><br />
+        </p>
+          <hr />
+          <p><span class="STYLE7">Use Your Own Data - Version 1.3.1 Beta - Linux Only (for Chinese-English and English-Chinese translation tasks)</span></p>
+
+<!-- Overview -->
+</p>
+          <p class="STYLE12"><strong>Overview of data preprocessing for bilingual data, development data, test data and monolingual data (for language model training) </strong><br />
+<UL>
+<li>
+<p class="STYLE12">Here is a quick overview of the main steps in data preprocessing. Detailed descriptions of each step are presented in the following sections. </p></li>
+<li>
+<p class="STYLE12">Processing Bilingual Data</p></li>
+<PRE>
+1: use NiuTrans-clear.illegal.char.pl to clean the data (see Step 2 for more details)
+2: use data pre-processing scripts to handle Chinese and English-sentence files respectively 
+(see Steps 4 and 5 for more details)
+NOTE: in case of bilingual data preprocessing, it is suggested to use the NE generalization option 
+(i.e., replace number, time and date entities with symbols), and turn off the NE translation option, 
+in other words, set "-method" in NiuTrans-running-segmenter.pl to "01".
+3: use word-alignment tools to generate word-to-word alignments for the bilingual data (see Step 7 for more details)
+</PRE>
+<li>
+<p class="STYLE12">Processing Development Data</p></li>
+<PRE>
+1: Process the source language sentences with "NiuTrans-running-segmenter.pl", and set "-method" to "11" to generalize 
+and translate number, time and date NEs (see Steps 4 and 5 for more details).
+2: Process the target language sentences with "NiuTrans-running-segmenter.pl", and set "-method" to "00" to inactivate 
+the NE symbol generalization and translation functions (see Steps 4 and 5 for more details).
+3: Generate the development data file (see Step 6)
+</PRE>
+<li>
+<p class="STYLE12">Processing Test Data</p></li>
+<PRE>
+1: Process the source language sentences with "NiuTrans-running-segmenter.pl", and set "-method" to "11" to generalize and 
+translate number, time and date NEs (see Steps 4 and 5 for more details). This is in principle the same as the first step 
+used in "Processing Development Data".
+</PRE>
+</li>
+<li>
+<p class="STYLE12">Processing Monolingual Data (for language model training)</p>
+<PRE>
+1: Merge the target-side of the bilingual data and additional (large-scale) target-language data
+2: Process these sentences with "NiuTrans-running-segmenter.pl", and set "-method" to "10" to generalize number, 
+time and date NEs but do not translate them (see Steps 4 and 5 for more details).
+</PRE>
+</li>
+</UL>
+</p>
+
+<!-- Step 1 -->
+</p>
+          <p class="STYLE12"><strong>1. Sample Data</strong><br />
+<UL>
+<li>
+<p class="STYLE12">NiuTrans allows users to use their own bilingual data to build a machine translation system (Currently for Chinese-English and English-Chinese translation tasks only). Here we provide 1k sample sentences to show how to prepare your own data for running NiuTrans.<br />
+The sample data is placed in "NiuTrans/sample-data/sample-submission-version" in the NiuTrans package. </p>
+
+<PRE>sample-submission-version/
+  -- Raw-data/                          # Original bilingual dataset (1K sentence-pairs)
+       -- chinese.txt                   # source sentences
+       -- english.txt                   # target sentences
+</PRE>
+</li>
+<li>
+  <p class="STYLE12">Format: please unpack "NiuTrans/sample-data/sample.tar.gz" and check "description-of-the-sample-data" for more information about data format.
+</p>
+</li>
+</UL>
+</p>
+
+
+<!-- Step 2 -->
+<p class="STYLE12"><strong>2. Cleaning Bilingual Training Data </strong><br />
+<UL>
+<li>
+<p class="STYLE12">Function: remove meaningless markups and characters for Chinese-English sentence pairs </p>
+</li>
+<li>
+<p class="STYLE12">Instructions (cygwin is required for Windows users)</p>
+<PRE>
+$> cd NiuTrans/sample-data/
+$> tar xzvf sample.tar.gz                      # skip this step if sample.tar.gz has already been unpacked
+$> cd NiuTrans/scripts/
+$> mkdir ../work/preprocessing -p
+$> perl NiuTrans-clear.illegal.char.pl \
+        -src    ../sample-data/sample-submission-version/Raw-data/chinese.raw.txt \
+        -tgt    ../sample-data/sample-submission-version/Raw-data/english.raw.txt \
+        -outSrc ../work/preprocessing/chinese.clean.txt \
+        -outTgt ../work/preprocessing/english.clean.txt
+</PRE>
+<span class="STYLE20">
+<strong>For the NiuTrans-clear.illegal.char.pl script: </strong><br/>
+"-src" specifies Chinese-sentence file<br/>
+"-tgt" specifies English-sentence file<br/>
+"-outSrc" specifies cleaned Chinese-sentence file<br/>
+"-outTgt" specifies cleaned English-sentence file
+</span><br/>
+</li>
+<li><p class="STYLE12">Output: two files are generated in “/NiuTrans/work/preprocessing”</p>
+<PRE>
+- chinese.clean.txt                            # Chinese
+- english.clean.txt                            # English
+</PRE>
+</li>
+</UL>
+</p>
+
+
+<!-- Step 3 -->
+<p class="STYLE12"><strong>3. Cleaning Monolingual Data</strong><br />
+<UL>
+<li>
+<p class="STYLE12">Function: remove meaningless markups and characters for Chinese/English</p>
+</li>
+<li>
+<p class="STYLE12">Instructions (perl is required. Also, cygwin is required for Windows users)</p>
+<PRE>
+$> cd NiuTrans/sample-data/
+$> tar xzvf sample.tar.gz                      # skip this step if sample.tar.gz has already been unpacked
+$> cd NiuTrans/scripts/
+$> mkdir ../work/preprocessing -p
+$> perl NiuTrans-monolingual.clear.illegal.char.pl \
+        -tgt    ../sample-data/sample-submission-version/Raw-data/chinese.raw.txt \
+        -outTgt ../work/preprocessing/chinese.mono.clean.txt \
+        -lang zh
+</PRE>
+<span class="STYLE20">
+<strong>For the NiuTrans-monolingual.clear.illegal.char.pl script: </strong><br/>
+"-tgt" specifies the input file (one sentence per line)<br/>
+"-outTgt" specifies the output file <br/>
+"-lang" specifies the language: "zh" = Chinese, "en" = English
+</span><br/>
+</li>
+<li><p class="STYLE12">Output: a file is generated in "/NiuTrans/work/preprocessing"</p>
+<PRE>
+- chinese.mono.clean.txt                            # the result file
+</PRE>
+</li>
+</UL>
+</p>
+
+
+
+<!-- Step 4 -->
+<p class="STYLE12"><strong>4. Data Preprocessing for Chinese</strong><br />
+<UL>
+<li>
+<p class="STYLE12">Function: Chinese word segmentation, named entity (NE) recognition, named entity generalization (i.e., NEs are replaced with symbols) and named entity translation (for date, time, and number entities)</p>
+</li>
+<li>
+<p class="STYLE12">Instructions (perl is required. Also, cygwin is required for Windows users)</p>
+<PRE>
+$> perl NiuTrans-running-segmenter.pl \ 
+        -lang   ch \
+        -input  ../work/preprocessing/chinese.clean.txt \
+        -output ../work/preprocessing/chinese.clean.txt.prepro \
+        -method 01
+</PRE>
+<span class="STYLE20">
+<strong>For the NiuTrans-running-segmenter.pl script:</strong><br/>
+"-lang" specifies the language. In the case of Chinese language, the value of "-lang" should be "ch"<br/>
+"-input" the input file (one sentence per line)<br/>
+"-output" the output file <br/>
+"-method" specifies the options used in NE recognition and generalization. When "00" is set, no NEs are generalized as symbols and no NE translations are provided; when "01" is set, the nubmer, time and date entities are generalized as symbols but no translations are provided for these entities；when "11" is set, all nubmer, time and date entities are generalized as symbols and translations are provided.
+</span><br/>
+</li>
+<li><p class="STYLE12">Output: a file is generated in "/NiuTrans/work/preprocessing"</p>
+<PRE>
+- chinese.clean.txt.prepro                     # the result file
+</PRE>
+</li>
+</UL>
+</p>
+
+<!-- Step 5 -->
+<p class="STYLE12"><strong>5. Data Preprocessing for English</strong><br />
+<UL>
+<li>
+<p class="STYLE12">Function: English tokenization, named entity (NE) recognition, named entity generalization (i.e., NEs are replaced with symbols) and named entity translation (for date, time, and number entities)</p>
+</li>
+<li>
+<p class="STYLE12">Instructions (perl is required. Also, cygwin is required for Windows users)</p>
+<PRE>
+$> perl NiuTrans-running-segmenter.pl \
+        -lang   en \
+        -input  ../work/preprocessing/english.clean.txt \
+        -output ../work/preprocessing/english.clean.txt.prepro \
+        -method 01
+</PRE>
+<span class="STYLE20">
+<strong>For the NiuTrans-running-segmenter.pl script: </strong><br/>
+"-lang" specifies the language. In the case of English language, the value of "-lang" should be "en"<br/>
+"-input" the input file (one sentence per line)<br/>
+"-output" the output file <br/>
+"-method" specifies the options used in NE recognition and generalization. When "00" is set, no NEs are generalized as symbols and no NE translations are provided; when "01" is set, the nubmer, time and date entities are generalized as symbols but no translations are provided for these entities；when "11" is set, all nubmer, time and date entities are generalized as symbols and translations are provided.
+
+</span><br/>
+</li>
+<li><p class="STYLE12">Output: a file is generated in "/NiuTrans/work/preprocessing"</p>
+<PRE>
+- english.clean.txt.prepro                     # the result file
+</PRE>
+</li>
+</UL>
+</p>
+
+<!-- Step 6 -->
+</p>
+          <p class="STYLE12"><strong>6. Generation of Development Data File</strong><br />
+<UL>
+<li>
+<p class="STYLE12">Instructions (perl is required. Also, cygwin is required for Windows users)<br /></p>
+
+<PRE>
+$> cd NiuTrans/scripts/
+$> perl NiuTrans-dev-merge.pl \
+        source-sentence file  \
+        reference-translation file1 \
+        reference-translation file2 \
+        reference-translation file3 \
+        reference-translation file4 \
+        ...   \
+        > ../work/preprocessing/dev.txt
+</PRE>
+</li>
+<li>
+  <p class="STYLE12">Note: the format of development data file is: one line source-sentence, followed by a blank line, followed by reference translation for several lines, followed by the next source-sentence and so forth.
+</p>
+</li>
+<li><p class="STYLE12">Output: a file is generated in "/NiuTrans/work/preprocessing"</p>
+<PRE>
+- dev.txt                                          # the development data file
+</PRE>
+</li>
+</UL>
+</p>
+
+<!-- Step 7 -->
+<p class="STYLE12"><strong>7. Word Alignment</strong><br />
+<UL>
+<li>
+<p class="STYLE12">Download: <a href="http://code.google.com/p/giza-pp/downloads/detail?name=giza-pp-v1.0.7.tar.gz">http://code.google.com/p/giza-pp/downloads/detail?name=giza-pp-v1.0.7.tar.gz</a>, move "giza-pp-v1.0.7.tar.gz" to "/NiuTrans/tools"</p>
+</li>
+<li>
+<p class="STYLE12">Instructions (perl is required)<br/></span></p>
+<PRE>
+$> cd NiuTrans/tools/
+$> tar xzvf giza-pp-v1.0.7.tar.gz
+$> cd giza-pp
+$> make
+$> cp GIZA++-v2/GIZA++ \                             # copy "GIZA++","snt2cooc.out","plain2snt.out","mkcls" to "/NiuTrans/bin"
+      GIZA++-v2/snt2cooc.out \
+      GIZA++-v2/plain2snt.out \
+      mkcls-v2/mkcls \
+      ../../bin                                      
+$> cd ../../scripts
+$> mkdir ../work/wordalignment/ -p
+$> nohup nice perl NiuTrans-running-GIZA++.pl \      
+      -src    ../work/preprocessing/chinese.clean.txt.prepro \
+      -tgt    ../work/preprocessing/english.clean.txt.prepro \
+      -out    ../work/wordalignment/alignment.txt \
+      -tmpdir ../work/wordalignment/ &
+</PRE>
+<span class="STYLE20">
+"-src" specifies the file of source sentences.<br/>
+"-tgt" specifies the file of target sentences.<br/>
+"-out" specifies the file of word-alignment result.<br/>
+</span>
+</li>
+<li><p class="STYLE12">Output: a new file is generated in "/NiuTrans/work/wordalignment":</p>
+<PRE>
+- alignment.txt                                # word-alignment file
+</PRE>
+</li>
+</UL>
+</p>
+
+  </td>
+</tr>
+</table>
+
+</body>
+</html>

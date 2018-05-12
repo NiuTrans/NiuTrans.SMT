@@ -1,0 +1,333 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>东北大学自然语言处理实验室</title>
+<link href="style.css" type="text/css" rel="stylesheet"  />
+<link href="func.js" type="text/javascript"  />
+<link href="images/n.gif" type="images/x-iconf" rel="shortcut icon"  />
+</head>
+
+<body onload="MM_preloadImages('../NLP-WEB/home+.gif','../NLP-WEB/news+.gif','../NLP-WEB/people+.gif','../NLP-WEB/pub+.gif','../NLP-WEB/pro+.gif','../NLP-WEB/re+.gif','../NLP-WEB/images/home+.gif','../NLP-WEB/images/news+.gif','../NLP-WEB/images/people+.gif','../NLP-WEB/images/pub+.gif','../NLP-WEB/images/pro+.gif','../NLP-WEB/images/re+.gif')">
+
+<table id="mainbody" align="center" border="0" cellpadding="0" cellspacing="0">
+<tr>
+  <td id="sidebar" valign="top">
+  <div id="fixed_pos">
+    <div id="logo"><img src="images/logo.png" class="logo_img"/></div>
+    <div id="navi">
+      <h1>NiuTrans</h1>
+        <div class="item"><a href="NiuTrans.YourData.html">English<img src="images/eng.png" width="15" height="15" /></a></div>
+        <div class="item"><a href="NiuTrans.ch.html#introduction" target="_self">简介</a></div>
+        <div class="item"><a href="NiuTrans.ch.html#features" target="_self">系统特色</a></div>
+        <div class="item"><a href="NiuTrans.ch.html#download" target="_self">下载</a></div>
+        <div class="item"><a href="NiuTrans.ch.html#requirements" target="_self">系统运行要求</a></div>
+        <div class="item"><a href="NiuTrans.ch.html#installation" target="_self">安装</a></div>
+        <div class="item"><a href="NiuTrans.ch.html#manual" target="_self">手册&nbsp;<img src="images/pdf.gif" /></a></div>
+        <div class="item"><a href="NiuTrans.ch.html#team-member" target="_self">NiuTrans团队</a><img src="images/new_icon.gif" width="31" height="12" /></div>
+        <div class="item"><a href="NiuTrans.ch.html#cite-us" target="_self">如何引用NiuTrans</a></div>
+        <div class="item"><a href="NiuTrans.ch.html#get-support" target="_self">获得帮助</a></div>
+        <div class="item"><a href="NiuTrans.ch.html#history" target="_self">NiuTrans历史</a></div>
+        <div class="item"><a href="NiuTrans.ch.html#acknowledgements" target="_self">致谢</a></div>
+        
+      <h1>使用说明</h1>
+        <div class="item"><a href="NiuTrans.YourData.ch.html" target="_self">使用自己的数据</a><img src="images/new_icon.gif" width="31" height="12" /></div>
+        <div class="item"><a href="NiuTrans.Phrase.ch.html" target="_self">短语系统</a></div>
+        <div class="item"><a href="NiuTrans.Hierarchy.ch.html" target="_self">层次短语系统</a></div>
+        <div class="item"><a href="NiuTrans.Syntax.ch.html" target="_self">句法系统</a></div>
+
+      <h1>高级用法</h1>
+        <div class="item"><a href="NiuTransAdvancedUsage.ch.html" target="_self">高级用法</a></div>
+        
+      <h1>FAQ</h1>
+        <div class="item"><a href="NiuTrans.FAQ.ch.html" target="_self">FAQ</a></div>
+
+      <h1>应用</h1>
+        <div class="item"><a href="http://www.zjyatuo.com/" target="_self">1. NiuTrans Server<img src="images/new_icon.gif" width="31" height="12" /></a></div>
+        <div class="item"><a href="http://218.75.34.138/fanyi/" target="_self">2. 在线翻译系统</a></div>
+        <div class="item"><a href="http://www.zjyatuo.com/NiuTrans_Mobile.html">3. 牛牛翻译</a></div>
+      <h1>官方微博</h1>
+       <div class="item"><a href="http://weibo.com/niutrans" target="_blank">weibo.com/niutrans</a></div>
+
+      <h1>小牛论坛</h1>
+       <div class="item"><a href="http://183.129.153.66:81" target="_blank">183.129.153.66:81</a></div>
+    </div>
+  </div>
+  </td>
+  <td id="corepart" valign="top">
+    <div id="mini_navi">
+      <span><a href="http://www.nlplab.com">东北大学自然语言处理实验室</a></span><span class="gt">&gt;&gt;</span><span><a href="NiuTrans.ch.html">NiuTrans主页</a></span><span class="gt">&gt;&gt;</span><span class="last_item">使用自己的数据</span>
+    </div>
+        <p align="right"><br /></p>
+          <hr />
+          <p><span class="STYLE7"><a name="introduction"></a>使用自己的数据 - 1.3.1 Beta版 - Linux (目前仅支持中英/英中翻译任务)</span></p>
+          
+<!-- Overview -->
+</p>
+          <p class="STYLE12"><strong>概述：双语训练数据/开发集/测试集/语言模型训练数据处理步骤</strong><br />
+<UL>
+<li>
+<p class="STYLE12">这里首先介绍一下数据预处理的基本内容。每个步骤的具体操作细节在后面会有详细描述。</p></li>
+
+<li>
+<p class="STYLE12">双语训练数据</p></li>
+<PRE>
+步骤1：使用 NiuTrans-clear.illegal.char.pl 脚本进行双语乱码过滤，具体指令见“2. 双语训练数据乱码过滤”
+步骤2：对过滤的双语文本分别进行数据预处理操作，具体指令见“4/5. 中文/英文数据预处理”
+注 意：进行数据预处理时，开启泛化开关，泛化数字($number)、时间($time)、日期($date)，关闭翻译开关。
+       即 NiuTrans-running-segmenter.pl 中 -method 参数值为 01
+步骤3: 利用自动词对齐工具得到双语句子的词到词次对应关系（具体指令见步骤“6. 开发集格式处理”）
+</PRE>
+<li>
+<p class="STYLE12">开发集</p></li>
+<PRE>
+步骤1：对源语言文本进行数据预处理。源语言文本进行数据预处理时，同时开启泛化开关与翻译开关，
+       即 NiuTrans-running-segmenter.pl 中 -method 参数值为 11，泛化并翻译数字、时间、日期
+步骤2：对多个参考翻译结果文本进行数据预处理。参考翻译结果进行数据预处理时，关闭泛化开关与翻译开关。
+       即 NiuTrans-running-segmenter.pl 中 -method 参数值为 00
+步骤3：进行开发集格式处理，处理为NiuTrans使用的开发集数据格式，具体见步骤“7. 词对齐”。
+</PRE>
+<li>
+<p class="STYLE12">测试集</p></li>
+<PRE>
+步骤1：对源语言文本进行数据预处理。源语言文本进行数据预处理时，同时开启泛化开关与翻译开关，
+       即 NiuTrans-running-segmenter.pl 中 -method 参数值为 11，泛化并翻译数字、时间、日期
+</PRE>
+</li>
+<li>
+<p class="STYLE12">语言模型训练数据</p>
+<PRE>
+步骤1：将双语训练数据的目标语言端文本与准备的大规模目标语言端单语语料进行合并
+步骤2：对语言模型训练数据进行数据预处理。进行数据预处理时，开启泛化开关，关闭翻译开关。
+       即 NiuTrans-running-segmenter.pl 中 -method 参数值为 01
+</PRE>
+</li>
+</UL>
+</p>
+
+<!-- Step 1 -->
+</p>
+          <p class="STYLE12"><strong>1. 示例数据</strong><br />
+<UL>
+<li>
+<p class="STYLE12">NiuTrans系统支持用户使用自己的双语数据搭建机器翻译系统，这里提供了1000句的示例数据：<br />
+  NiuTrans软件包中提供了一些示例数据，供连通预处理系统与词对齐系统之用，位于"NiuTrans/sample-data/sample-submission-version"文件夹中。</p>
+
+<PRE>sample-submission-version/
+  -- Raw-data/                          # 原始双语句对集（共有1,000句对）
+       -- chinese.txt                   # 源语句子集
+       -- english.txt                   # 目标语句子集
+</PRE>
+</li>
+<li>
+  <p class="STYLE12">格式：请解压“NiuTrans/sample-data/sample.tar.gz”，有关数据格式的更多信息参见“description-of-the-sample-data”。
+</p>
+</li>
+</UL>
+</p>
+
+
+<!-- Step 2 -->
+<p class="STYLE12"><strong>2. 双语训练数据乱码过滤</strong><br />
+<UL>
+<li>
+<p class="STYLE12">操作说明（要求安装perl。此外， Windows用户要求安装Cygwin）</p>
+<PRE>
+$> cd NiuTrans/sample-data/
+$> tar xzvf sample.tar.gz                      # 如果“sample.tar.gz”已经解压缩，则忽略此步
+$> cd NiuTrans/scripts/
+$> mkdir ../work/preprocessing -p
+$> perl NiuTrans-clear.illegal.char.pl \
+        -src    ../sample-data/sample-submission-version/Raw-data/chinese.raw.txt \
+        -tgt    ../sample-data/sample-submission-version/Raw-data/english.raw.txt \
+        -outSrc ../work/preprocessing/chinese.clean.txt \
+        -outTgt ../work/preprocessing/english.clean.txt
+</PRE>
+<span class="STYLE20">
+<strong>在“NiuTrans-clear.illegal.char.pl”脚本中：</strong><br/>
+“-src”表示中文文本（无论训练汉英/英汉翻译系统，该参数都指定为中文）。<br/>
+“-tgt”表示英文文本（无论训练汉英/英汉翻译系统，该参数都指定为英文）。<br/>
+“-outSrc”表示输出过滤乱码后中文文本。<br/>
+“-outTgt”表示输出过滤乱码后英文文本。
+</span><br/>
+</li>
+<li><p class="STYLE12">输出：在“/NiuTrans/work/preprocessing”目录下生成两个文件</p>
+<PRE>
+- chinese.clean.txt                            # 中文预处理文本
+- english.clean.txt                            # 英文预处理文本
+</PRE>
+</li>
+</UL>
+</p>
+
+
+<!-- Step 3 -->
+<p class="STYLE12"><strong>3. 单语数据乱码过滤</strong><br />
+<UL>
+<li>
+<p class="STYLE12">操作说明（要求安装perl。此外， Windows用户要求安装Cygwin）</p>
+<PRE>
+$> cd NiuTrans/sample-data/
+$> tar xzvf sample.tar.gz                      # 如果“sample.tar.gz”已经解压缩，则忽略此步
+$> cd NiuTrans/scripts/
+$> mkdir ../work/preprocessing -p
+$> perl NiuTrans-monolingual.clear.illegal.char.pl \
+        -tgt    ../sample-data/sample-submission-version/Raw-data/chinese.raw.txt \
+        -outTgt ../work/preprocessing/chinese.mono.clean.txt \
+        -lang zh
+</PRE>
+<span class="STYLE20">
+<strong>在“NiuTrans-monolingual.clear.illegal.char.pl”脚本中：</strong><br/>
+“-tgt”表示输入待处理文本。<br/>
+“-outTgt”表示输出过滤乱码后文本。<br/>
+“-lang”表示输出文本语言，zh为中文，en为英文。
+</span><br/>
+</li>
+<li><p class="STYLE12">输出：在“/NiuTrans/work/preprocessing”目录下生成一个文件</p>
+<PRE>
+- chinese.mono.clean.txt                            # 中文预处理文本
+</PRE>
+</li>
+</UL>
+</p>
+
+
+
+<!-- Step 4 -->
+<p class="STYLE12"><strong>4. 中文数据预处理</strong><br />
+<UL>
+<li>
+<p class="STYLE12">操作说明（要求安装perl。此外， Windows用户要求安装Cygwin）</p>
+<PRE>
+$> perl NiuTrans-running-segmenter.pl \        # 中文预处理
+        -lang   ch \
+        -input  ../work/preprocessing/chinese.clean.txt \
+        -output ../work/preprocessing/chinese.clean.txt.prepro \
+        -method 01
+</PRE>
+<span class="STYLE20">
+<strong>在“NiuTrans-running-segmenter.pl”脚本中：</strong><br/>
+“-lang”表示数据预处理文件类型，“-lang”参数值为“ch”。<br/>
+“-input”为输入待处理文本。<br/>
+“-output”为输出预处理后文本。<br/>
+“-method”表示数据预处理中泛化和翻译的开关。参数值为“00”时，不泛化也不翻译；参数值为“01”时，只泛化不翻译；参数值为“11”时，泛化并翻译。这里的泛化指的是训练数据中数字（$number）、时间（$time）、日期（$date）的泛化。
+</span><br/>
+</li>
+<li><p class="STYLE12">输出：在“/NiuTrans/work/preprocessing”目录下生成一个文件</p>
+<PRE>
+- chinese.clean.txt.prepro                     # 中文预处理文本
+</PRE>
+</li>
+</UL>
+</p>
+
+<!-- Step 5 -->
+<p class="STYLE12"><strong>5. 英文数据预处理</strong><br />
+<UL>
+<li>
+<p class="STYLE12">操作说明（要求安装perl。此外， Windows用户要求安装Cygwin）</p>
+<PRE>
+$> perl NiuTrans-running-segmenter.pl \        # 英文预处理
+        -lang   en \
+        -input  ../work/preprocessing/english.clean.txt \
+        -output ../work/preprocessing/english.clean.txt.prepro \
+        -method 01
+</PRE>
+<span class="STYLE20">
+<strong>在“NiuTrans-running-segmenter.pl”脚本中：</strong><br/>
+“-lang”为预处理文件类型，“-lang”参数值为“en”。<br/>
+“-input”为输入待处理文本。<br/>
+“-output”为输出预处理后文本。<br/>
+“-method”表示数据预处理中泛化和翻译的开关。参数值为“00”时，不泛化也不翻译；参数值为“01”时，只泛化不翻译；参数值为“11”时，泛化并翻译。这里的泛化指的是训练数据中数字（$number）、时间（$time）、日期（$date）的泛化。
+
+</span><br/>
+</li>
+<li><p class="STYLE12">输出：在“/NiuTrans/work/preprocessing”目录下生成一个文件</p>
+<PRE>
+- english.clean.txt.prepro                     # 英文预处理文本
+</PRE>
+</li>
+</UL>
+</p>
+
+
+<!-- Step 6 -->
+</p>
+          <p class="STYLE12"><strong>6. 开发集格式处理</strong><br />
+<UL>
+<li>
+<p class="STYLE12">操作说明（要求安装perl。此外， Windows用户要求安装Cygwin）<br /></p>
+
+<PRE>
+$> cd NiuTrans/scripts/
+$> perl NiuTrans-dev-merge.pl \                   # 生成开发集文本
+        原文  \
+        译文1 \
+        译文2 \
+        译文3 \
+        译文4 \
+        ...   \
+        > ../work/preprocessing/dev.txt
+</PRE>
+</li>
+<li>
+  <p class="STYLE12">NiuTrans系统进行权重调优时，使用的开发集格式为：1行源语，1行空行（句法树），目标语参考翻译结果（多个多行）。双语平行句对经过数据预处理后，需要使用上述指令进行格式处理。若用户有多个译文，可直接写入命令行中。
+</p>
+</li>
+<li><p class="STYLE12">输出：在“/NiuTrans/work/preprocessing”目录下生成一个开发集文本</p>
+<PRE>
+- dev.txt                                          # 开发集文本
+</PRE>
+</li>
+</UL>
+</p>
+
+
+
+<!-- Step 7 -->
+<p class="STYLE12"><strong>7. 词对齐</strong><br />
+<UL>
+<li>
+<p class="STYLE12">下载链接：<a href="http://code.google.com/p/giza-pp/downloads/detail?name=giza-pp-v1.0.7.tar.gz">http://code.google.com/p/giza-pp/downloads/detail?name=giza-pp-v1.0.7.tar.gz</a>，将下载的“giza-pp-v1.0.7.tar.gz”放入“/NiuTrans/tools”目录下</p>
+</li>
+<li>
+<p class="STYLE12">使用说明<br/></span></p>
+<PRE>
+$> cd NiuTrans/tools/
+$> tar xzvf giza-pp-v1.0.7.tar.gz
+$> cd giza-pp
+$> make
+$> cp GIZA++-v2/GIZA++ \                         # 拷贝“GIZA++”,“snt2cooc.out”,“plain2snt.out”,
+      GIZA++-v2/snt2cooc.out \                   # “mkcls”至“/NiuTrans/bin”目录下
+      GIZA++-v2/plain2snt.out \
+      mkcls-v2/mkcls \
+      ../../bin                                      
+$> cd ../../scripts
+$> mkdir ../work/wordalignment/ -p
+$> nohup nice perl NiuTrans-running-GIZA++.pl \  # 此步比较耗时，采用后台方式运行，查看运行情况“tail -f nohup.out”
+      -src    ../work/preprocessing/chinese.clean.txt.prepro \
+      -tgt    ../work/preprocessing/english.clean.txt.prepro \
+      -out    ../work/wordalignment/alignment.txt \
+      -tmpdir ../work/wordalignment/ &
+</PRE>
+<span class="STYLE20">
+“-src”表示预处理后的中文文本。<br/>
+“-tgt”表示预处理后的英文文本。<br/>
+“-out”表示经过对称化处理的词对齐文件。<br/>
+</span>
+</li>
+<li><p class="STYLE12">输出：在“/NiuTrans/work/wordalignment”目录下生成词对齐结果文件</p>
+<PRE>
+- alignment.txt                                # 对称化处理的词对齐文本
+</PRE>
+</li>
+</UL>
+</p>
+
+  </td>
+</tr>
+</table>
+
+</body>
+</html>

@@ -1,0 +1,143 @@
+For the latest information about "NiuTrans" Platform, please visit our website at:
+
+    http://www.nlplab.com/NiuPlan/NiuTrans.html
+
+NiuTrans - SMT platform
+Copyright (C) 2011-2014, NEU-NLPLab (http://www.nlplab.com). All rights reserved.
+
+This platform is free software; you can redistribute it and/or
+modify it under the terms of the GNU General Public
+License as published by the Free Software Foundation; either
+version 2 of the License, or (at your option) any later version.
+
+This platform is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU
+General Public License for more details.
+
+You should have received a copy of the GNU General Public
+License along with this platform; if not, write to the Free Software
+Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA
+
+I) Introduction
+
+NiuTrans is an open-source statistical machine translation system developed by 
+the Natural Language Processing Group at Northeastern University, China.
+The NiuTrans system is fully developed in C++ language. So it runs fast and uses less memory.
+Currently it has already supported phrase-based, hierarchical phrase-based and syntax-based models for research-oriented studies.
+
+II) Features
+
+1. Written in C++. So it runs fast.
+2. Multi-thread supported
+3. Easy-to-use APIs for feature engineering
+4. Competitive performance for Chinese-Foreign translation tasks
+5. A compact but efficient n-gram language model is embedded. It does not need external support from other softwares (such as SRILM)
+6. Supports multiple SMT models
+   a) Phrase-based model
+   b) Hierarchical phrase-based model
+   c) Syntax-based model
+
+III) Requirements
+
+For Windows users, Visual Studio 2008, Cygwin, and perl (version 5.10.0 or higher) are required.
+It is suggested to install cygwin under path "C:\" by default. 
+
+For Linux users, gcc (version 4.1.2 or higher), g++ (version 4.1.2 or higher), 
+GNU Make (version 3.81 or higher) and perl (version 5.8.8 or higher) are required. 
+
+NOTE: 2GB memory and 10GB disc space is a minimal requirement for running the system.
+Of course, more memory and disc space are helpful if the system is trained using large-scale data.
+To support large data/model (such as n-gram LM), 64bit OS is recommended.
+
+IV) Installation
+
+Please unpack the downloaded package (surppose that the target directory is "NiuTrans") and follow the following instructions to install the system.
+
+For Windows users, 
+   - open "NiuTrans.sln" in "NiuTrans\src\"
+   - set configuration mode to "Release"
+   - set platform mode to "Win32" (for 32bit OS)
+     or
+     set platform mode to "x64" (for 64bit OS)
+   - build the whole solution
+ You will then find that all binaries are generated in "NiuTrans\bin\".
+
+For Linux users, 
+   - cd NiuTrans/src/
+   - chmod a+x install.sh 
+   - ./install.sh -m32 (for 32bit OS)
+     or
+     ./install.sh (for 64bit OS)
+   - source ~/.bashrc
+ You will then find that all binaries are generated in "NiuTrans/bin/".
+
+V) Step-by-Step
+
+   a) NiuTrans.Phrase:
+      Please refer to the file "NiuTrans/doc/NiuTrans.Phrase.html" to learn how to use the phrase-based engine of the NiuTrans system.
+
+   b) NiuTrans.Hierarchy:
+      Please refer to the file "NiuTrans/doc/NiuTrans.Hierarchy.html" to learn how to use the hierarchical phrase-based engine of the NiuTrans system.
+
+   c) NiuTrans.Syntax:
+      Please refer to the file "NiuTrans/doc/NiuTrans.Syntax.html" to learn how to use the syntax-based engines of the NiuTrans system.
+
+VI) Manual
+
+We also offer a manual to describe more details about the NiuTrans system, as well as various tricks to build better MT engines.
+You can find it under the path "NiuTrans/doc/niutrans-manual.pdf".
+
+VII) Team Member
+
+Jingbo Zhu (Co-PI)
+Tong Xiao (Co-PI)
+Hao Zhang
+Qiang Li
+Ji Ma
+Quan Du
+
+VIII) How To Cite NiuTrans
+
+If you use NiuTrans in your research and would like to acknowledge this project, please cite the following paper:
+"Tong Xiao, Jingbo Zhu, Hao Zhang and Qiang Li. 2012.
+NiuTrans: An Open Source Toolkit for Phrase-based and Syntax-based Machine Translation.
+In Proc. of ACL, demonstration session".
+
+IX) Get Support
+
+For any questions about NiuTrans, please e-mail to us (niutrans@mail.neu.edu.cn) directly.
+
+X) History
+
+VERSION 1.3.1 Beta  --- Dec 1, 2014
+  * bug fixes for the t2s/t2t decoder and syntactic rule extraction module
+
+VERSION 1.3.0 Beta CWMT2013  --- July 22, 2013
+  * CWMT2013 Chinses-English/English-Chinese baseline system
+
+VERSION 1.3.0 Beta  --- July 17, 2013
+  * bug fixes, decoder updates, data preprocessing system updates, new scripts for CWMT2013 
+
+VERSION 1.2.0 Beta --- Jan. 31, 2013
+  * bug fixes, decoder updates, add preprocessing system, word-alignment tool and recasing module 
+
+VERSION 1.0.0 Beta --- July 7th, 2012
+  * Syntax-based models are supported (string-to-tree/tree-to-string/tree-to-tree)
+
+VERSION 0.3.0 --- April 27th, 2012
+  * Hierarchical phrase-based model is supported
+
+VERSION 0.2.0 --- Oct. 29th, 2011
+	* 32bit OS supported
+	* Bug-fixing for ME-based reordering model (in parsing Berkeley syntactic parses)
+	* Better initial weight setting
+
+VERSION 0.1.0 --- July 5th, 2011
+
+XI) Acknowledgements
+
+This project is supported in part by the National Science Foundation of China (60873091; 61073140),
+Specialized Research Fund for the Doctoral Program of Higher Education (20100042110031),
+and the Fundamental Research Funds for the Central Universities.
+In the process of the implementation of this project, we get the support of previous graduates, they are Rushan Chen (language model) and Shujie Yao (data selection and processing).

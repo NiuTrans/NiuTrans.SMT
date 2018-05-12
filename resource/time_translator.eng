@@ -1,0 +1,19 @@
+S	a.m.	上午
+S	AM	上午
+S	p.m.	下午
+S	PM	下午
+K	o'clock	点整
+K	hour	点
+P	a quarter	一刻
+P	half	半
+T	Yesterday	昨天
+T	Today	今天
+T	Tomorrow	明天
+T	yesterday	昨天
+T	today	今天
+T	tomorrow	明天
+Q	hours	小时
+Q	minutes	分钟
+Q	seconds	秒
+C	from	从
+C	to	到

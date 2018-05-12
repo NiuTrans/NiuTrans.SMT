@@ -1,0 +1,492 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>东北大学自然语言处理实验室</title>
+<link href="style.css" type="text/css" rel="stylesheet"  />
+<link href="func.js" type="text/javascript"  />
+<link href="images/n.gif" type="images/x-iconf" rel="shortcut icon"  />
+</head>
+
+<body onload="MM_preloadImages('../NLP-WEB/home+.gif','../NLP-WEB/news+.gif','../NLP-WEB/people+.gif','../NLP-WEB/pub+.gif','../NLP-WEB/pro+.gif','../NLP-WEB/re+.gif','../NLP-WEB/images/home+.gif','../NLP-WEB/images/news+.gif','../NLP-WEB/images/people+.gif','../NLP-WEB/images/pub+.gif','../NLP-WEB/images/pro+.gif','../NLP-WEB/images/re+.gif')">
+
+<table id="mainbody" align="center" border="0" cellpadding="0" cellspacing="0">
+<tr>
+  <td id="sidebar" valign="top">
+  <div id="fixed_pos">
+    <div id="logo"><img src="images/logo.png" class="logo_img"/></div>
+    <!--div id="logo"><img src="images/niu.gif" class="logo_img"/></div-->
+    <div id="navi">
+      <h1>NiuTrans</h1>
+        <div class="item"><a href="NiuTrans.Syntax.html">English<img src="images/eng.png" width="15" height="15" /></a></div>
+        <div class="item"><a href="NiuTrans.ch.html#introduction" target="_self">简介</a></div>
+        <div class="item"><a href="NiuTrans.ch.html#features" target="_self">系统特色</a></div>
+        <div class="item"><a href="NiuTrans.ch.html#download" target="_self">下载</a></div>
+        <div class="item"><a href="NiuTrans.ch.html#requirements" target="_self">系统运行要求</a></div>
+        <div class="item"><a href="NiuTrans.ch.html#installation" target="_self">安装</a></div>
+        <div class="item"><a href="NiuTrans.ch.html#manual" target="_self">手册&nbsp;<img src="images/pdf.gif" /></a></div>
+        <div class="item"><a href="NiuTrans.ch.html#team-member" target="_self">NiuTrans团队</a><img src="images/new_icon.gif" width="31" height="12" /></div>
+        <div class="item"><a href="NiuTrans.ch.html#cite-us" target="_self">如何引用NiuTrans</a></div>
+        <div class="item"><a href="NiuTrans.ch.html#get-support" target="_self">获得帮助</a></div>
+        <div class="item"><a href="NiuTrans.ch.html#history" target="_self">NiuTrans历史</a></div>
+        <div class="item"><a href="NiuTrans.ch.html#acknowledgements" target="_self">致谢</a></div>
+        
+      <h1>使用说明</h1>
+        <div class="item"><a href="NiuTrans.YourData.ch.html" target="_self">使用自己的数据</a><img src="images/new_icon.gif" width="31" height="12" /></div>
+        <div class="item"><a href="NiuTrans.Phrase.ch.html" target="_self">短语系统</a></div>
+        <div class="item"><a href="NiuTrans.Hierarchy.ch.html" target="_self">层次短语系统</a></div>
+        <div class="item"><a href="NiuTrans.Syntax.ch.html" target="_self">句法系统</a></div>
+
+      <h1>高级用法</h1>
+        <div class="item"><a href="NiuTransAdvancedUsage.ch.html" target="_self">高级用法</a></div>
+        
+      <h1>FAQ</h1>
+        <div class="item"><a href="NiuTrans.FAQ.ch.html" target="_self">FAQ</a></div>
+
+      <h1>应用</h1>
+        <div class="item"><a href="http://www.zjyatuo.com/" target="_self">1. NiuTrans Server<img src="images/new_icon.gif" width="31" height="12" /></a></div>
+        <div class="item"><a href="http://218.75.34.138/fanyi/" target="_self">2. 在线翻译系统</a></div>
+        <div class="item"><a href="http://www.zjyatuo.com/NiuTrans_Mobile.html">3. 牛牛翻译</a></div>
+      <h1>官方微博</h1>
+       <div class="item"><a href="http://weibo.com/niutrans" target="_blank">weibo.com/niutrans</a></div>
+
+      <h1>小牛论坛</h1>
+       <div class="item"><a href="http://183.129.153.66:81" target="_blank">183.129.153.66:81</a></div>
+    </div>
+  </div>
+  </td>
+  <td id="corepart" valign="top">
+    <div id="mini_navi">
+      <span><a href="http://www.nlplab.com">东北大学自然语言处理实验室</a></span><span class="gt">&gt;&gt;</span><span><a href="NiuTrans.ch.html">NiuTrans主页</a></span><span class="gt">&gt;&gt;</span><span class="last_item">句法系统</span>
+    </div>
+        <p align="right"><br /></p>
+          <hr />
+          <p><span class="STYLE7"><a name="introduction"></a>句法系统使用说明 - 1.3.1 Beta版</span></p>
+
+<!-- Step 1 -->
+</p>
+          <p class="STYLE12"><strong>1. 准备数据</strong><br />
+<UL>
+<li>
+<p class="STYLE12">NiuTrans翻译系统是“数据驱动”的MT系统，要求使用数据对系统进行训练和/或调参。在运行该系统前要求用户准备好以下数据：<br />
+  <span class="STYLE22">a). <strong>训练数据</strong>：双语句对以及对应的词对齐结果 <br/>
+  </span>
+  <span class="STYLE22">b). <strong>开发数据</strong>：带有至少一个参考译文的源语句子集<br/></span>
+  <span class="STYLE22">c). <strong>测试数据</strong>：新句集<br/></span>
+  <span class="STYLE22">d). <strong>评价数据</strong>：测试数据集的参考答案<br/>
+  </span>
+  NiuTrans软件包中提供了一些样本文件，供系统实验以及研究格式要求之用，位于"NiuTrans/sample-data/sample-submission-version"文件夹中。</p>
+
+<PRE>sample-submission-version/
+  -- TM-training-set/                   # 带有词对齐结果的双语句对集（共有100,000句对）
+       -- chinese.txt                   # 源语句子集
+       -- english.txt                   # 目标语句子集（英文全部转换为小写字符）
+       -- Alignment.txt                 # 句对的词对齐结果
+       -- chinese.tree.txt              # 源语言句法树
+       -- english.tree.txt              # 目标语言句法树
+  -- LM-training-set/
+       -- e.lm.txt                      # 单语语料，用于训练语言模型（100K目标语句子）
+  -- Dev-set/
+       -- Niu.dev.txt                   # 开发数据集，用于权重调优（400句子集）
+       -- Niu.dev.tree.txt              # 包含源语言端句法树信息的开发集
+  -- Test-set/
+       -- Niu.test.txt                  # 测试数据集（1K句子集）
+       -- Niu.test.tree.txt             # 包含句法树信息的测试数据集
+  -- Reference-for-evaluation/
+       -- Niu.test.reference            # 测试数据集的参考译文（1K句子集）
+  -- description-of-the-sample-data     # 样本数据的描述</PRE>
+</li>
+<li>
+  <p class="STYLE12">格式：请解压“NiuTrans/sample-data/sample.tar.gz”，有关数据格式的更多信息参见“description-of-the-sample-data”。
+</p>
+</li>
+<li>
+  <p class="STYLE12">以下各步骤中使用上述数据集来讲解如何运行NiuTrans系统（如何训练MT模型，调整特征权重，以及对测试句进行解码等）。</br>
+</p>
+</li>
+</UL>
+   
+<!-- Step 2 -->
+<p class="STYLE12"><strong>2. 生成句法规则</strong><br />
+<UL>
+<li>
+<p class="STYLE12">操作说明（要求安装perl。此外， Windows用户要求安装Cygwin）</p>
+<p><strong>串到句法树</strong></p>
+<PRE>
+$> cd NiuTrans/sample-data/
+$> tar xzf sample.tar.gz
+$> cd ../
+$> mkdir work/model.syntax.s2t/ -p
+$> cd scripts/
+$> perl NiuTrans-syntax-train-model.pl \
+        -model s2t \
+        -src   ../sample-data/sample-submission-version/TM-training-set/chinese.txt \
+        -tgt   ../sample-data/sample-submission-version/TM-training-set/english.txt \
+        -aln   ../sample-data/sample-submission-version/TM-training-set/Alignment.txt \
+        -ttree ../sample-data/sample-submission-version/TM-training-set/english.tree.txt \
+        -out   ../work/model.syntax.s2t/syntax.string2tree.rule
+</PRE>
+<p><strong>句法树到串</strong></p>
+<PRE>
+$> cd NiuTrans/sample-data/
+$> tar xzf sample.tar.gz
+$> cd ../
+$> mkdir work/model.syntax.t2s/ -p
+$> cd scripts/
+$> perl NiuTrans-syntax-train-model.pl \
+        -model t2s \
+        -src   ../sample-data/sample-submission-version/TM-training-set/chinese.txt \
+        -stree ../sample-data/sample-submission-version/TM-training-set/chinese.tree.txt \
+        -tgt   ../sample-data/sample-submission-version/TM-training-set/english.txt \
+        -aln   ../sample-data/sample-submission-version/TM-training-set/Alignment.txt \
+        -out   ../work/model.syntax.t2s/syntax.tree2string.rule
+</PRE>
+<p><strong>句法树到句法树</strong></p>
+<PRE>
+$> cd NiuTrans/sample-data/
+$> tar xzf sample.tar.gz
+$> cd ../
+$> mkdir work/model.syntax.t2t/ -p
+$> cd scripts/
+$> perl NiuTrans-syntax-train-model.pl \
+        -model t2t \
+        -src   ../sample-data/sample-submission-version/TM-training-set/chinese.txt \
+        -stree ../sample-data/sample-submission-version/TM-training-set/chinese.tree.txt \
+        -tgt   ../sample-data/sample-submission-version/TM-training-set/english.txt \
+        -ttree ../sample-data/sample-submission-version/TM-training-set/english.tree.txt \
+        -aln   ../sample-data/sample-submission-version/TM-training-set/Alignment.txt \
+        -out   ../work/model.syntax.t2t/syntax.tree2tree.rule
+</PRE>
+<span class="STYLE20">
+“-model”为机器翻译的模型，该参数决定生成那种类型的规则，具体取值为“s2t”，“t2s”或“t2t”。<br/>
+“-src”，“-tgt”和“-aln”分别为源语言，目标语言以及二者之间的词对齐文件（每行一句）。<br/>
+“-stree”为源语言句子的句法树。<br/>
+“-ttree”为目标语言句子的句法树。</span><br/>
+</li>
+
+<li><p class="STYLE12">输出</p>
+<p><strong>串到句法树</strong></p>
+  <p class="STYLE12">输出：在<span class="STYLE20">“NiuTrans/work/model.syntax.s2t/”</span>目录下生成3个文件<br />
+<PRE>
+- syntax.string2tree.rule                    # 句法规则表
+- syntax.string2tree.rule.bina               # 二叉化句法规则表
+- syntax.string2tree.rule.unbina             # 非二叉化句法规则表
+</PRE>
+</p>
+<p><strong>句法树到串</strong></p>
+  <p class="STYLE12">输出：在<span class="STYLE20">“NiuTrans/work/model.syntax.t2s/”</span>目录下生成3个文件<br />
+<PRE>
+- syntax.tree2string.rule                    # 句法规则表
+- syntax.tree2string.rule.bina               # 二叉化句法规则表
+- syntax.tree2string.rule.unbina             # 非二叉化句法规则表
+</PRE>
+</p>
+<p><strong>句法树到句法树</strong></p>
+  <p class="STYLE12">输出：在<span class="STYLE20">“NiuTrans/work/model.syntax.t2t/”</span>目录下生成3个文件<br />
+<PRE>
+- syntax.tree2tree.rule                      # 句法规则表
+- syntax.tree2tree.rule.bina                 # 二叉化句法规则表
+- syntax.tree2tree.rule.unbina               # 非二叉化句法规则表
+</PRE>
+</p>
+</li>
+<li>
+  <p class="STYLE12">注意：在运行“NiuTrans-syntax-train-model.pl”前请进入“NiuTrans/scripts/”目录。<br/>
+</p>
+</li>
+</UL>
+
+<!-- Step 3 -->
+<p class="STYLE12"><strong>3. 训练<em>N</em>元语言模型</strong><br />
+<UL>
+<li>
+<p class="STYLE12">操作说明</p>
+<PRE>
+$> cd ../
+$> mkdir work/lm/
+$> cd scripts/
+$> perl NiuTrans-training-ngram-LM.pl \
+        -corpus ../sample-data/sample-submission-version/LM-training-set/e.lm.txt \
+        -ngram  3 \
+        -vocab  ../work/lm/lm.vocab \
+        -lmbin  ../work/lm/lm.trie.data
+</PRE>
+<span class="STYLE20">
+“-ngram”为<em>N</em>元语言模型中的元数。如，“-ngram 3”指3元语言模型。<br/>
+“-vocab”为所生成的目标语端语言模型词汇表。<br/>
+“-lmbin”为所生成的目标语端语言模型的二进制文件。
+</span><br/>
+</li>
+<li>
+  <p class="STYLE12">输出： 生成两个文件，放在目录<span class="STYLE20">“NiuTrans/work/lm/”</span>中<br />
+<PRE>
+- lm.vocab                            # 目标语端词汇表
+- lm.trie.data                        # 二进制语言模型
+</PRE>
+</p>
+</li>
+</UL>
+
+<!-- Step 4 -->
+<p class="STYLE12"><strong>4. 生成配置文件</strong><br />
+<UL>
+<li>
+<p class="STYLE12">操作说明</p>
+<p><strong>串到句法树</strong></p>
+<PRE>
+$> cd NiuTrans/scripts/
+$> mkdir ../work/config/ -p
+$> perl NiuTrans-syntax-generate-mert-config.pl \
+        -model      s2t \
+        -syntaxrule ../work/model.syntax.s2t/syntax.string2tree.rule.bina \
+        -lmdir      ../work/lm/ \
+        -nref       1 \
+        -ngram      3 \
+        -out        ../work/config/NiuTrans.syntax.s2t.user.config
+</PRE>
+<p><strong>句法树到串</strong></p>
+<PRE>
+$> cd NiuTrans/scripts/
+$> mkdir ../work/config/ -p
+$> perl NiuTrans-syntax-generate-mert-config.pl \
+        -model      t2s \
+        -syntaxrule ../work/model.syntax.t2s/syntax.tree2string.rule.bina \
+        -lmdir      ../work/lm/ \
+        -nref       1 \
+        -ngram      3 \
+        -out        ../work/config/NiuTrans.syntax.t2s.user.config
+</PRE>
+<p><strong>句法树到句法树</strong></p>
+<PRE>
+$> cd NiuTrans/scripts/
+$> mkdir ../work/config/ -p
+$> perl NiuTrans-syntax-generate-mert-config.pl \
+        -model      t2t \
+        -syntaxrule ../work/model.syntax.t2t/syntax.tree2tree.rule.bina \
+        -lmdir      ../work/lm/ \
+        -nref       1 \
+        -ngram      3 \
+        -out ../work/config/NiuTrans.syntax.t2t.user.config
+</PRE>
+<span class="STYLE20">
+“-model”表示用于MERT的句法规则类型，具体取值为“s2t”，“t2s”或“t2t”。<br/>
+“-syntaxrule”为句法规则表。<br/>
+“-lmdir”为包含<em>N</em>元语言模型和目标语端词汇表的目录。</span><span class="STYLE20"><br />
+“-nref”表示源语言句子对应的候选翻译个数。<br/>
+“-ngram”为<em>N</em>元语言模型中的元数。<br/>
+“-out”为输出结果，即配置文件。
+  </span><br/>
+</li>
+<li><p class="STYLE12">输出</p>
+<p><strong>串到句法树</strong></p>
+  <p class="STYLE12">输出：生成配置文件并放在目录<span class="STYLE20">“NiuTrans/work/config”</span>下，用户可根据需要修改该文件。<br />
+  <PRE>
+- NiuTrans.syntax.s2t.user.config           # 用于MERT和解码的配置文件
+</PRE>
+  </p>
+<p><strong>句法树到串</strong></p>
+  <p class="STYLE12">输出：生成配置文件并放在目录<span class="STYLE20">“NiuTrans/work/config”</span>下<br />
+  <PRE>
+- NiuTrans.syntax.t2s.user.config           # 用于MERT和解码的配置文件
+</PRE>
+  </p>
+<p><strong>句法树到句法树</strong></p>
+  <p class="STYLE12">输出：生成配置文件并放在目录<span class="STYLE20">“NiuTrans/work/config”</span>下<br />
+  <PRE>
+- NiuTrans.syntax.t2t.user.config           # 用于MERT和解码的配置文件
+</PRE>
+  </p>
+</li>
+</UL>
+
+<!-- Step 5 -->
+<p class="STYLE12"><strong>5. 权重调优</strong><br />
+<UL>
+<li>
+<p class="STYLE12">操作说明（要求使用perl）</p>
+<p><strong>串到句法树</strong></p>
+<PRE>
+$> cd NiuTrans/scripts/
+$> perl NiuTrans-syntax-mert-model.pl \
+        -model  s2t \
+        -config ../work/config/NiuTrans.syntax.s2t.user.config \
+        -dev    ../sample-data/sample-submission-version/Dev-set/Niu.dev.tree.txt \
+        -nref   1 \
+        -round  2 \
+        -log    ../work/syntax-s2t-mert-model.log
+</PRE>
+<p><strong>句法树到串</strong></p>
+<PRE>
+$> cd NiuTrans/scripts/
+$> perl NiuTrans-syntax-mert-model.pl \
+        -model  t2s
+        -config ../work/config/NiuTrans.syntax.t2s.user.config \
+        -dev    ../sample-data/sample-submission-version/Dev-set/Niu.dev.tree.txt \
+        -nref   1 \
+        -round  2 \
+        -log    ../work/syntax-t2s-mert-model.log
+</PRE>
+<p><strong>句法树到句法树</strong></p>
+<PRE>
+$> perl NiuTrans-syntax-mert-model.pl \
+        -model  t2t \
+        -config ../work/config/NiuTrans.syntax.t2t.user.config \
+        -dev    ../sample-data/sample-submission-version/Dev-set/Niu.dev.tree.txt \
+        -nref   1 \
+        -round  2 \
+        -log    ../work/syntax-t2t-mert-model.log
+</PRE>
+<span class="STYLE20">
+“-model”为MERT用到的模型类型，具体取值为“s2t”，“t2s”或“t2t”。<br />
+“-config”为以前的步骤中生成的配置文件。<br/>
+“-dev”为权重调优的开发集。<br/>
+“-nref”为每个源语句子提供的参考译文的数量。<br/>
+“-round”为执行MERT程序的轮数 (初始设置为1轮 = 10 MERT 循环)。<br />
+“-log”为MERT生成的log文件。</span><br/>
+</li>
+<li>
+  <p class="STYLE12">输出：MERT之后，最优的特征权重被记录在配置文件“-config”的最后一行中。这些特征权重将被用于对新测试句的解码过程中。<br />
+    </p>
+</li>
+</UL>
+<!-- Step 6 -->
+<p class="STYLE12"><strong>6. 解码</strong><br />
+<UL>
+<li>
+<p class="STYLE12">操作说明（要求使用perl）</p>
+<p><strong>串到句法树</strong></p>
+<PRE>
+$> cd NiuTrans/scripts/
+$> mkdir ../work/syntax.trans.result/ -p
+$> perl NiuTrans-syntax-decoder-model.pl \
+        -model  s2t \
+        -config ../work/config/NiuTrans.syntax.s2t.user.config \
+        -test   ../sample-data/sample-submission-version/Test-set/Niu.test.tree.txt \
+        -output ../work/syntax.trans.result/Niu.test.syntax.s2t.translated.en.txt
+</PRE>
+<p><strong>句法树到串</strong></p>
+<PRE>
+$> cd NiuTrans/scripts/
+$> mkdir ../work/syntax.trans.result/ -p
+$> perl NiuTrans-syntax-decoder-model.pl \
+        -model  t2s \
+        -config ../work/config/NiuTrans.syntax.t2s.user.config \
+        -test   ../sample-data/sample-submission-version/Test-set/Niu.test.tree.txt \
+        -output ../work/syntax.trans.result/Niu.test.syntax.t2s.translated.en.txt
+</PRE>
+<p><strong>句法树到句法树</strong></p>
+<PRE>
+$> cd NiuTrans/scripts/
+$> mkdir ../work/syntax.trans.result/ -p
+$> perl NiuTrans-syntax-decoder-model.pl \
+        -model  t2t \
+        -config ../work/config/NiuTrans.syntax.t2t.user.config \
+        -test   ../sample-data/sample-submission-version/Test-set/Niu.test.tree.txt \
+        -output ../work/syntax.trans.result/Niu.test.syntax.t2t.translated.en.txt
+</PRE>
+<span class="STYLE20">
+“-model”为解码用到的模型类型，具体取值为“s2t”，“t2s”或“t2t”。<br/>
+“-config”为配置文件。<br/>
+“-test”为测试数据集（每行一句）。<br/>
+“-output”为翻译结果文件（如果未规定此选项，则翻译结果将被放入“stdout”中）。</span><br/>
+</li>
+<li><p class="STYLE12">输出</p>
+<p><strong>串到句法树</strong></p>
+  <p class="STYLE12">输出：在<span class="STYLE20">“NiuTrans/work/syntax.trans.result”</span>目录下生成翻译结果文件<br />
+  <PRE>
+- Niu.test.syntax.s2t.translated.en.txt                # 测试句子的1-best翻译结果
+</PRE>
+  </p>
+<p><strong>句法树到串</strong></p>
+  <p class="STYLE12">输出：在<span class="STYLE20">“NiuTrans/work/syntax.trans.result”</span>目录下生成翻译结果文件<br />
+  <PRE>
+- Niu.test.syntax.t2s.translated.en.txt                # 测试句子的1-best翻译结果
+</PRE>
+  </p>
+<p><strong>句法树到句法树</strong></p>
+  <p class="STYLE12">输出：在<span class="STYLE20">“NiuTrans/work/syntax.trans.result”</span>目录下生成翻译结果文件<br />
+  <PRE>
+- Niu.test.syntax.t2t.translated.en.txt                # 测试句子的1-best翻译结果
+</PRE>
+  </p>
+</li>
+</UL>
+<!-- Step 7 -->
+<p class="STYLE12"><strong>7. 评价</strong><br />
+<UL>
+<li>
+<p class="STYLE12">操作说明（要求使用perl）</p>
+<p><strong>串到句法树</strong></p>
+<PRE>
+$> perl NiuTrans-generate-xml-for-mteval.pl \
+        -1f   ../work/syntax.trans.result/Niu.test.syntax.s2t.translated.en.txt \
+        -tf   ../sample-data/sample-submission-version/Reference-for-evaluation/Niu.test.reference \ 
+        -rnum 1
+$> perl mteval-v13a.pl \
+        -r    ref.xml \
+        -s    src.xml \
+        -t    tst.xml
+</PRE>
+<p><strong>句法树到串</strong></p>
+<PRE>
+$> perl NiuTrans-generate-xml-for-mteval.pl \
+        -1f   ../work/syntax.trans.result/Niu.test.syntax.t2s.translated.en.txt \
+        -tf   ../sample-data/sample-submission-version/Reference-for-evaluation/Niu.test.reference \
+        -rnum 1
+$> perl mteval-v13a.pl \
+        -r    ref.xml \
+        -s    src.xml \
+        -t    tst.xml
+</PRE>
+<p><strong>句法树到句法树</strong></p>
+<PRE>
+$> perl NiuTrans-generate-xml-for-mteval.pl \
+        -1f   ../work/syntax.trans.result/Niu.test.syntax.t2t.translated.en.txt \
+        -tf   ../sample-data/sample-submission-version/Reference-for-evaluation/Niu.test.reference \
+        -rnum 1
+$> perl mteval-v13a.pl \
+        -r    ref.xml \
+        -s    src.xml \
+        -t    tst.xml
+</PRE>
+<span class="STYLE20">
+“-1f”为测试句子集的1-best翻译结果文件。<br/>
+“-tf”为测试句子集的源语言句子及参考翻译结果文件。<br/>
+“-rnum”为每个测试句子含有的参考译文。<br/>
+“-r”为参考翻译文件。<br/>
+“-s”为源语句的文件。 <br/>
+“-t”为MT系统生成的（1-best）翻译结果文件。</span><br/>
+</li>
+<li>
+  <p class="STYLE12">输出：显示IBM版的BLEU值。如果以上各个步骤正确，您将得到测试样本数据的BLEU值约为<B>0.2212</B>。<br />
+</p>
+</li>
+<li>
+<p class="STYLE12">注意：脚本<a href="ftp://jaguar.ncsl.nist.gov/mt/resources/mteval-v13a.pl">mteval-v13a.pl</a>依赖<a href="http://search.cpan.org/~toddr/XML-Parser-2.41/Parser.pm">XML::Parser</a>包。如果您的系统中没有安装XML::Parser，请按照以下命令行进行安装。
+<pre>
+$> su root
+$> tar xzf XML-Parser-2.41.tar.gz
+$> cd XML-Parser-2.41/
+$> perl Makefile.PL
+$> make install
+</pre>
+</p>
+</li>
+</UL>
+           
+<hr style="width:30%; text-align:left; margin: 0 auto 0 0;"/>
+
+<!-- ############################### -->
+<!-- Usage -->
+<p class="STYLE13">高级用法<br />
+<!-- <span class="STYLE12">In addition to the brief manual shown above, a more detailed description of various settings can be found <a href="NiuTransAdvancedUsage.html">here</a>. In general, the BLEU score can be further improved by using those advanced features. Hope it helps!</span></p> -->
+<span class="STYLE12">除了以上简明操作步骤以外，您可以从<a href="NiuTransAdvancedUsage.ch.html">这里</a>获得关于NiuTrans更多高级的设置。一般来说，通过使用这些高级的设置，一般会获得BLEU值的提高，希望有所帮助！</span></p>
+
+
+  </td>
+</tr>
+</table>
+
+</body>
+</html>

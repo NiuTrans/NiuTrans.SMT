@@ -1,0 +1,223 @@
+1	时	NULL
+1	分	NULL
+1	秒	NULL
+1	点	NULL
+2	时	NULL
+2	时半	half past
+2	点半	half past
+3	差	NULL
+3	时	NULL
+3	分	NULL
+3	秒	NULL
+3	点	NULL
+4	今天	today
+4	今日	today
+4	明天	tomorrow
+4	明日	tomorrow
+4	昨天	yesterday
+4	昨日	yesterday
+4	前天	the day before yesterday
+4	前日	the day before yesterday
+4	后天	the day after tomorrow
+4	后日	the day after
+4	大后天	three days from now
+4	大后日	three days from now
+4	大前天	three days ago
+4	大前日	three days ago
+4	凌晨	morning
+4	清晨	morning
+4	早晨	morning
+4	早上	morning
+4	上午	morning
+4	中午	at noon
+4	晌午	at noon
+4	正午	at noon
+4	午后	afternoon
+4	下午	afternoon
+4	傍晚	evening
+4	晚上	evening
+4	夜间	night
+4	深夜	night
+4	子夜	night
+4	半夜	middle of the night
+4	午夜	midnight
+4	昨晚	last night
+4	昨夜	last night
+4	今早	this morning
+4	今晨	this morning
+4	今晚	tonight
+4	今夜	tonight
+4	明早	tomorrow morning
+4	明晚	tomorrow evening
+4	明夜	tomorrow night
+4	前天早上	morning of the day before yesterday
+4	前天早晨	morning of the day before yesterday
+4	前天上午	morning of the day before yesterday
+4	前天中午	morning of the day before yesterday
+4	前天下午	afternoon of the day before yesterday
+4	前天傍晚	evening of the day before yesterday
+4	前天晚上	night of the day before yesterday
+4	前天半夜	midnight of the day before yesterday
+4	昨天早上	yesterday morning
+4	昨天早晨	yesterday morning
+4	昨天上午	yesterday morning
+4	昨天中午	yesterday noon
+4	昨天下午	yesterday afternoon
+4	昨天傍晚	yesterday evening
+4	昨天晚上	yesterday night
+4	昨天半夜	yesterday midnight
+4	今天凌晨	this morning
+4	今天清晨	this morning
+4	今天早上	this morning
+4	今天早晨	this morning
+4	今天上午	this morning
+4	今天中午	this noon
+4	今天下午	this afternoon
+4	今天傍晚	this evening
+4	今天晚上	tonight
+4	今天半夜	this midnight
+4	明天凌晨	tomorrow morning
+4	明天清晨	tomorrow morning
+4	明天早上	tomorrow morning
+4	明天早晨	tomorrow morning
+4	明天上午	tomorrow morning
+4	明天中午	tomorrow noon
+4	明天下午	tomorrow afternoon
+4	明天傍晚	tomorrow evening
+4	明天晚上	tomorrow night
+4	明天半夜	tomorrow midnight
+4	后天凌晨	morning of the day after tomorrow
+4	后天清晨	morning of the day after tomorrow
+4	后天早上	morning of the day after tomorrow
+4	后天早晨	morning of the day after tomorrow
+4	后天上午	morning of the day after tomorrow
+4	后天中午	noon of the day after tomorrow
+4	后天下午	afternoon of the day after tomorrow
+4	后天傍晚	evening of the day after tomorrow
+4	后天晚上	night of the day after tomorrow
+4	后天半夜	midnight of the day after tomorrow
+4	前日早上	morning of the day before yesterday
+4	前日早晨	morning of the day before yesterday
+4	前日上午	morning of the day before yesterday
+4	前日中午	morning of the day before yesterday
+4	前日下午	afternoon of the day before yesterday
+4	前日傍晚	evening of the day before yesterday
+4	前日晚上	night of the day before yesterday
+4	前日半夜	midnight of the day before yesterday
+4	昨日早上	yesterday morning
+4	昨日早晨	yesterday morning
+4	昨日上午	yesterday morning
+4	昨日中午	yesterday noon
+4	昨日下午	yesterday afternoon
+4	昨日傍晚	yesterday evening
+4	昨日晚上	yesterday night
+4	昨日半夜	yesterday midnight
+4	今日凌晨	this morning
+4	今日清晨	this morning
+4	今日早上	this morning
+4	今日早晨	this morning
+4	今日上午	this morning
+4	今日中午	this noon
+4	今日下午	this afternoon
+4	今日傍晚	this evening
+4	今日晚上	tonight
+4	今日半夜	this midnight
+4	明日凌晨	tomorrow morning
+4	明日清晨	tomorrow morning
+4	明日早上	tomorrow morning
+4	明日早晨	tomorrow morning
+4	明日上午	tomorrow morning
+4	明日中午	tomorrow noon
+4	明日下午	tomorrow afternoon
+4	明日傍晚	tomorrow evening
+4	明日晚上	tomorrow night
+4	明日半夜	tomorrow midnight
+4	后日凌晨	morning of the day after tomorrow
+4	后日清晨	morning of the day after tomorrow
+4	后日早上	morning of the day after tomorrow
+4	后日早晨	morning of the day after tomorrow
+4	后日上午	morning of the day after tomorrow
+4	后日中午	noon of the day after tomorrow
+4	后日下午	afternoon of the day after tomorrow
+4	后日傍晚	evening of the day after tomorrow
+4	后日晚上	night of the day after tomorrow
+4	后日半夜	midnight of the day after tomorrow
+5	时	o'clock
+5	点钟	o'clock
+5	点整	o'clock
+5	时整	o'clock
+5	时半	half past
+5	点半	half past
+6	刻钟	quarter
+7	1	时
+7	2	分
+7	3	秒
+7	4	点
+7	5	整
+7	6	刻
+7	7	钟
+7	8	半
+7	9	过
+7	10	差
+7	11	个
+7	12	小时
+7	13	小
+8	1	((大?前|昨|今|明|大?后)[天日])?([凌清早]晨|早上|[上中晌正下]午|午后|傍晚|晚上|夜间|[半午]夜)?
+8	2	(昨[晚夜]|今[早晨晚夜]|明[早夜晚])
+8	3	(两|零|十?[一二三四五六七八九]|二十[一二三四]?|十|[01]?\d|2[0-4])[时点]((两|过|零|十|二十|三十|四十|五十)?[一二三四五六七八九]|零|十|二十|三十|四十|五十|[0-5]?\d)分((两|过|零|十|二十|三十|四十|五十)?[一二三四五六七八九]|零|十|二十|三十|四十|五十|[0-5]?\d)秒?
+8	4	(两|零|十?[一二三四五六七八九]|二十[一二三四]?|十|[01]?\d|2[0-4])[时点]((两|过|零|十|二十|三十|四十|五十)?[一二三四五六七八九]|零|十|二十|三十|四十|五十|[0-5]?\d)分?
+8	5	(两|零|十?[一二三四五六七八九]|二十[一二三四]?|十|[01]?\d|2[0-4])(时|点钟?)[整半]?
+8	6	(两|零|十?[一二三四五六七八九]|二十[一二三四]?|十|[01]?\d|2[0-4])(时|点钟?)[一二三]刻钟?
+8	7	((两|零|十|二十|三十|四十|五十)?[一二三四五六七八九]|十|二十|三十|四十|五十|[0-5]?\d)分((两|过|零|十|二十|三十|四十|五十)?[一二三四五六七八九]|零|十|二十|三十|四十|五十|[0-5]?\d)秒?
+8	8	差((两|零|十|二十|三十|四十|五十)?[一二三四五六七八九]|十|二十|三十|四十|五十|[0-5]?\d)分(两|零|十?[一二三四五六七八九]|二十[一二三四]?|十|[01]?\d|2[0-4])点
+8	9	差[一二三]刻(两|零|十?[一二三四五六七八九]|二十[一二三四]?|十|[01]?\d|2[0-4])点
+8	10	[两零一二三四五六七八九十百千万亿\d]+个?小时
+8	11	[两零一二三四五六七八九十百千万亿\d]+个?小时((两|过|零|十|二十|三十|四十|五十)?[一二三四五六七八九]|零|十|二十|三十|四十|五十|[0-5]?\d)分钟?
+8	12	[两零一二三四五六七八九十百千万亿\d]+个?小时((两|过|零|十|二十|三十|四十|五十)?[一二三四五六七八九]|零|十|二十|三十|四十|五十|[0-5]?\d)秒?
+8	13	[两零一二三四五六七八九十百千万亿\d]+个?小时((两|过|零|十|二十|三十|四十|五十)?[一二三四五六七八九]|零|十|二十|三十|四十|五十|[0-5]?\d)分钟?((两|过|零|十|二十|三十|四十|五十)?[一二三四五六七八九]|零|十|二十|三十|四十|五十|[0-5]?\d)秒?
+8	14	[两零一二三四五六七八九十百千万亿\d]+分钟?
+8	15	[两零一二三四五六七八九十百千万亿\d]+分钟?((两|过|零|十|二十|三十|四十|五十)?[一二三四五六七八九]|零|十|二十|三十|四十|五十|[0-5]?\d)秒?
+8	16	[两零一二三四五六七八九十百千万亿\d]+秒
+9	1	(时|点钟|点整|时整)
+9	2	(时半|点半)
+9	3	(时|时钟|点|点钟)
+9	4	(刻|刻钟)
+0	afternoon	in the
+0	afternoon of the day after tomorrow	in the
+0	afternoon of the day before yesterday	in the
+0	evening	in the
+0	middle of the night	in the
+0	midnight	in the
+0	midnight of the day after tomorrow	in the
+0	midnight of the day before yesterday	in the
+0	morning	in the
+0	morning of the day after tomorrow	in the
+0	morning of the day before yesterday	in the
+0	night	in the
+0	night of the day after tomorrow	in the
+0	night of the day before yesterday	in the
+0	noon of the day after tomorrow	in the
+0	three days ago	in
+0	three days from now	in
+0	tomorrow afternoon	in
+0	tomorrow evening	in
+0	tomorrow midnight	in
+0	tomorrow morning	in
+0	tomorrow night	in
+0	tomorrow noon	in
+0	yesterday afternoon	in
+0	yesterday midnight	in
+0	yesterday morning	in
+0	yesterday night	in
+0	yesterday noon	in
+0	yesterday	in
+0	tomorrow	in
+0	noon	at
+0	last night	in
+0	tonight	in
+0	the day after tomorrow	in
+0	the day before yesterday	in
+0	this afternoon	in
+0	this midnight	in
+0	this morning	in
+0	this noon	in

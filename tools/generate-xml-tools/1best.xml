@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<tstset setid="en_zh_news_trans" srclang="en" trglang="zh">
+<system site="NEU-NLPLab" sysid="NiuTrans">
+system description
+TO BE ADDED: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+</system>
+<DOC docid="news">
+<seg id="1">伊拉克让美国撤军的最后期限</seg>
+<seg id="2">巴格达 , 伊拉克 ( cnn ) --美国和盟国部队从伊拉克撤出应当规定一个最后期限 , 他们撤军可能会在到2011年完成 , 伊拉克政府发言人星期二说。</seg>
+<seg id="3">伊拉克政府发言人达巴厄 , 美国撤军说 , 可能在三至五年。</seg>
+<seg id="4">阿里·达巴格说 , 任何时间表将取决于该国将经历“的条件和情况。”</seg>
+<seg id="5">内但是 , 他说 , 是撤出“三 , 四 , 五”年是不可能的。</seg>
+<seg id="6">“它可能是2011或2012 , ”·达巴格说。</seg>
+<seg id="7">“我们没有考虑到具体日期 , 但我们必需商定的原则规定期限。”</seg>
+<seg id="8">·达巴格的评论来 , 美国和伊拉克试图协商一个框架的美国和盟国部队的驻扎超过的尽头2008 , 当联合国为联合部队的任务期满。</seg>
+<seg id="9">·达巴格说 , 任何这种协定应包括撤军的最后期限。</seg>
+<seg id="10">提前一天 , 总理努里·马利基还说 , 他赞成一个短期协议 , 会做出一个美军撤退时间表计算的。</seg>
+</DOC>
+</tstset>

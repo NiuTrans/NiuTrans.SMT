@@ -1,0 +1,424 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>Natural Language Processing Laboratory at Northeastern University</title>
+<link href="style.css" type="text/css" rel="stylesheet"  />
+<link href="func.js" type="text/javascript"  />
+<link href="images/n.gif" type="images/x-iconf" rel="shortcut icon"  />
+</head>
+
+<body onload="MM_preloadImages('../NLP-WEB/home+.gif','../NLP-WEB/news+.gif','../NLP-WEB/people+.gif','../NLP-WEB/pub+.gif','../NLP-WEB/pro+.gif','../NLP-WEB/re+.gif','../NLP-WEB/images/home+.gif','../NLP-WEB/images/news+.gif','../NLP-WEB/images/people+.gif','../NLP-WEB/images/pub+.gif','../NLP-WEB/images/pro+.gif','../NLP-WEB/images/re+.gif')">
+
+<table id="mainbody" align="center" border="0" cellpadding="0" cellspacing="0">
+<tr>
+  <td id="sidebar" valign="top">
+  <div id="fixed_pos">
+    <div id="logo"><img src="images/logo.png" class="logo_img"/></div>
+    <!--div id="logo"><img src="images/niu.gif" class="logo_img"/></div-->
+    <div id="navi">
+      <h1>NiuTrans</h1>
+        <div class="item"><a href="NiuTrans.Phrase.ch.html">中文版<img src="images/chinese.png" width="15" height="15" /></a></div>
+        <div class="item"><a href="NiuTrans.html#introduction" target="_self">Introduction</a></div>
+        <div class="item"><a href="NiuTrans.html#features" target="_self">Features</a></div>
+        <div class="item"><a href="NiuTrans.html#download" target="_self">Download</a></div>
+        <div class="item"><a href="NiuTrans.html#requirements" target="_self">Requirements</a></div>
+        <div class="item"><a href="NiuTrans.html#installation" target="_self">Installation</a></div>
+        <div class="item"><a href="NiuTrans.html#manual" target="_self">Manual&nbsp;<img src="images/pdf.gif" /></a></div>
+        <div class="item"><a href="NiuTrans.html#team-member" target="_self">NiuTrans Team</a><img src="images/new_icon.gif" width="31" height="12" /></div>
+        <div class="item"><a href="NiuTrans.html#cite-us" target="_self">Cite Us</a></div>
+        <div class="item"><a href="NiuTrans.html#get-support" target="_self">Get Support</a></div>
+        <div class="item"><a href="NiuTrans.html#history" target="_self">History</a></div>
+        <div class="item"><a href="NiuTrans.html#acknowledgements" target="_self">Acknowledgements</a></div>
+        
+      <h1>Step by Step Usage</h1>
+        <div class="item"><a href="NiuTrans.YourData.html" target="_self">Use Your Own Data</a><img src="images/new_icon.gif" width="31" height="12" /></div>
+        <div class="item"><a href="NiuTrans.Phrase.html" target="_self">NiuTrans.Phrase</a></div>
+        <div class="item"><a href="NiuTrans.Hierarchy.html" target="_self">NiuTrans.Hierarchy</a></div>
+        <div class="item"><a href="NiuTrans.Syntax.html" target="_self">NiuTrans.Syntax</a></div>
+      
+      <h1>Advanced Usage</h1>
+        <div class="item"><a href="NiuTransAdvancedUsage.html" target="_self">Advanced Usage</a></div>
+        
+      <h1>FAQ</h1>
+        <div class="item"><a href="NiuTrans.FAQ.ch.html" target="_self">FAQ</a></div>
+
+      <h1>Applications</h1>
+        <div class="item"><a href="http://www.zjyatuo.com/" target="_self">1. NiuTrans Server<img src="images/new_icon.gif" width="31" height="12" /></a></div>
+        <div class="item"><a href="http://218.75.34.138/fanyi/" target="_self">2. Web-based MT</a></div>
+        <div class="item"><a href="http://www.zjyatuo.com/NiuTrans_Mobile.html">3. Speech-to-Speech MT (Android)</a></div>
+
+      <h1>Weibo</h1>
+       <div class="item"><a href="http://weibo.com/niutrans" target="_blank">weibo.com/niutrans</a></div>
+
+      <h1>BBS</h1>
+       <div class="item"><a href="http://183.129.153.66:81" target="_blank">183.129.153.66:81</a></div>
+    </div>
+  </div>
+  </td>
+  <td id="corepart" valign="top">
+    <div id="mini_navi">
+      <span><a href="http://www.nlplab.com">NEUNLPLab</a></span><span class="gt">&gt;&gt;</span><span><a href="NiuTrans.html">NiuTrans Home</a></span><span class="gt">&gt;&gt;</span><span class="last_item">NiuTrans.Phrase</span>
+    </div>
+        <p align="right"><br />
+        </p>
+          <hr />
+          <p><span class="STYLE7">A Step-by-step manual of NiuTrans.Phrase - Version 1.3.1 Beta</span>
+<!--
+<p class="STYLE13"><font color="red">Note</font><br />
+<span class="STYLE12">
+<span class="STYLE17">
+<font color="red">
+As the LM library is updated in NiuTrans Version 1.1.0 beta, please check the following items to make sure that the new-version system can be correctly set up on your system.
+</font>
+</span>
+</br>
+<span class="STYLE17">
+<font color="red">
+If you have installed NiuTrans Version 1.0.0 Beta or earlier versions, please remove the files under “/NiuTrans/lib” of existing NiuTrans systems. For linux users, please modify the “~/.bashrc” file and remove the “LD_LIBRARY_PATH” setting that was added previously. Then re-install NiuTrans Version 1.1.0 and make sure that “LD_LIBRARY_PATH” directs to the newly-installed system.
+</font>
+</span>
+</span>
+</p>
+-->
+<!-- Step 1 -->
+</p>
+          <p class="STYLE12"><strong>1. Data Preparation</strong><br />
+<UL>
+<li>
+<p class="STYLE12">The NiuTrans system  is a &quot;data-driven&quot; MT system which requries &quot;data&quot; for training and tuning the system. It requries users to prepare the following data files before running the system.<br />
+  <span class="STYLE22">a). <strong>Training data</strong>: bilingual sentence-pairs and word alignments. <br/>
+  </span>
+  <span class="STYLE22">b). <strong>Tuning data</strong>: source sentences with one or more reference translations. <br/></span>
+  <span class="STYLE22">c). <strong>Test data</strong>: some new sentences.<br/></span>
+  <span class="STYLE22">d). <strong>Evaluation data</strong>: reference translations of test sentences.<br/>
+  </span>
+  In the NiuTrans package, some sample files are offered for experimenting with the system and studying the format requirement. They are located in "NiuTrans/sample-data/sample-submission-version".</p>
+
+<PRE>sample-submission-version/
+  -- TM-training-set/                   # word-aligned bilingual corpus (100,000 sentence-pairs)
+       -- chinese.txt                   # source sentences
+       -- english.txt                   # target sentences (case-removed)
+       -- Alignment.txt                 # word alignments of the sentence-pairs
+  -- LM-training-set/
+       -- e.lm.txt                      # monolingual corpus for training language model (100K target sentences)
+  -- Dev-set/
+       -- Niu.dev.txt                   # development dataset for weight tuning (400 sentences)
+  -- Test-set/
+       -- Niu.test.txt                  # test dataset (1K sentences)
+  -- Reference-for-evaluation/
+       -- Niu.test.reference            # references of the test sentences (1K sentences)
+  -- Recaser-training-set/
+       -- english.keepcase.txt          # monolingual corpus for training recasing model (10K sentences)
+  -- description-of-the-sample-data     # a description of the sample data
+</PRE>
+</li>
+<li>
+  <p class="STYLE12">Format: please unpack &quot;NiuTrans/sample-data/sample.tar.gz&quot;, and check  "description-of-the-sample-data" to find more information about data format.
+</p>
+</li>
+<li>
+  <p class="STYLE12">In the following, the above data files are used to illustrate how to run the NiuTrans system (e.g. how to train MT models, tune feature weights, and decode test sentences).</br>
+</p>
+</li>
+</UL>
+   
+<!-- Step 2 -->
+<p class="STYLE12"><strong>2. Training Translation Model</strong><br />
+<UL>
+<li>
+<p class="STYLE12">Instructions (perl is required. Also,  Cygwin is required for Windows users)</p>
+<PRE>
+$> cd NiuTrans/sample-data/
+$> tar xzf sample.tar.gz
+$> cd ../
+$> mkdir work/model.phrase/ -p
+$> cd scripts/
+$> perl NiuTrans-phrase-train-model.pl \
+        -tmdir ../work/model.phrase/ \
+        -s ../sample-data/sample-submission-version/TM-training-set/chinese.txt \
+        -t ../sample-data/sample-submission-version/TM-training-set/english.txt \
+        -a ../sample-data/sample-submission-version/TM-training-set/Alignment.txt
+</PRE>
+<span class="STYLE20">"-tmdir" specifies the target directory for generating various table and model files. <br/>
+"-s", "-t" and "-a" specify the source sentences, the target sentences and the alignments between them (one sentence per line).
+</span><br/>
+</li>
+<li>
+  <p class="STYLE12">Output: three files are generated in <span class="STYLE20">&quot;NiuTrans/work/model.phrase/&quot;</span>:<br />
+<PRE>
+- me.reordering.table                 # ME reorder model
+- msd.reordering.table                # MSD reorder model
+- phrase.translation.table            # phrase translation model
+</PRE>
+</p>
+</li>
+<li>
+  <p class="STYLE12">Note: Please enter "scripts/"  before running the script "NiuTrans-phrase-train-model.pl". <br/>
+</p>
+</li>
+</UL>
+
+<!-- Step 3 -->
+<p class="STYLE12"><strong>3. Training n-gram language model</strong><br />
+<UL>
+<li>
+<p class="STYLE12">Instructions</p>
+<PRE>
+$> cd ../
+$> mkdir work/lm/
+$> cd scripts/
+$> perl NiuTrans-training-ngram-LM.pl \
+        -corpus ../sample-data/sample-submission-version/LM-training-set/e.lm.txt \
+        -ngram  3 \
+        -vocab  ../work/lm/lm.vocab \
+        -lmbin  ../work/lm/lm.trie.data
+</PRE>
+<span class="STYLE20">
+"-ngram" specifies the order of n-gram LM. E.g. &quot;-ngram 3&quot; indicates a 3-gram language model. <br/>
+"-vocab" specifies where the target-side vocabulary is generated. <br/>
+"-lmbin" specifies where the language model file is generated.
+</span><br/>
+</li>
+<li>
+  <p class="STYLE12">Output: two files are generated and placed in <span class="STYLE20">&quot;NiuTrans/work/lm/&quot;</span>:<br />
+<PRE>
+- lm.vocab                            # target-side vocabulary
+- lm.trie.data                        # binary-encoded language model
+</PRE>
+</p>
+</li>
+</UL>
+
+<!-- Step 4 -->
+<p class="STYLE12"><strong>4. Generating Configuration File</strong><br />
+<UL>
+<li>
+<p class="STYLE12">Instructions</p>
+<PRE>
+$> cd scripts/
+$> perl NiuTrans-phrase-generate-mert-config.pl -tmdir ../work/model.phrase/ -lmdir ../work/lm/ \
+        -ngram 3 -o ../work/NiuTrans.phrase.user.config
+</PRE>
+<span class="STYLE20">"-tmdir" specifies the directory that holds the translation table and the reordering model files. <br/>
+"-lmdir" specifies the directory that holds the n-gram language model and the target-side vocabulary.<br />
+&quot;-ngram&quot; specifies the order of n-gram language model.<br/>
+"-o" specifies the output (i.e. a config file).
+</span><br/>
+</li>
+<li>
+  <p class="STYLE12">Output: a config file is generated and placed in <span class="STYLE20">&quot;NiuTrans/work/&quot;</span>:<br />
+<PRE>
+- NiuTrans.phrase.user.config           # configuration file for MERT and decoding
+</PRE>
+</p>
+</li>
+</UL>
+
+<!-- Step 5 -->
+<p class="STYLE12"><strong>5. Table Filtering (Optional)</strong><br />
+<UL>
+<li>
+<p class="STYLE12">If the dev and test data is prepared in advance, a popular trick to improve the system efficiency is to prune the translation table by throwing away those "useless" phrases containing n-grams that never appear in the dev/test sentences. It is suggested to carry out the following step for a faster experiment in your reserach work. Note that this step is not necessary and thus can be skiped as needed.</p>
+</li>
+<li>
+<p class="STYLE12">Instructions (perl is required)</p>
+<PRE>
+$> cd ..
+$> cat sample-data/sample-submission-version/Dev-set/Niu.dev.txt \
+       sample-data/sample-submission-version/Reference-for-evaluation/Niu.test.reference \
+       > sample-data/sample-submission-version/Dev-set/Niu.dev.and.test.txt
+$> bin/NiuTrans.PhraseExtractor --FILPD \
+        -dev     sample-data/sample-submission-version/Dev-set/Niu.dev.and.test.txt \
+        -in      work/model.phrase/phrase.translation.table \
+        -out     work/model.phrase/phrase.translation.table.filterDevAndTest \
+        -maxlen  10 \
+        -rnum    1
+$> perl scripts/filter.msd.model.pl \
+        work/model.phrase/phrase.translation.table.filterDevAndTest \  
+        work/model.phrase/msd.reordering.table \
+        > work/model.phrase/msd.reordering.table.filterDevAndTest
+</PRE>
+<span class="STYLE20">
+“-dev” specifies the data set for filtering. Usually we merge the development dataset and test dataset to form a such dataset.<br/>
+“-in” specifies the translation table to be filtered.<br />
+“-out” specifies the resulting table (i.g., pruned translation table).<br/>
+“-maxlen” specifies the maximum length of phrase in phrase translation table.<br />
+“-rnum” specifies how many reference translations per source-sentence are provided.
+</span><br/>
+</li>
+<li>
+  <p class="STYLE12">Output: “NiuTrans/work/NiuTrans.phrase.user.config” is updated. E.g., we can view the file of "NiuTrans/work/NiuTrans.phrase.user.config" and check the result <br />
+  </p>
+ <PRE>
+   param="MSD-Reordering-Model"   value="../work/model.phrase/msd.reordering.table"
+   is replaced with
+   param="MSD-Reordering-Model"   value="../work/model.phrase/msd.reordering.table.filterDevAndTest"
+   
+   param="Phrase-Table"           value="../work/model.phrase/phrase.translation.table"
+   is replaced with
+   param="Phrase-Table"           value="../work/model.phrase/phrase.translation.table.filterDevAndTest"
+</PRE>
+</li>
+</UL>
+
+<!-- Step 6 -->
+<p class="STYLE12"><strong>6. Weight Tuning</strong><br />
+<UL>
+<li>
+<p class="STYLE12">Instructions (perl is required)</p>
+<PRE>
+$> perl NiuTrans-phrase-mert-model.pl \
+        -dev ../sample-data/sample-submission-version/Dev-set/Niu.dev.txt \
+        -c ../work/NiuTrans.phrase.user.config \
+        -nref 1 \
+        -r 2 \
+        -l ../work/mert-model.log
+</PRE>
+<span class="STYLE20">
+"-dev" specifies the development dataset (or tuning set) for weight tuning. <br/>
+"-c" specifies the  configuration file generated in the previous steps. <br />
+&quot;-nref&quot; specifies how many reference translations per source-sentence are provided<br/>
+&quot;-r&quot; specifies how many rounds the MERT performs (by default, 1 round = 15 MERT iterations). <br />
+"-l" specifies the log file generated by MERT.
+</span><br/>
+</li>
+<li>
+  <p class="STYLE12">Output: the optimized feature weights are recorded in the configuration file "NiuTrans/work/NiuTrans.phrase.user.config". They will then be used in decoding the test sentences.<br />
+  </p>
+</li>
+</UL>
+
+<!-- Step 7 -->
+<p class="STYLE12"><strong>7. Decoding Test Sentences</strong><br />
+<UL>
+<li>
+<p class="STYLE12">Instructions (perl is required)</p>
+<PRE>
+$> perl NiuTrans-phrase-decoder-model.pl \
+        -test ../sample-data/sample-submission-version/Test-set/Niu.test.txt \
+        -c ../work/NiuTrans.phrase.user.config \
+        -output 1best.out
+</PRE>
+<span class="STYLE20">&quot;-test&quot; specifies the test dataset (one sentence per line).<br/>
+&quot;-c&quot; specifies the configuration file.<br />
+&quot;-output&quot; specifies the translation result file (the result is dumped to "stdout" if this option is not specified).</span><br/>
+</li>
+<li>
+  <p class="STYLE12">Output: a new file is generated in <span class="STYLE20">&quot;NiuTrans/scripts/&quot;</span>:<br />
+<PRE>
+- 1best.out                         # 1-best translation of the test sentences
+</PRE>
+</p>
+</li>
+</UL>
+    
+<!-- Step 8 -->
+<p class="STYLE12"><strong>8. Recasing (Suppose that the target language is English)</strong><br />
+<UL>
+<li>
+<p class="STYLE12">Instructions (perl is required)</p>
+<PRE>
+$> mkdir ../work/model.recasing -p
+$> perl NiuTrans-training-recase-model.pl \
+        -corpus   ../sample-data/sample-submission-version/Recaser-training-set/english.keepcase.txt \
+        -modelDir ../work/model.recasing
+$> perl NiuTrans-recaser.pl \
+        -config ../work/model.recasing/recased.config.file \
+        -test   1best.out \
+        -output 1best.out.recased
+</PRE>
+<span class="STYLE20">“-corpus” specifies the training dataset (one sentence per line).<br/>
+“-modelDir” specifies the directory that holds the model and config file.</span><br/>
+</li>
+<li>
+  <p class="STYLE12">Output: a config file and several model file are generated and placed in <span class="STYLE20">“NiuTrans/work/model/recasing”</span>.<br />
+<PRE>
+- recased.config.file               # Recasing config file
+- recased.lm.trie.data              
+- recased.lm.vocab
+- recased.null
+- recased.phrase.translation.table
+</PRE>
+  <p class="STYLE12">Output: a new file is generated in <span class="STYLE20">“NiuTrans/scripts”</span>:<br />
+<PRE>
+- 1best.out.recased
+</PRE>
+</p>
+<p class="STYLE12">Note: this step makes no sense when the target language does not have case information (such as English-Chinese translation). <br />
+</p>
+</li>
+</UL>
+
+<!-- Step 9 -->
+<p class="STYLE12"><strong>9. Detokenizer</strong><br />
+<UL>
+<li>
+<p class="STYLE12">Instructions (perl is required)</p>
+<PRE>
+$> perl NiuTrans-detokenizer.pl \
+        -in  1best.out.recased \
+        -out 1best.out.recased.detoken
+</PRE>
+<span class="STYLE20">“-in” specifies the inputted file.<br/>
+“-output” specifies the outputted file.</span><br/>
+</li>
+<li>
+  <p class="STYLE12">Output: a new file is generated in <span class="STYLE20">“NiuTrans/scripts/”</span>.<br />
+<PRE>
+- 1best.out.recased.detoken         
+</PRE>
+</p>
+<p class="STYLE12">Note: Again, this step is only available for the translation tasks where the target language needs tokenization in data prepration. <br />
+</p>
+</li>
+</UL>
+
+<!-- Step 10 -->
+<p class="STYLE12"><strong>10. Evaluation</strong><br />
+<UL>
+<li>
+<p class="STYLE12">Instructions (perl is required. Suppose that the MT result is in "1best.out.recased.detoken")</p>
+<PRE>
+$> perl NiuTrans-generate-xml-for-mteval.pl -1f 1best.out.recased.detoken \
+        -tf ../sample-data/sample-submission-version/Reference-for-evaluation/Niu.test.reference -rnum 1
+$> perl mteval-v13a.pl -r ref.xml -s src.xml -t tst.xml
+</PRE>
+<span class="STYLE20">
+&quot;-1f&quot; specifies the file of the 1-best translations of the test dataset. <br/>
+&quot;-tf&quot; specifies the file of the source sentences and their reference translations of the test dataset. <br/>
+&quot;-r&quot; specifies the file of the reference translations. <br/>
+&quot;-s&quot; specifies the file of source sentences. <br/>
+&quot;-t&quot; specifies the file of (1-best) translations generated by the MT system.</span><br/>
+</li>
+<li>
+  <p class="STYLE12">Output: The IBM-version BLEU score is displayed<span class="STYLE20"></span>. If everything goes well, you will obtain a score of about <B>0.2412</B> for the sample data set. <br />
+</p>
+</li>
+<li>
+<p class="STYLE12">Note: script <a href="ftp://jaguar.ncsl.nist.gov/mt/resources/mteval-v13a.pl">mteval-v13a.pl</a> relies on the package <a href="http://search.cpan.org/~toddr/XML-Parser-2.41/Parser.pm">XML::Parser</a>. If XML::Parser is not installed on your system, please follow the following commands to install it. 
+<pre>
+$> su root
+$> tar xzf XML-Parser-2.41.tar.gz
+$> cd XML-Parser-2.41/
+$> perl Makefile.PL
+$> make install
+</pre>
+</p>
+</li>
+</UL>
+
+<hr style="width:30%; text-align:left; margin: 0 auto 0 0;"/>
+
+<!-- ############################### -->
+<!-- Usage -->
+<p class="STYLE13">Advanced Usage<br />
+<span class="STYLE12">In addition to the brief manual shown above, a more detailed description of various settings can be found <a href="NiuTransAdvancedUsage.html">here</a>. In general, the BLEU score can be further improved by using those advanced features. Hope it helps!</span></p>
+
+  </td>
+</tr>
+</table>
+
+</body>
+</html>

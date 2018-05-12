@@ -1,0 +1,68 @@
+################### 说明
+### 以后正则表达式的文件格式变为：
+# "开关 类型 正则表达式"
+### 开关表
+# 0                                      不启用
+# 1                                      启用
+#
+### 类型表
+#
+## 数字
+# $number_[atom]_{ARABIC}_{0}            纯阿拉伯数字
+# $number_[atom]_{LOCAL}_{1}             纯本地数字
+# $number_[atom]_{ARALOCAL}_{1}          阿拉伯数字和本地单位组合
+# $number_[atom]_{PERCENT}_{1}           本地百分数
+# $number_[atom]_{FRACTION}_{1}          本地分数
+# $number_[atom]_{ORDINAL}_{0}           序数词不翻译
+# $number_[atom]_{ORDINAL}_{1}           序数词
+# $number_[atom]_{LOCFUZZY}_{1}          本地模糊数
+#
+## 时间
+# $time_[atom]_{24TIME}_{0}              24小时表示法
+# $time_[atom]_{PREFIX}_{1}              时间前缀
+# $time_[atom]_{LOCTIME}_{1}             本地时间
+# $time_[atom]_{TMQT}_{1}                时间量词
+#
+## 日期
+# $date_[atom]_{WEEK}_{1}                星期
+# $date_[atom]_{CENTURY}_{1}             世纪年代
+# $date_[atom]_{YYMMDD}_{0}              通用年月日
+# $date_[atom]_{YYMMDD}_{1}              本地年月日
+# $date_[atom]_{NONGLI}_{0}              中文农历
+#
+
+######### serialnum_genesn类型literal的识别是正则表达式+具体函数工作的 而非纯正则表达式 详细见开发文档
+
+################### 说明结束
+
+######## 高优先级
+
+######## 高优先级结束
+
+######## 数字
+
+######## 时间
+1 $time_[atom]_{PREFIX}_{1} ([Yy]esterday|[Tt]oday|[Tt]omorrow)
+
+######## 日期
+1 $date_[atom]_{WEEK}_{1} (monday|tuesday|wednesday|thursday|friday|saturday|sunday|Monday|Tuesday|Wednesday|Thursday|Friday|Saturday|Sunday)
+1 $date_[atom]_{CENTURY}_{1} ((the\s)?(beginning|end|turn)\sof\s)?((the\s)|last\s|next\s)century
+######## literal
+1 $url [\w\-.]{3,}.(com|org|edu|gov|name|net|asia|tel|mobi|info|biz|mil|cc|tv|cn|hk|tw|de|fr|us|uk|ca|jp|kp|kr|se|sg|ru|vn|za)(:\d{2,5})?(/[/\w]+(.(html?|jsp|php|aspx?))?(\?[0-9a-z_!~*'().;?:@&=+$,%#\-]*)?)?
+1 $url ((https|http|ftp|rtsp|mms|svn|git)://)[\w\-.]{3,}.(com|org|edu|gov|name|net|asia|tel|mobi|info|biz|mil|[a-z]{2})(:\d{2,5})?(/[/\w]+(.(html?|jsp|php|aspx?))?(\?[0-9a-z_!~*'().;?:@&=+$,%#\-]*)?)?
+1 $url ((https|http|ftp|rtsp|mms|svn|git)://)[012]?\d{1,2}(.[012]?\d{1,2}){3}(:\d{2,5})?(/(/\w+)+(\?[0-9a-z_!~*'().;?:@&=+$,%#\-]*)?)?
+
+1 $email \w+([\-\.]\w+)*@\w+([\.\-]\w+)*\.\w{2,4}
+
+1 $serialnum_genesn (\([A-Z]+\)|\([a-z]{1,2}\))
+1 $serialnum_genesn ([\w+\-./=\*_]+[=\*_][\w+\-/=\*_]*)
+0 $serialnum_genesn [\w+\-./=\*_]*\([\w+\-./=\*_]+\)[\w+\-./=\*_]*
+1 $serialnum_genesn (((\d+[A-Za-z]+)+\d+[A-Za-z]*)|(([A-Za-z]+\d+)+[A-Za-z]+\d*))
+1 $serialnum_genesn ([A-Za-z]+[\d]*[+/\-\.]{0,2}\d+[A-Za-z]*)
+
+
+1 $phone_telepn (Tel:|TEL:|tel:|Tel|TEL|tel){0,1}((0\d{2,3}-\d{7,8})|(\(0\d{2,3}\)\d{7,8}))
+1 $phone_telepn (Tel:|TEL:|tel:|Tel|TEL|tel){0,1}((\+86-\d{2,4}-\d{7,8})|(0086-\d{2,4}-\d{7,8}))
+0 $phone_telepn (Tel:|TEL:|tel:|Tel|TEL|tel){0,1}((400\d{1}-\d{3}-\d{3})|(400-\d{3}-\d{4}))
+
+1 $phone_cellpn (Tel:|TEL:|tel:|Tel|TEL|tel){0,1}((\+86\d{11})|(\+86\s\d{3}\s\d{4}\s\d{4})|(((13\d{1})|186|159|158)\d{8}))

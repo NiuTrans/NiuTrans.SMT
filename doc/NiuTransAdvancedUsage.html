@@ -1,0 +1,403 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>Natural Language Processing Laboratory at Northeastern University|东北大学自然语言处理实验室|机器翻译|语言分析|文本挖掘</title>
+<link href="style.css" type="text/css" rel="stylesheet"  />
+<link href="func.js" type="text/javascript"  />
+<link href="images/n.gif" type="images/x-iconf" rel="shortcut icon"  />
+</head>
+
+<body onload="MM_preloadImages('../NLP-WEB/home+.gif','../NLP-WEB/news+.gif','../NLP-WEB/people+.gif','../NLP-WEB/pub+.gif','../NLP-WEB/pro+.gif','../NLP-WEB/re+.gif','../NLP-WEB/images/home+.gif','../NLP-WEB/images/news+.gif','../NLP-WEB/images/people+.gif','../NLP-WEB/images/pub+.gif','../NLP-WEB/images/pro+.gif','../NLP-WEB/images/re+.gif')">
+
+<table id="mainbody" align="center" border="0" cellpadding="0" cellspacing="0">
+<tr>
+  <td id="sidebar" valign="top">
+  <div id="fixed_pos">
+    <div id="logo"><img src="images/logo.png" class="logo_img"/></div>
+    <!--div id="logo"><img src="images/niu.gif" class="logo_img"/></div-->
+    <div id="navi">
+      <h1>NiuTrans</h1>
+        <div class="item"><a href="NiuTransAdvancedUsage.ch.html">中文版<img src="images/chinese.png" width="15" height="15" /></a></div>
+        <div class="item"><a href="NiuTrans.html#introduction" target="_self">Introduction</a></div>
+        <div class="item"><a href="NiuTrans.html#features" target="_self">Features</a></div>
+        <div class="item"><a href="NiuTrans.html#download" target="_self">Download</a></div>
+        <div class="item"><a href="NiuTrans.html#requirements" target="_self">Requirements</a></div>
+        <div class="item"><a href="NiuTrans.html#installation" target="_self">Installation</a></div>
+        <div class="item"><a href="NiuTrans.html#manual" target="_self">Manual&nbsp;<img src="images/pdf.gif" /></a></div>
+        <div class="item"><a href="NiuTrans.html#team-member" target="_self">NiuTrans Team</a><img src="images/new_icon.gif" width="31" height="12" /></div>
+        <div class="item"><a href="NiuTrans.html#cite-us" target="_self">Cite Us</a></div>
+        <div class="item"><a href="NiuTrans.html#get-support" target="_self">Get Support</a></div>
+        <div class="item"><a href="NiuTrans.html#history" target="_self">History</a></div>
+        <div class="item"><a href="NiuTrans.html#acknowledgements" target="_self">Acknowledgements</a></div>
+        
+      <h1>Step by Step Usage</h1>
+        <div class="item"><a href="NiuTrans.YourData.html" target="_self">Use Your Own Data</a><img src="images/new_icon.gif" width="31" height="12" /></div>
+        <div class="item"><a href="NiuTrans.Phrase.html" target="_self">NiuTrans.Phrase</a></div>
+        <div class="item"><a href="NiuTrans.Hierarchy.html" target="_self">NiuTrans.Hierarchy</a></div>
+        <div class="item"><a href="NiuTrans.Syntax.html" target="_self">NiuTrans.Syntax</a></div>
+      
+      <h1>Advanced Usage</h1>
+        <div class="item"><a href="NiuTransAdvancedUsage.html" target="_self">Advanced Usage</a></div>
+        
+      <h1>FAQ</h1>
+        <div class="item"><a href="NiuTrans.FAQ.html" target="_self">FAQ</a></div>
+
+      <h1>Applications</h1>
+        <div class="item"><a href="http://www.zjyatuo.com/" target="_self">1. NiuTrans Server<img src="images/new_icon.gif" width="31" height="12" /></a></div>
+        <div class="item"><a href="http://218.75.34.138/fanyi/" target="_self">2. Web-based MT</a></div>
+        <div class="item"><a href="http://www.zjyatuo.com/NiuTrans_Mobile.html">3. Speech-to-Speech MT (Android)</a></div>
+
+      <h1>Weibo</h1>
+        <div class="item"><a href="http://weibo.com/niutrans" target="_blank">weibo.com/niutrans</a></div>
+
+      <h1>BBS</h1>
+       <div class="item"><a href="http://183.129.153.66:81" target="_blank">183.129.153.66:81</a></div>
+    </div>
+  </div>
+  </td>
+  <td id="corepart" valign="top">
+    <div id="mini_navi">
+      <span><a href="http://www.nlplab.com">NLPLAB</a></span><span class="gt">&gt;&gt;</span><span><a href="NiuTrans.html">NiuTrans Home</a></span><span class="gt">&gt;&gt;</span><span class="last_item">NiuTransAdvancedUsage</span>
+    </div>
+    <p align="right"><br />
+        </p>
+          <hr />
+          <p><span class="STYLE7">An advanced usage of NiuTrans - Version 1.3.1 Beta</span></p>
+          <p class="STYLE13">Config Files<br />
+            <span class="STYLE12"><strong><em>NiuTrans</em></strong> has many features which might be helpful for advanced users. All those features can be activated by modefying the config files provided within the package. The following is a description of each configuration file used in the system.</span>          
+          <p class="STYLE12"><strong>NiuTrans.phrase.user.config</strong><br />
+            &quot;NiuTrans.phrase.user.config&quot; records the  decoding settings. Users can modify it and use the advanced features of NiuTrans. Basically &quot;NiuTrans.phrase.user.config&quot; contains the following information.<br />
+          <PRE>
+###########################################
+### NiuTrans decoder configuration file ###
+###          phrase-based system        ###
+###              2011-07-01             ###
+###########################################
+
+#>>> runtime resource tables
+
+# language model
+param="Ngram-LanguageModel-File"     value="../sample-data/lm.trie.data"
+
+# target-side vocabulary
+param="Target-Vocab-File"            value="../sample-data/lm.vocab"
+
+# MaxEnt-based lexicalized reordering model
+param="ME-Reordering-Table"          value="../training/me.reordering.table"
+
+# MSD lexicalized reordering model
+param="MSD-Reordering-Model"         value="../training/msd.reordering.table"
+
+# phrase translation model
+param="Phrase-Table"                 value="../training/phrase.translation.table"
+
+#>>> runtime parameters
+
+# number of MERT iterations
+param="nround"                       value="10"
+
+# order of n-gram language model
+param="ngram"                        value="3"
+
+# use punctuation pruning (1) or not (0)
+param="usepuncpruning"               value="1"
+
+# use cube-pruning (1) or not (0)
+param="usecubepruning"               value="1"
+
+# use maxent reordering model (1) or not (0)
+param="use-me-reorder"               value="1"
+
+# use msd reordering model (1) or not (0)
+param="use-msd-reorder"              value="1"
+
+# number of threads
+param="nthread"                      value="4"
+
+# how many translations are dumped
+param="nbest"                        value="20"
+
+# output OOVs and word-deletions in the translation result
+param="outputnull"                   value="0"
+
+# beam size (or beam width)
+param="beamsize"                     value="20"
+
+# number of references of dev. set
+param="nref"                         value="1"
+
+#>>> model parameters
+
+# features defined in the log-linear model
+#  0: n-gram language model
+#  1: number of target-words
+#  2: Pr(e|f). f->e translation probablilty.
+#  3: Lex(e|f). f->e lexical weight
+#  4: Pr(f|e). e->f translation probablilty.
+#  5: Lex(f|e). e->f lexical weight
+#  6: number of phrases
+#  7: number of bi-lex links (not fired in current version)
+#  8: number of NULL-translation (i.e. word deletion)
+#  9: MaxEnt-based lexicalized reordering model
+# 10: <UNDEFINED>&lt;UNDEFINED&gt;
+# 11: MSD reordering model: Previous & Monotonic
+# 12: MSD reordering model: Previous & Swap
+# 13: MSD reordering model: Previous & Discontinuous
+# 14: MSD reordering model: Following & Monotonic
+# 15: MSD reordering model: Following & Swap
+# 16: MSD reordering model: Following & Discontinuous
+
+# feature weights
+param="weights" \
+value="1.000 0.500 0.200 0.200 0.200 0.200 0.500 0.500 -0.100 1.000 0.000 0.100 0.100 0.100 0.100 0.100 0.100"
+
+# bound the feature weight in MERT
+# e.g. the first number "-3:7" means that the first feature weight ranges in [-3, 7]
+param="ranges" \
+value=&quot;-3:7 -3:3 0:3 0:0.4 0:3 0:0.4 -3:3 -3:3 -3:0 -3:3 0:0 0:3 0:0.3 0:0.3 0:3 0:0.3 0:0.3&quot;
+
+# fix a dimention (1) or not (0)
+param="fixedfs"  value="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0"
+</PRE>
+<span class="STYLE12"><strong>NiuTrans.phrase.train.model.config</strong><br />
+&quot;\config\NiuTrans.phrase.train.model.config&quot; records the  settings for training the translation table and the reordering models. It contains the following information.<br /></span>
+<PRE>
+###########################################
+### NiuTrans  phrase train model config ###
+###########################################
+
+# temp file path
+param="Lexical-Table"                value="lex"
+param="Extract-Phrase-Pairs"         value="extractPhrasePairs"
+
+# phrase table parameters
+param="Max-Source-Phrase-Size"       value="3"                          # number greater than 0
+param="Max-Target-Phrase-Size"       value="5"                          # number greater than 0
+param="Phrase-Cut-Off"               value="0"                          # number not less than 0
+
+# phrase translation model
+param="Phrase-Table"                 value="phrase.translation.table"
+
+# maxent lexicalized reordering model
+param="ME-max-src-phrase-len"        value="3"                          # &gt; 0 or = -1 (unlimited)
+param="ME-max-tar-phrase-len"        value="5"                          # &gt; 0 or = -1 (unlimited)
+param="ME-null-algn-word-num"        value="1"                          # &gt;= 0 or = -1 (unlimited)
+param="ME-use-src-parse-pruning"     value="0"                          # "0" or "1"
+param="ME-src-parse-path"            value="/path/to/src-parse/"        # source parses (one parse per line)
+param="ME-max-sample-num"            value="5000000"                    # number greater than 0 or "-1" (unlimited)
+param="ME-Reordering-Table"          value="me.reordering.table"
+
+# msd lexicalized reordering model
+param="MSD-model-type"               value="1"                          # "1", "2" or "3"
+param="MSD-filter-method"            value="tran-table"                 # "tran-table" or "msd-sum-1"
+param="MSD-max-phrase-len"           value="7"                          # number greater than 0
+param="MSD-Reordering-Model"         value="msd.reordering.table"
+</PRE>
+          </span>
+<hr style="width:30%; text-align:left; margin: 0 auto 0 0;"/>
+
+<p><span class="STYLE13">Useful Features and Tips<br /></span></p>
+<p class="STYLE12">The following information is provided for your reference<br />
+  <a href="#nbest">How to Generate n-Best Lists</a><br />
+  <a href="#beamwidth">How to Enlarge the Beam Width</a><br />
+  <a href="#pruning">What Pruning Methods are Adopted</a><br />
+  <a href="#speedup">How to Speed-up the Decoder</a><br />
+  <a href="#refnum">How Many Reference Translations Can Be Involved</a><br />
+  <a href="#higherorderngramlm">How to Use Higher Order N-gram Language Models</a><br />
+  <a href="#controlphrasetable">How to Control Phrase Table Size</a><br />
+  <a href="#controlmereordering">How to Scale ME-based Reordering Model to Larger Corpus</a><br />
+  <a href="#controlmsdreordering">How to Scale MSD Reordering Model to Larger Corpus</a><br />
+  <a href="#selfdevelopedfeature">How to Add Self-developed Features</a><br />
+  <a href="#externaltranslation">How to Plug External Translations into the Decoder</a><br />
+</p>
+
+<UL>
+<li>
+<H2><A name=nbest id="nbest"></A></H2>
+<p class="STYLE12"><strong>How to Generate <span class="STYLE17">n-Best</span> Lists</strong><br/>
+It can be trivially done by setting parameter &quot;nbest&quot; defined in &quot;NiuTrans.phrase.user.config&quot;. E.g. if you want to generate a list of 50-best translations, you can modify &quot;NiuTrans.phrase.user.config&quot; as follows: <br />
+<PRE>
+# how many translations are dumped
+param="nbest"                     value="50"
+</PRE>
+</li>
+
+<li>
+<H2><A name=beamwidth id="beamwidth"></A></H2>
+<p class="STYLE12"><strong>How to Enlarge the <span class="STYLE17">Beam Width</span></strong><br/> 
+In the NiuTrans system beam width is controlled by the parameter &quot;beamsize&quot; defined in &quot;NiuTrans.phrase.user.config&quot;. E.g. if you wish to choose a beam of width 100, you can modify &quot;NiuTrans.phrase.user.config&quot;, as follows: <br />
+<PRE>
+# beam size (or beam width)
+param="beamsize"                     value="100"
+</PRE>
+</li>
+
+<li>
+<H2><A name=pruning id="pruning"></A></H2>
+<p class="STYLE12"><strong>What <span class="STYLE17">Pruning</span> Methods are Adopted</strong><br />
+    The current version supports two pruning methods: punctuation pruning and cube pruning. The first method divides the input sentence into several segments according to punctuations (such as comma). The decoding is then performed on each segment individually. Finally the translation is generated by gluing the translations of these segments. The second method can be regarded as an instance of heuristic search. Here we re-implement the method described in (Chiang, 2007).<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;To activate the two pruning techniques, users can fire the triggers &quot;usepuncpruning&quot; and &quot;usecubepruning&quot; defined in &quot;NiuTrans.phrase.user.config&quot;. Of course, each of them can be set individually.<br />
+<PRE>
+# use punctuation pruning (1) or not (0)
+param="usepuncpruning"               value="1"
+
+# use cube-pruning (1) or not (0)
+param="usecubepruning"               value="1"
+</PRE>
+  </p>
+</li>
+
+<li>
+<H2><A name=speedup id="speedup"></A></H2>
+<p class="STYLE12"><strong>How to <span class="STYLE17">Speed-up</span> the Decoder</strong><br/>
+A straightforward solution is pruning. As described above, punctuation pruning and/or cube pruning can be employed for system speed-up. By default both of them are activated in our system (On Chinese-English translation tasks, they generally lead to a 10-fold speed improvement). Also, multi-thread running-mode can make the system faster if more than one CPU/core is available. To  run the system on multiple threads, users can use the parameter &quot;nthread&quot; defined in &quot;NiuTrans.phrase.user.config&quot;. E.g. if you want to run decoder with 6 threads, you can set &quot;nthread&quot; like this<br /></p>
+<PRE>
+# number of threads
+param="nthread"                      value="6"
+</PRE>
+<p class="STYLE12">To further speed-up the system, another obvious solution is to filter the translation table and the reordering model using input sentences. This feature will be supported in the later version of the system.<br /></p>
+</li>
+
+<li>
+<H2><A name=refnum id="refnum"></A></H2>
+<p class="STYLE12"><strong>How Many <span class="STYLE17">Reference Translations</span> Can Be Involved</strong><br/> 
+The NiuTrans system does not   any upper limit   on the number of reference translations used in either weight tuning or evaluation. E.g. if you want to use 3 references for weight tuning, you can format your tuning data file as follows (Note that &quot;#&quot; indicates a comment here, and SHOULD NOT appear in users' file).<br /></p>
+<PRE>
+澳洲 重新 开放 驻 马尼拉 大使馆               # sentence-1
+                                              # a blank line
+australia reopens embassy in manila           # the 1st reference translation
+australia reopened manila embassy             # the 2nd reference translation
+australia reopens its embassy to manila       # the 3rd reference translation
+澳洲 是 与 北韩 有邦交 的 少数 国家 之 .      # sentence-2
+...</PRE>
+<p class="STYLE12">Then set the "-nref" accordingly. For weight tuning (Note: "-nref 3"), </p>
+<PRE>
+$> perl NiuTrans-mert-model.pl \
+        -dev ../sample-data/sample-submission-version/Dev-set/Niu.dev.txt \
+        -c ../work/NiuTrans.phrase.user.config \
+        -nref 1 \
+        -r 3 \
+        -l ../work/mert-model.log</PRE>
+<p class="STYLE12">For evaluation (Note: "-nref 3"), </p>
+<PRE>
+...
+$> perl NiuTrans-generate-xml-for-mteval.pl -1f 1best.out -tf test-ref.txt -rnum 3
+...
+</PRE>
+</li>
+
+<li>
+<H2><A name=higherorderngramlm id="higherorderngramlm"></A></H2>
+<p class="STYLE12"><strong>How to Use <span class="STYLE17">Higher Order N-gram Language Models</span></strong> <br />
+  You first need to choose the order for n-gram language model. E.g. if you prefers a 5-gram languguage model, you can type the following command to train LM (NOTE: "-n 5").<br/></p>
+<PRE>
+$> ../bin/NiuTrans.LMTrainer -t sample-submission-version/LM-training-set/e.lm.txt -n 5 \
+   -v lm.vocab -m lm.trie.data
+</PRE>
+<p class="STYLE12">Then set the config file accordingly</p>
+<PRE>$&gt; cd scripts/
+$&gt; perl NiuTrans-generate-mert-config.pl -tmdir ../work/model/ -lmdir ../work/lm/ \
+        -ngram 5 -o ../work/NiuTrans.phrase.user.config</PRE>
+</li>
+
+<li>
+<H2><A name=controlphrasetable id="controlphrasetable"></A></H2>
+<p class="STYLE12"><strong>How to Control <span class="STYLE17">Phrase Table Size</span></strong><br/>
+To avoid extremely large phrase table, &quot;\config\NiuTrans.phrase.train.model.config&quot; defines two parameters "Max-Source-Phrase-Size" and "Max-Target-Phrase-Size" which control the maximum number of words on source-side and target-side of a phrase-pair, respectively. 
+Generally both two parameters greatly impact the number of resulting phrase-pairs. Note that, although extracting larger phrases can increase the coverage rate of a phrase table, it does not always benefit the BLEU improvement due to data sparseness.<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Another way to reduce the size of phrase table is to throw away the low-frequency phrases. This can be done using the parameter "Phrase-Cut-Off" defined in &quot;\config\NiuTrans.phrase.train.model.config&quot;. When &quot;Phrase-Cut-Off&quot; is set to n, all phrases appearing equal to or less than n times are thrown away by the NiuTrans system.<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;E.g. the example below shows how to obtain a phrase table with areasonable size. In this setting, the maximum number of source words and target words are set to 3 and 5, respectively. Moreover, all phrases with frequency 1 are filtered.<br />
+<PRE>
+param="Max-Source-Phrase-Size"       value="3"
+param="Max-Target-Phrase-Size"       value="5"
+param="Phrase-Cut-Off"               value="1"
+</PRE>
+</li>
+
+<li>
+<H2><A name=controlmereordering id="controlmereordering"></A></H2>
+<p class="STYLE12"><strong>How to Scale ME-based Reordering Model to <span class="STYLE17">Larger Corpus</span></strong><br/>
+We follow the work of (Xiong et al., 2006) to design the ME-based lexicalized reordering model. In general, the size of the (ME-based) reordering model increases greatly as more training data is involved. Thus several parameters are defined to control the size of the resulting model. They can be found in the configuration file "\config\NiuTrans.phrase.train.model.config", and start with symbol "ME-". <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;1. "ME-max-src-phrase-len" and "ME-max-tar-phrase-len" restrict the maximum number of words appearing in the source-side phrase and target-side phrase. Obviously larger &quot;ME-max-src-phrase-len&quot; (or &quot;ME-max-tar-phrase-len&quot;) means a smaller model.<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;2. "ME-null-algn-word-num" limits the number of unaligned target words that appear between two adjacent blocks. <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;3. "ME-use-src-parse-pruning" is a trigger, and indicates using source-side parse to constraint the training sample extraction. In our in-house experiments, using source-side parse as constraints can greatly reduce the size of resulting model but does not lose BLEU score significantly.<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;4. "ME-src-parse-path" specifies the file of source parses (one parse per line). It is meaningful only when "ME-use-src-parse-pruning" is turned on. <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;5. "ME-max-sample-num" limits the maximum number of extracted samples. Because the ME trainer "maxent(.exe)" cannot work on a very large number of training samples, controlling the  maximum number of extracted samples is a reasonable way to avoid the unacceptable training time and memory cost. By default, &quot;ME-max-sample-num&quot; is set to 5000000 in the NiuTrans system. This setting means that only the first 5,000,000 samples affect the model training, and a too large training corpus does not actually result in a larger model.<br/>
+ &nbsp;&nbsp;&nbsp;&nbsp;To train ME-based reordering model on a larger data set, it is <span class="STYLE17">recommended</span> to set the above parameters as follows (for Chinese-to-English translation tasks). Note that this setting requires users to provide the source-side parse trees for pruning.<br />
+<PRE>
+param="ME-max-src-phrase-len"        value="3"
+param="ME-max-tar-phrase-len"        value="5"
+param="ME-null-algn-word-num"        value="1"
+param="ME-use-src-parse-pruning"     value="1"                      # if you have source parses
+param="ME-src-parse-path"            value="/path/to/src-parse/"
+param="ME-max-sample-num"            value="-1"                     # depends on how large your corpus is
+                                                                    # can be set to a positive number as needed</PRE>
+</li>
+
+<li>
+<H2><A name=controlmsdreordering id="controlmsdreordering"></A></H2>
+<p class="STYLE12"><strong>How to Scale MSD Reordering Model to </strong><strong><span class="STYLE17">Larger Corpus</span></strong><br/>
+It is worth pointing out that the NiuTrans system have three models to calculate M, S, D probabilities. Users can choose one of them using the parameter "MSD-model-type". When &quot;MSD-model-type&quot; is set to "1", the MSD reordering is modeled on word-level, as what the Moses system does. In addition to the basic model, the phrase-based MSD model and the hiearachical phrase-based MSD model (Galley et al., 2008) are also implemented. They can be use when &quot;MSD-model-type&quot; is set to &quot;2&quot; or &quot;3&quot;.<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;When trained on  a large corpus, the MSD model might be very large. 
+The situationis even more severe when model 3 is involved. To alleviate this problem, users can use the parameter "MSD-filter-method" which filters the MSD model using phrase translation 
+table (any entry that is not covered by the phrase table are excluded).<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Also, users can use the parameter "MSD-max-phrase-len" to limit the maximum number of words in a source or target phrase. This parameter can effectively limit the size of the generated MSD model. <br/>
+&nbsp;&nbsp;&nbsp;&nbsp;Below gives an example that restricts the MSD to a acceptable size.
+<PRE>
+param="MSD-model-type"               value="1"                             # "1", "2" or "3"
+param="MSD-filter-method"            value="tran-table"                    # "tran-table" or "msd-sum-1"
+param="MSD-max-phrase-len"           value="7"                             # number greater than 0
+</PRE>
+</li>
+
+<li>
+<H2><A name=selfdevelopedfeature id="selfdevelopedfeature"></A></H2>
+<p class="STYLE12"><strong>How to Add <span class="STYLE17">Self-developed Features</span></strong><br />
+  The NiuTrans system allows users to add self-developed features into the phrase translation table. In the default setting, each entry in the translation table is associated with 6 features. E.g. below is a sample table (&quot;phrase.translation.table&quot;), where each entry is coupled with a 6-dimention feature vector.</p>
+<PRE>
+...
+一定 ||| must ||| -2.35374 -2.90407 -1.60161 -2.12482 1 0
+一定 ||| a certain ||| -2.83659 -1.07536 -4.97444 -1.90004 1 0
+一定 ||| be ||| -4.0444 -5.74325 -2.32375 -4.46486 1 0
+一定 ||| be sure ||| -4.21145 -1.3278 -5.75147 -3.32514 1 0
+一定 ||| ' ll ||| -5.10527 -5.32301 -8.64566 -4.80402 1 0
+...</PRE>
+<p class="STYLE12">To add new features into the table, users can append them to these feature vectors. E.g. suppose that we wish to add a feature that indicates whether the phrase pair is low-frequency in the training data (appears only once) or not (appears two times or more). We can update the above table, as follows:</p>
+ <PRE>
+..
+一定 ||| must ||| -2.35374 -2.90407 -1.60161 -2.12482 1 0 0
+一定 ||| a certain ||| -2.83659 -1.07536 -4.97444 -1.90004 1 0 0
+一定 ||| be ||| -4.0444 -5.74325 -2.32375 -4.46486 1 0 0
+一定 ||| be sure ||| -4.21145 -1.3278 -5.75147 -3.32514 1 0 0
+一定 ||| ' ll ||| -5.10527 -5.32301 -8.64566 -4.80402 1 0 1
+...</PRE>
+<p class="STYLE12">We then modify the config file "NiuTrans.phrase.user.config" to activate the newly-introduced feature.</p>
+ <PRE>
+param="freefeature"                   value="1"
+param="tablefeatnum"                  value="7"
+</PRE>
+<p class="STYLE12">where "freefeature" is a trigger that activates the use of additional features. "tablefeatnum" sets the number of features defined in the table. </p>
+</li>
+<li>
+<H2><A name=externaltranslation id="externaltranslation"></A></H2>
+<p class="STYLE12"><strong>How to Plug <span class="STYLE17">External Translations</span> into the Decoder</strong><br />
+The NiuTrans system also defines some special markups to support this feature. E.g. below is sample sentence to be decoded.</p>
+<PRE>
+彼得泰勒 是 一名 英国 资深 金融 分析师 .
+(Peter Taylor is a senior financial analyst at UK .)</PRE>
+<p class="STYLE12">If you have prior knowledge about how to translate "彼得泰勒" and "英国", you can add your own translations using the special markups.:</p>
+<PRE>
+彼得泰勒 是 一名 英国 资深 金融 分析师 . |||| {0 ||| 0 ||| Peter Taylor ||| $ne ||| 彼得泰勒} \
+{3 ||| 3 ||| UK ||| $ne ||| 英国}</PRE>
+<p class="STYLE12">where "||||" is a separator, "{0 ||| 0 ||| Peter Taylor ||| $ne ||| 彼得泰勒}" and "{3 ||| 3 ||| UK ||| $ne ||| 英国}" are two user-defined translations. Each consists of 5 terms. The first two numbers indicate the span to be translated; the third term is the translation specified by users; the fourth term indicates the type of translation; and the last term repeats the corresponding word sequence. Note that &quot;\&quot; is  used to ease the display here. Please remove &quot;\&quot; in you file, and use &quot;彼得泰勒 是 一名 英国 资深 金融 分析师 . |||| {0 ||| 0 ||| Peter Taylor ||| $ne ||| 彼得泰勒}{3 ||| 3 ||| UK ||| $ne ||| 英国}&quot; directly.</p>
+</li>
+</UL>
+
+  </td>
+</tr>
+</table>
+
+</body>
+</html>

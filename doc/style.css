@@ -1,0 +1,208 @@
+/* CSS Document */
+
+body {
+	background-image: url(images/body-bg.png);
+	background-repeat: repeat-x;
+	background-attachment: fixed;
+	margin-left: 0px;
+	margin-top: 3px;
+	line-height: 120%;	/*overflow-x: hidden;*/
+}
+.STYLE7 {
+	font-size: 18px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	color: #2d72d9;
+}
+a:link {
+	color: #2d72d9;
+}
+a:visited {
+	color: #2d72d9;
+}
+a:active {
+	color: #ff6d02;
+}
+a:hover {
+	color: #ff6d02;
+}
+.STYLE12 {
+	color: #000;
+	line-height: 150%;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	font-weight: normal;
+}
+.STYLE13 {
+	color: #2d72d9;
+	font-weight: bold;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	line-height: 150%;
+	border-top: 0px;
+}
+.STYLE17 {
+	color: #ff6d02;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+}
+
+.STYLE18 {
+	color: #028bff;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+}
+
+.STYLE22 {
+	color: #000;
+	line-height: 150%;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 15px;
+	font-weight: normal;
+	margin-left:2em;
+	left:2em;
+}
+
+UL {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0.2em 0px 0px 2em; PADDING-TOP: 0px; LIST-STYLE-TYPE: square; LIST-STYLE-IMAGE: url(images/bullet_feed.gif)
+}
+
+LI {
+	MARGIN-BOTTOM: 0.1em
+}
+
+PRE {
+	BORDER-RIGHT: #2f6fab 1px dashed; PADDING-RIGHT: 1em; BORDER-TOP: #2f6fab 1px dashed; PADDING-LEFT: 1em; PADDING-BOTTOM: 0.2em; BORDER-LEFT: #2f6fab 1px dashed; COLOR: black; PADDING-TOP: 0.2em; BORDER-BOTTOM: #2f6fab 1px dashed; BACKGROUND-COLOR: #f9f9f9; font-size: 12px;
+	margin: 0 5px 0 0;
+}
+
+.STYLE20 {color: #000000; font-family: Arial, Helvetica, sans-serif; font-size: 14px; }
+
+
+/*
+#-----------------------------------------------------
+# Added by Zhang Ao
+# Jun 26, 2012
+#-----------------------------------------------------
+*/
+#mainbody {
+	margin: 0 auto;
+	background-color: #ffffff;
+	width: 100%;
+	float: left;
+	
+}
+
+/* style of navigation bar */
+
+#sidebar {
+	width: 200px;
+	float:left;
+	margin: 0px;
+	background-image: url(images/body-bg.png);
+	background-repeat: repeat;
+	background-attachment: fixed;
+	
+}
+#sidebar #fixed_pos {
+	width: 200px;
+	/*position: fixed;*/
+	top: 30px;
+	background-image: url(images/body-bg.png);
+	background-repeat: repeat;
+	background-attachment: fixed;
+}
+
+#logo {
+	margin: 0px;
+	/*padding: 10px 10px 10px 10px;*/
+}
+
+#logo .logo_img {
+	width: 180px;
+	padding: 10px;
+}
+
+#navi {
+	font-family: Verdana, Geneva, sans-serif;
+	margin: 10px 0px;
+/*	background-color: #efefef;
+	BACKGROUND: none transparent scroll repeat 0% 0%;*/
+}
+
+#navi h1 {
+	background-color:#c0c0c0;
+	margin: 20px 0px 10px 0;
+	padding: 6px 0px 6px 10px ;
+	font-size: 16px;
+	font-family: arial, verdana, sans-serif;
+}
+
+#navi a {
+	color: #000;
+	text-decoration: none;
+}
+#navi a:hover {
+	color: #2d72d9;
+	text-decoration: none;
+}
+
+#navi .item {
+	margin: -2px 0px;
+	padding: 0px 12px 0px 12px;
+	font-size: 12px;
+}
+
+.niu {
+	margin: 10px 0 0 0;
+}
+
+.niu_img {
+	width: 100px;
+}
+
+.niu_img_dynamic {
+	width: 200px;
+}
+
+.weibo {
+	margin: 0px 20px;
+}
+
+.weibo a {
+	color: #000;
+}
+
+/* core part: the right part to navigation bar */
+#corepart {
+	width: 100%;
+	padding: 0px 40px 0 20px;
+	margin: 0px;
+	border-left: 2px #CCC solid;
+}
+
+#mini_navi {
+	margin: 5px 0 -30px 0;
+	font-family: sans-serif, Arial, Helvetica;
+	font-weight: bold;
+}
+
+#mini_navi a {
+	color:#000;
+	font-size: 14px;
+	text-decoration: underline;
+}
+#mini_navi a:hover {
+	color: #999;
+	text-decoration: underline;
+}
+
+#mini_navi .gt {
+	margin: 0 1em;
+	font-size: 9px;
+}
+
+#mini_navi .last_item {
+	color: #000;
+	font-size: 14px;
+}

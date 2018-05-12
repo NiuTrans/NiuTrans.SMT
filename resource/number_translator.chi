@@ -1,0 +1,110 @@
+#percent
+百分之
+
+#fraction
+分之
+
+#negative
+负
+
+#positive
+正
+
+#regex
+$number_[atom]_{ARABIC}_{0} \d+.\d+
+$number_[atom]_{LOCAL}_{1} [两零一二三四五六七八九十百千]+点[两零一二三四五六七八九]+
+
+#fuzzy
+数十	tens of
+数百	hundreds of
+数千	thousands of
+数万	tens of thousands of
+数十万	hundreds of thousands of
+数百万	millions of
+数千万	tens of millions of
+数亿	hundreds of millions of
+数十亿	billions of
+数百亿	tens of billions of
+数千亿	hundreds of billions of
+数万亿	trillions of
+数十万亿	tens of trillions of
+数百万亿	hundreds of trillions of
+数千万亿	quadrillions of
+数亿亿	tens of quadrillions of
+几十	several ten
+几百	several hundred
+几千	several thousand
+几万	tens of thousands of
+几十万	hundreds of thousands of
+几百万	several million
+几千万	tens of millions of
+几亿	hundreds of millions of
+几十亿	several billion
+几百亿	tens of billions of
+几千亿	hundreds of billions of
+几万亿	several trillion
+几十万亿	tens of trillions of
+几百万亿	hundreds of trillions of
+几千万亿	several quadrillion
+几亿亿	tens of quadrillions of
+
+#quantity
+克拉	carat
+ct	carat
+Ct	carat
+千克	kg
+kg	kg
+Kg	kg
+KG	kg
+毫米	mm
+mm	mm
+MM	mm
+厘米	cm
+cm	cm
+CM	cm
+千米	km
+km	km
+KM		km
+英尺	 foot* feet
+ft	 foot* feet
+foot	 foot* feet
+英寸	 inch* inches
+inch	 inch* inches
+弧度	 radian(rad)* radians(rad)
+rad	 radian(rad)* radians(rad)
+radian	 radian(rad)* radians(rad)
+镑	 pound* pounds
+pound	 pound* pounds
+pounds	 pound* pounds
+帕	Pa
+pa	Pa
+Pa	Pa
+百万帕	MPa
+MPa	MPa
+Mpa	MPa
+千磅	 kilopound(kip)* kilopounds(kip)
+kip	 kilopound(kip)* kilopounds(kip)
+平方米	 square meter(m2)* square meters(m2)
+m2	 square meter* square meters
+平方毫米	 square millimeter(mm2)* square millimeters(mm2)
+mm2	 square millimeter* square millimeters
+平方厘米	 square centimeter(cm2)* square centimeters(cm2)
+cm2	 square centimeter* square centimeters
+立方米	 cubic meter(m3)* cubic meters(m3)
+m3	 cubic meter* cubic meters
+立方厘米	 cubic centimeter(cm3)* cubic centimeters(cm3)
+cm3	 cubic centimeter* cubic centimeters
+立方毫米	 cubic millimeter(mm3)* cubic millimeters(mm3)
+mm3	 cubic millimeter* cubic millimeter
+毫升 mL
+mL mL
+转/分	 revolution per minute(rpm)* revolutions per minute(rpm)
+rpm	 revolutions per minute(rpm)* revolutions per minute(rpm)
+百万分之一	 parts per million(ppm)
+ppm	 parts per million(ppm)
+千瓦	kW
+kW	kW
+毫伏	mV
+mV	mV
+毫安	mA
+mA	mA

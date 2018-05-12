@@ -1,0 +1,116 @@
+#OrdinalPrefix
+第
+
+#Percent
+百分之
+
+#Positive
+正
+
+#Negative
+负
+
+#Fuzzy
+tens of	数十
+hundreds of	数百
+thousands of	数千
+tens of thousands of	数万
+hundreds of thousands of	数十万
+millions of	数百万
+tens of millions of	数千万
+hundreds of millions of	数亿
+billions of	数十亿
+tens of billions of	数百亿
+hundreds of billions of	数千亿
+trillions of	数万亿
+tens of trillions of	数十万亿
+hundreds of trillions of	数百万亿
+quadrillions of	数千万亿
+tens of quadrillions of	数亿亿
+several ten	几十
+several hundred	几百
+several thousand	几千
+several million	几百万
+several billion	几十亿
+several trillion	几万亿
+tens of trillions of	几十万亿
+several quadrillion	几千万亿
+several tens	几十
+several hundreds	几百
+several thousands	几千
+several millions	几百万
+several billions	几十亿
+several trillions	几万亿
+tens of trillions ofs	几十万亿
+several quadrillions	几千万亿
+#Number_Compose_N2N
+from	to||||从	至
+-||||-
+~||||~
+to||||至
+#Number_Pre_More
+more	than||||超过	NULL
+over||||超过
+about||||大约
+
+#quantity
+carat	克拉
+ct	克拉
+Ct	克拉
+kg	千克
+Kg	千克
+KG	千克
+mm	毫米
+MM	毫米
+cm	厘米
+CM	厘米
+km	千米
+KM	千米
+foot	英尺
+feet	英尺
+ft	英尺
+inch	英寸
+inches	英寸
+radian	弧度
+radians	弧度
+rad	弧度
+pound	镑
+pounds	镑
+Pa	帕
+pa	帕
+Pa	帕
+MPa	百万帕
+Mpa	百万帕
+kilopound	千磅
+kilopounds	千磅
+kip	千磅
+square meter	平方米
+square meters	平方米
+m2	平方米
+square millimeter	平方毫米
+square millimeters	平方毫米
+mm2	平方毫米
+square centimeter	平方厘米
+square centimeters	平方厘米
+cm2	平方厘米
+cubic meter	立方米
+cubic meters	立方米
+m3	立方米
+cubic centimeter	立方厘米
+cubic centimeters	立方厘米
+cm3	立方厘米
+cubic millimeter	立方毫米
+cubic millimeters	立方毫米
+mm3	立方毫米
+mL	毫升
+revolution per minute	转/分
+revolutions per minute	转/分
+rpm	转/分
+parts per million	百万分之一
+ppm	百万分之一
+kW	千瓦
+mV	毫伏
+mA	毫安
+
+#OrdinalSuffix
+日
