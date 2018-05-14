@@ -39,7 +39,7 @@
 ## 手册
 在NiuTrans中提供描述更多关于NiuTrans细节的手册，同时介绍如何使用NiuTrans更好搭建统计机器翻译系统。点击这里下载[ PDF版手册 ](http://www.niutrans.com/niutrans/man/niutrans-manual.pdf)。
 
-## NiuTrans团队
+## NiuTrans.SMT团队
 * [朱靖波](http://www.nlplab.com/members/zhujingbo.html)（项目负责人）
 * [肖桐](http://www.nlplab.com/members/xiaotong.html)（技术负责人）
 * 李垠桥
