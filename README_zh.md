@@ -1,6 +1,6 @@
 # NiuTrans.SMT统计机器翻译系统
 
-* NiuTrans.SMT是一个开源的统计机器翻译系统，由东北大学自然语言处理实验室和沈阳雅译网络技术有限公司联合开发。NiuTrans系统全部由C++开发，运行速度快，占用内存少。目前该系统支持基于（层次）短语/基于句法的模型，可供研究之用。
+* NiuTrans.SMT是一个开源的统计机器翻译系统，由东北大学自然语言处理实验室和沈阳雅译网络技术有限公司联合开发。NiuTrans.SMT系统全部由C++开发，运行速度快，占用内存少。目前该系统支持基于（层次）短语/基于句法的模型，可供研究之用。
 
 
 ## 系统特色
@@ -37,7 +37,7 @@
     - 在“NiuTrans/bin/”目录下生成了所有的二进制文件。
 
 ## 手册
-在NiuTrans中提供描述更多关于NiuTrans细节的手册，同时介绍如何使用NiuTrans更好搭建统计机器翻译系统。点击这里下载[ PDF版手册 ](http://www.niutrans.com/niutrans/man/niutrans-manual.pdf)。
+在NiuTrans.SMT中提供描述更多关于NiuTrans细节的手册，同时介绍如何使用NiuTrans.SMT更好搭建统计机器翻译系统。点击这里下载[ PDF版手册 ](http://www.niutrans.com/niutrans/man/niutrans-manual.pdf)。
 
 ## NiuTrans.SMT团队
 * [朱靖波](http://www.nlplab.com/members/zhujingbo.html)（项目负责人）
@@ -52,7 +52,7 @@
 致谢：在本项目实施的过程中，获得了往届毕业生的支持，他们是：李强（基于短语的系统和各种脚本），张浩（解码器，调序模型），陈如山（语言模型），姚树杰（数据选取和数据预处理），马骥（语言模型，CWMT2013基线系统），孙坤杰（CWMT2013汉英基线系统），刘卓（CWMT2013英汉基线系统）。
 
 ## 如何引用NiuTrans
-如果您在研究中使用了NiuTrans，请在参考文献中注明引用如下论文
+如果您在研究中使用了NiuTrans.SMT，请在参考文献中注明引用如下论文
 
 **Tong Xiao, Jingbo Zhu, Hao Zhang and Qiang Li. 2012. NiuTrans: An Open Source Toolkit for Phrase-based and Syntax-based Machine Translation. In Proc. of ACL, demonstration session.**
 
