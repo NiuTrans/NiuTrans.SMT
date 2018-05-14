@@ -14,10 +14,6 @@
 	* 基于层次短语的模型
 	* 基于句法（树到串，串到树，树到树）的模型
   
-## 下载
-本系统为开放源码系统，依照GNU公用许可证[(GPL)](http://www.gnu.org/licenses/gpl-2.0.html)发布。
-请点击[下载地址](http://183.129.153.70:5010/ntopen_server/niutrans-download-page.jsp)下载本系统的源代码和样本数据。
-
 ## 系统运行要求
 * Windows用户：要求Visual Studio 2008，Cygwin，以及 perl（5.10.0 版本或更高）。建议默认在“C:\”路径下安装cygwin。
 
@@ -26,7 +22,6 @@
 注意：运行本系统的最低要求为`2GB内存、10GB硬盘空间`。 如果使用大规模的语料训练本系统，则需要更多的内存和硬盘空间。建议使用64位操作系统以支持大规模语料/模型（如N-元语言模型） 
 
 ## 安装
-请解压下载的软件包（假设安装目录是“NiuTrans”），按照如下说明安装本系统。
 
 ### 对于Windows用户   
 	- 在 NiuTrans\src\下打开NiuTrans.sln
@@ -62,6 +57,7 @@
 有关NiuTrans, 请发送e-mail至niutrans@mail.neu.edu.cn。我们将为您详细解答。
 
 ## NiuTrans历史
+* NiuTrans 1.4.0版 - 2018年5月12日（bug修复）
 * NiuTrans 1.3.1 Beta版 - 2014年12月1日（解码器及句法规则抽取bug修复）
 * NiuTrans 1.3.0 Beta版 - 2013年7月17日（bug修复，解码器升级，数据预处理系统升级，增加CWMT2013评测专用脚本
 * NiuTrans 1.2.0 Beta版 - 2013年1月31日（bug修复，解码器升级，增加数据预处理系统，增加词对齐工具，增加recasing模块）
