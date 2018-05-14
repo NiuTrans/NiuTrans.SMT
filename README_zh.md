@@ -60,7 +60,7 @@
 有关NiuTrans, 请发送e-mail至niutrans@mail.neu.edu.cn。我们将为您详细解答。
 
 ## NiuTrans历史
-* NiuTrans 1.4.0版 - 2018年5月12日（bug修复）
+* NiuTrans 1.4.0 Beta版 - 2018年5月12日（bug修复）
 * NiuTrans 1.3.1 Beta版 - 2014年12月1日（解码器及句法规则抽取bug修复）
 * NiuTrans 1.3.0 Beta版 - 2013年7月17日（bug修复，解码器升级，数据预处理系统升级，增加CWMT2013评测专用脚本
 * NiuTrans 1.2.0 Beta版 - 2013年1月31日（bug修复，解码器升级，增加数据预处理系统，增加词对齐工具，增加recasing模块）
