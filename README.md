@@ -1,4 +1,4 @@
-# NiuTrans: A Statistical Machine Translation System
+# NiuTrans.SMT: A Statistical Machine Translation System
 
 * NiuTrans.SMT is an open-source statistical machine translation system developed by the Natural Language Processing Group at Northeastern University, China. The NiuTrans system is fully developed in C++ language. So it runs fast and uses less memory. Currently it supports phrase-based, hierarchical phrase-based and syntax-based (string-to-tree, tree-to-string and tree-to-tree) models for research-oriented studies.
 
