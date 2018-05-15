@@ -71,7 +71,7 @@ NiuTrans version 0.2.0 - October 29, 2011 (bug-fixing, 32bit OS supported)
 NiuTrans version 0.1.0 - July 5, 2011 (first version)  
 
 ## Acknowledgements
-This project is supported in part by the National Science Foundation of China, Specialized Research Fund for the Doctoral Program of Higher Education (20100042110031), and the Fundamental Research Funds for the Central Universities.
+This project is supported in part by the National Science Foundation of China, Specialized Research Fund for the Doctoral Program of Higher Education, and the Fundamental Research Funds for the Central Universities.
 
 
 
