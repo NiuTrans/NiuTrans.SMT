@@ -100,23 +100,27 @@ namespace ruletable_scorer
         bool printFreqFlag;
         bool printAlignFlag;
         bool generInvFileFlag;
+        bool sort_phrase_table;
 
         OptionsOfScore( int &newCutoffInit       , 
                         int &newCutoffHiero      , 
                         bool &newPrintFreqFlag   , 
                         bool &newPrintAlignFlag  , 
-                        bool &newGenerInvFileFlag  )
+                        bool &newGenerInvFileFlag ,
+                        bool &sort)
             : cutoffInit(       newCutoffInit       ), 
               cutoffHiero(      newCutoffHiero      ), 
               printFreqFlag(    newPrintFreqFlag    ), 
               printAlignFlag(   newPrintAlignFlag   ),
-              generInvFileFlag( newGenerInvFileFlag ){}
+              generInvFileFlag( newGenerInvFileFlag ),
+              sort_phrase_table(sort){}
 
         OptionsOfScore(): cutoffInit(       0     ), 
                           cutoffHiero(      0     ), 
                           printFreqFlag(    false ), 
                           printAlignFlag(   false ), 
-                          generInvFileFlag( false ){}
+                          generInvFileFlag( false ),
+                          sort_phrase_table(true){}
     };
 
 
@@ -201,7 +205,8 @@ namespace ruletable_scorer
         bool output( ofstream         &outfile         , 
                      bool             &inverseFlag     , 
                      OptionsOfScore   &options         , 
-                     ScoreClassifyNum &scoreClassifyNum  );
+                     ScoreClassifyNum &scoreClassifyNum  ,
+                     double           totalFrequency);
     };
 
     class ConsolidateClassifyNum
