@@ -374,7 +374,7 @@ bool Tree::CreateForest(const char * string)
         const char * ibeg = beg;
         int i = 0;
 
-        while(ibeg != '\0'){
+        while(*ibeg != '\0'){
             while(*ibeg == ' ')
                 ibeg++;
 
