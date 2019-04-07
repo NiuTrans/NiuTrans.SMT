@@ -1,6 +1,15 @@
+/*
+last modify:
+	2014/11/04   by duquan
+	2015/10/23   by duquan, add define final or final and
+*/
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#define GROW_DIAG_FINAL_AND
+
+#define MAX_LINE_LENGTH 102400
 
 int main(int argc,char **argv)
 {
@@ -22,19 +31,19 @@ int main(int argc,char **argv)
 	}
 
 
-	char LineNum[1000];
-	char Sentence[5000];
-	char Align[5000];
+	char LineNum[MAX_LINE_LENGTH+1];
+	char Sentence[MAX_LINE_LENGTH+1];
+	char Align[MAX_LINE_LENGTH+1];
 
 	int CountLine=0;
 	printf("Start combining e2c and c2e!!!\n");
 
-	while (fgets(LineNum,1000,c2e)!=NULL)
+	while (fgets(LineNum,MAX_LINE_LENGTH,c2e)!=NULL)
 	{
 		CountLine++;
 		if (CountLine%10000==0)
 		{
-			printf("\r\t %d Lines processed!!\n",CountLine);
+			printf("\r\t %d Lines processed!!",CountLine);
 		}
 
 		//get sentence source length and target length from first line.
@@ -47,20 +56,63 @@ int main(int argc,char **argv)
 		LinePointer+=6;
 		sscanf(LinePointer,"%d",&SourceSentenceLength);
 
-		if (fgets(Sentence,5000,c2e)==NULL||fgets(Align,5000,c2e)==NULL)
+		if (fgets(LineNum,MAX_LINE_LENGTH,e2c)==NULL)
+		{
+			printf("the two input line number is not the same!\ns");
+			return 1;
+		}
+		//judge if e2c is equal to c2e
+		LinePointer=strstr(LineNum,"length");
+		int JudgeSourceSentenceLength=0;           //english
+		int JudgeTargetSentenceLength=0;			  //chinese
+		LinePointer+=6;
+		sscanf(LinePointer,"%d",&JudgeSourceSentenceLength);
+		LinePointer=strstr(LinePointer,"length");
+		LinePointer+=6;
+		sscanf(LinePointer,"%d",&JudgeTargetSentenceLength);
+
+		if(TargetSentenceLength!=JudgeTargetSentenceLength || SourceSentenceLength != JudgeSourceSentenceLength )
+		{
+			if (fgets(Sentence,MAX_LINE_LENGTH,e2c)==NULL||fgets(Align,MAX_LINE_LENGTH,e2c)==NULL)
+			{
+				printf("target data format error!\n");
+				return 1;
+			}
+			if (fgets(Sentence,MAX_LINE_LENGTH,c2e)==NULL||fgets(Align,MAX_LINE_LENGTH,c2e)==NULL)
+			{
+				printf("source input format error\n");
+				return 1;
+			}
+			fprintf(Alignment,"\n");
+			continue;
+		}
+
+
+		if (fgets(Sentence,MAX_LINE_LENGTH,c2e)==NULL||fgets(Align,MAX_LINE_LENGTH,c2e)==NULL)
 		{
 			printf("source input format error\n");
 			return 1;
 		}
-		Sentence[strlen(Sentence)-1]='\0';
+		for( unsigned long i = strlen(Sentence)-1; i >= 0; i-- ) 
+		{
+			if( '\r' == Sentence[i] || '\n' == Sentence[i] )
+			{
+				Sentence[i]='\0';
+			}
+			else
+			{
+				break;
+			}
+		}
+
 		//get and deal the third line.
-		
 
-		int *SourceArray=new int[SourceSentenceLength];
-		int *TargetArray=new int[TargetSentenceLength];
 
-		memset(SourceArray,0,SourceSentenceLength*4);
-		memset(TargetArray,0,TargetSentenceLength*4);
+		int *SourceArray=new int[SourceSentenceLength+1];
+		int *TargetArray=new int[TargetSentenceLength+1];
+
+		memset(SourceArray,0,SourceSentenceLength*sizeof(int));
+		memset(TargetArray,0,TargetSentenceLength*sizeof(int));
 
 		//Target
 
@@ -73,9 +125,10 @@ int main(int argc,char **argv)
 		for (int count=0;count<AlignLength-1;count++)
 		{
 			temp=0;
-			if (Align[count]==')'&&Align[count-1]=='}')
+			if (Align[count]==')'&&count>0&&Align[count-1]=='}')
 			{
 				Align[count]='\0';
+				memset(Word,'\0',5000*sizeof(char));
 				sscanf(SentencePointer,"%s ({ %d %[ 0-9}]",Word,&temp,SentencePointer);
 
 				if (strlen(Word)>100)
@@ -105,6 +158,11 @@ int main(int argc,char **argv)
 						return 1;
 					}
 					SourceArray[temp-1]=CountProcess+1;
+					if (CountProcess>TargetSentenceLength)
+					{
+						printf("data error at line: %d!\n",CountLine);
+						return 0;
+					}
 					if(strcmp(SentencePointer,"}")==0)
 					{
 						break;
@@ -125,20 +183,26 @@ int main(int argc,char **argv)
 
 		//Source
 
-		if (fgets(LineNum,1000,e2c)==NULL)
-		{
-			printf("the two input line number is not the same!\ns");
-			return 1;
-		}
-		if (fgets(Sentence,5000,e2c)==NULL||fgets(Align,5000,e2c)==NULL)
+
+		if (fgets(Sentence,MAX_LINE_LENGTH,e2c)==NULL||fgets(Align,MAX_LINE_LENGTH,e2c)==NULL)
 		{
 			printf("target data format error!\n");
 			return 1;
 		}
-		
-		Sentence[strlen(Sentence)-1]='\0';
+		for( unsigned long i = strlen(Sentence)-1; i >= 0; i-- ) 
+		{
+			if( '\r' == Sentence[i] || '\n' == Sentence[i] )
+			{
+				Sentence[i]='\0';
+			}
+			else
+			{
+				break;
+			}
+		}
 		//get and deal the third line.
-		
+
+
 
 		SentencePointer=Align;
 		AlignLength=strlen(Align);
@@ -178,6 +242,11 @@ int main(int argc,char **argv)
 						return 1;
 					}
 					TargetArray[temp-1]=CountProcess+1;
+					if (CountProcess>SourceSentenceLength)
+					{
+						printf("data error at line: %d!\n",CountLine);
+						return 0;
+					}
 					if(strcmp(SentencePointer,"}")==0)
 					{
 						break;
@@ -196,8 +265,8 @@ int main(int argc,char **argv)
 
 		//grow-diag-final
 
-		int *Martix=new int[SourceSentenceLength*TargetSentenceLength];
-		memset(Martix,0,SourceSentenceLength*TargetSentenceLength*4);
+		int *Martix=new int[SourceSentenceLength*TargetSentenceLength+1];
+		memset(Martix,0,SourceSentenceLength*TargetSentenceLength*sizeof(int));
 
 		//store single alignment to Matrix
 		for (int i=0;i<SourceSentenceLength;i++)
@@ -209,11 +278,11 @@ int main(int argc,char **argv)
 
 		}
 
-		int *SourceSelected=new int[SourceSentenceLength];
-		int *TargetSelected=new int[TargetSentenceLength];
+		int *SourceSelected=new int[SourceSentenceLength+1];
+		int *TargetSelected=new int[TargetSentenceLength+1];
 
-		memset(SourceSelected,0,SourceSentenceLength*4);
-		memset(TargetSelected,0,TargetSentenceLength*4);
+		memset(SourceSelected,0,SourceSentenceLength*sizeof(int));
+		memset(TargetSelected,0,TargetSentenceLength*sizeof(int));
 
 		for (int i=0;i<TargetSentenceLength;i++)
 		{
@@ -252,7 +321,7 @@ int main(int argc,char **argv)
 					}
 
 					//before
-					if (i%TargetSentenceLength!=0&&Martix[i-1]==1)
+					if ((i-1)>=0&&i%TargetSentenceLength!=0&&Martix[i-1]==1)
 					{
 						if (SourceSelected[(i-1)/TargetSentenceLength]==0||TargetSelected[(i-1)%TargetSentenceLength]==0)
 						{
@@ -265,7 +334,7 @@ int main(int argc,char **argv)
 					}
 
 					//after
-					if ((i+1)%TargetSentenceLength!=0&&Martix[i+1]==1)
+					if ((i+1)%TargetSentenceLength!=0&&(i+1)<(SourceSentenceLength*TargetSentenceLength)&&Martix[i+1]==1&&(i+1)/TargetSentenceLength<TargetSentenceLength&&(i+1)%TargetSentenceLength<TargetSentenceLength)
 					{
 						if (SourceSelected[(i+1)/TargetSentenceLength]==0||TargetSelected[(i+1)%TargetSentenceLength]==0)
 						{
@@ -278,7 +347,7 @@ int main(int argc,char **argv)
 					}
 
 					//below
-					if ((i+TargetSentenceLength)<SourceSentenceLength*TargetSentenceLength&&Martix[i+TargetSentenceLength]==1)
+					if ((i+TargetSentenceLength)<SourceSentenceLength*TargetSentenceLength&&Martix[i+TargetSentenceLength]==1&&(i+TargetSentenceLength)/TargetSentenceLength<TargetSentenceLength&&(i+TargetSentenceLength)%TargetSentenceLength<TargetSentenceLength)
 					{
 						if (SourceSelected[(i+TargetSentenceLength)/TargetSentenceLength]==0||TargetSelected[(i+TargetSentenceLength)%TargetSentenceLength]==0)
 						{
@@ -320,7 +389,7 @@ int main(int argc,char **argv)
 					}
 
 					//left below
-					if ((i+TargetSentenceLength-1)<SourceSentenceLength*TargetSentenceLength&&i%TargetSentenceLength!=0&&Martix[i+TargetSentenceLength-1]==1)
+					if ((i+TargetSentenceLength-1)>=0&&(i+TargetSentenceLength-1)<SourceSentenceLength*TargetSentenceLength&&i%TargetSentenceLength!=0&&Martix[i+TargetSentenceLength-1]==1)
 					{
 						if (SourceSelected[(i+TargetSentenceLength-1)/TargetSentenceLength]==0||TargetSelected[(i+TargetSentenceLength-1)%TargetSentenceLength]==0)
 						{
@@ -350,72 +419,80 @@ int main(int argc,char **argv)
 			}
 		}
 
-			//final 
-			for (int i=0;i<SourceSentenceLength*TargetSentenceLength;i++)
+		//final 
+		for (int i=0;i<SourceSentenceLength*TargetSentenceLength;i++)
+		{
+			if (Martix[i]==1)
 			{
-				if (Martix[i]==1)
+				//final Source
+#ifndef GROW_DIAG_FINAL_AND
+				if ((SourceSelected[i/TargetSentenceLength]==0||TargetSelected[i%TargetSentenceLength]==0)&&SourceArray[i/TargetSentenceLength]==(i%TargetSentenceLength+1))
+#else
+				if ((SourceSelected[i/TargetSentenceLength]==0&&TargetSelected[i%TargetSentenceLength]==0)&&SourceArray[i/TargetSentenceLength]==(i%TargetSentenceLength+1))
+#endif
 				{
-					//final Source
-					if ((SourceSelected[i/TargetSentenceLength]==0&&TargetSelected[i%TargetSentenceLength]==0)&&SourceArray[i/TargetSentenceLength]==(i%TargetSentenceLength+1))
-					{
-						Martix[i]++;
-						SourceSelected[i/TargetSentenceLength]=1;
-						TargetSelected[i%TargetSentenceLength]=1;
-					}
-
+					Martix[i]++;
+					SourceSelected[i/TargetSentenceLength]=1;
+					TargetSelected[i%TargetSentenceLength]=1;
 				}
-			}
 
-			for (int i=0;i<SourceSentenceLength*TargetSentenceLength;i++)
+			}
+		}
+
+		for (int i=0;i<SourceSentenceLength*TargetSentenceLength;i++)
+		{
+			if (Martix[i]==1)
 			{
-				if (Martix[i]==1)
+				//final Target
+#ifndef GROW_DIAG_FINAL_AND
+				if ((SourceSelected[i/TargetSentenceLength]==0||TargetSelected[i%TargetSentenceLength]==0)&&TargetArray[i%TargetSentenceLength]==(i/TargetSentenceLength+1))
+#else
+				if ((SourceSelected[i/TargetSentenceLength]==0&&TargetSelected[i%TargetSentenceLength]==0)&&TargetArray[i%TargetSentenceLength]==(i/TargetSentenceLength+1))
+#endif
 				{
-					//final Target
-					if ((SourceSelected[i/TargetSentenceLength]==0&&TargetSelected[i%TargetSentenceLength]==0)&&TargetArray[i%TargetSentenceLength]==(i/TargetSentenceLength+1))
-					{
-						Martix[i]++;
-						SourceSelected[i/TargetSentenceLength]=1;
-						TargetSelected[i%TargetSentenceLength]=1;
-					}
-
+					Martix[i]++;
+					SourceSelected[i/TargetSentenceLength]=1;
+					TargetSelected[i%TargetSentenceLength]=1;
 				}
-			}
 
-			bool IfFirstPair=1;
-			for (int i=0;i<SourceSentenceLength*TargetSentenceLength;i++)
+			}
+		}
+
+		bool IfFirstPair=1;
+		for (int i=0;i<SourceSentenceLength*TargetSentenceLength;i++)
+		{
+			if (Martix[i]==2)
 			{
-				if (Martix[i]==2)
+				if (IfFirstPair)
 				{
-					if (IfFirstPair)
-					{
-						fprintf(Alignment,"%d-%d",i%TargetSentenceLength,i/TargetSentenceLength);
-						IfFirstPair=0;
-					}
-					else
-					{
-						fprintf(Alignment," %d-%d",i%TargetSentenceLength,i/TargetSentenceLength);
-					}
-					
+					fprintf(Alignment,"%d-%d",i%TargetSentenceLength,i/TargetSentenceLength);
+					IfFirstPair=0;
 				}
+				else
+				{
+					fprintf(Alignment," %d-%d",i%TargetSentenceLength,i/TargetSentenceLength);
+				}
+
 			}
-			fprintf(Alignment,"\n");
+		}
+		fprintf(Alignment,"\n");
 
 
 
-			delete(SourceArray);
-			delete(TargetArray);
-			delete(SourceSelected);
-			delete(TargetSelected);
-			delete(Martix);
+		delete(SourceArray);
+		delete(TargetArray);
+		delete(SourceSelected);
+		delete[] TargetSelected;
+		delete(Martix);
 
 	}
 
-	printf("\nTotal Line:<%d>",CountLine);
+	printf("\nTotal Line: %d \n",CountLine);
 
 	fclose(c2e);
 	fclose(e2c);
 	fclose(Alignment);
 
-	return 1;
+	return 0;
 }
 
