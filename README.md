@@ -30,7 +30,7 @@ NOTE: 2GB memory and 10GB disc space is a minimal requirement for running the sy
 ### For Linux users
     - cd NiuTrans/src/
     - chmod a+x install.sh 
-    - ./install.sh -m32 (32位OS) 或 ./install.sh (64位OS)
+    - ./install.sh -m32 (for 32bit OS) or ./install.sh (for 64bit OS)
     - source ~/.bashrc
      You will then find that all binaries are generated in "NiuTrans/bin/".
 
