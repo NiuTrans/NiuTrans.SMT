@@ -34,7 +34,7 @@
 
 namespace smt{
 
-bool DataChecker::CheckInputSentences(const char * fn, bool forTuning, int nref)
+void DataChecker::CheckInputSentences(const char * fn, bool forTuning, int nref)
 {
 	char * line = new char[MAX_LINE_LENGTH];
 	char * msg = new char[1024];
