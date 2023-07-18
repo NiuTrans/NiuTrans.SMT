@@ -50,7 +50,7 @@ public:
 	~DataChecker(){};
 
 public:
-	static bool CheckInputSentences(const char * fn, bool forTuning, int nref);
+	static void CheckInputSentences(const char * fn, bool forTuning, int nref);
 	static bool CheckSentence(const char * sent, char * msg);
 	static bool CheckModelFiles(Configer * configer);
 
