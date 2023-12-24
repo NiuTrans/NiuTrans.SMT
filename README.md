@@ -60,6 +60,7 @@ If you use NiuTrans.SMT in your research and would like to acknowledge this proj
 For any questions about NiuTrans, please e-mail to us (niutrans@mail.neu.edu.cn) directly.
 
 ## History
+NiuTrans version 1.4.1 Beta - June 1, 2023 (bug fixes)  
 NiuTrans version 1.4.0 Beta - May 12, 2018 (bug fixes)  
 NiuTrans version 1.3.1 Beta - December 1, 2014 (bug fixes for the t2s/t2t decoder and syntactic rule extraction module)  
 NiuTrans version 1.3.0 Beta - July 17, 2013 (bug fixes, decoder updates, data preprocessing system updates, new scripts for CWMT2013)  
