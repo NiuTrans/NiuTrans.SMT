@@ -36,7 +36,7 @@ NOTE: 2GB memory and 10GB disc space is a minimal requirement for running the sy
 
 ## Manual
 
-The package also offers a manual to describe more details about the system, as well as various tricks to build better MT engines using NiuTrans. Click [here](https://developer.niutrans.com/niutrans.smt/niutrans-manual.pdf) to download the manual in pdf.
+The package also offers a manual to describe more details about the system, as well as various tricks to build better MT engines using NiuTrans. Click [here](https://github.com/NiuTrans/NiuTrans.SMT/blob/master/niutrans-manual.pdf) to download the manual in pdf.
 
 ## NiuTrans Team
 * [Jingbo Zhu](http://www.nlplab.com/members/zhujingbo.html)（Co-PI）
